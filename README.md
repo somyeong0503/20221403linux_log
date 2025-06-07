@@ -5,7 +5,8 @@
 
 ####  ➜ 2주차 응용 문제 & 추가 구현 완료
   - url 맵핑, 컨트롤러 추가 : hello.2 맵핑, 5개 속성
-<div align="center"> <img width="300" alt="image" src="https://github.com/user-attachments/assets/13ec425d-71fe-41d9-bd9d-795d52c2c5b3"> </div>
+<div align="center"> <img width="300" alt="image" src="![image](https://github.com/user-attachments/assets/e59d8533-2328-4205-a8a7-a7f059e7481d)
+"> </div>
 
 ## * 3주차 수업 *
   - 리눅스 파일 시스템 구조 이해 : EXT4 기반의 파일 시스템과 /bin, /home, /etc 등 주요 디렉터리 구조 및 기능을 학습
@@ -30,15 +31,53 @@
   - 사용자 그룹 관리 : 그룹 생성 및 변경, 보조 그룹 추가, 그룹 삭제  등 계정과 그룹간 권한 관리를 학습
   - 원격 접속 및 폴더 공유 : ssh 서버 설정과 PUTTY를 통한 원격 접속, VIRTUAL BOX 환경에서 공유 폴더 마운트 및 파일 편집 실습
 
+####  ➜ 4주차 응용 문제
+  - 1. adduser 명령어로 홈 디렉터리를 지정하여 test 사용자를 생성하시오.
+  ➜ sudo adduser --home /home/test test
+  - 2. test 사용자의 패스워드를 지정하고, 최소일 7일, 최대일 10일로 설정하시오.
+  ➜ sudo passwd test, sudo chage -m 7 -M 10 test        
+  - 3. 현재 test 사용자의 GID 그룹은 무엇인가?
+  ➜ id test
+  - 4. GID 3000번 new 그룹, 3005번 old 그룹을 2개 생성하시오.
+  ➜ sudo groupadd -g 3000 new, sudo groupadd -g 3005 old
+  - 5. 사용자 test의 주 그룹을 new로, 보조 그룹으로 old를 추가하시오.
+  ➜ sudo usermod -g new -aG old test
+  - 6. 사용자 test를 홈 디렉터리를 포함하여 모두 삭제하시오.
+  ➜ sudo userdel -r test, sudo groupdel new, sudo groupdel old
+ 
  ## * 5주차 수업 *
   - 리눅스 파일 권한 이해 및 설정 : ls -al, chmod, umask, chown 등을 통해 파일과 디렉터리의 권한을 확인하고 변경하는 방법을 학습
   - 특수 권한과 속성 관리: setuid, setgid, sticky bit, chattr, lsattr 등을 통해 고급 보안 설정과 시스템 관리에 필요한 권한을 학습
   - 공유 폴더 자동 마운트 설정: crontab과 쉘 스크립트를 활용하여 VirtualBox 공유 폴더를 시스템 부팅 시 자동으로 연결하는 실습을 수행
 
+####  ➜ 5주차 응용 문제
+  - 1. 현재 umask 기본값은 022다. 폴더 및 디렉터리 생성 시 권한을 750으로 설정하려면?
+  ➜ 777 - umask = 750 → umask = 027
+  - 2. 홈 디렉터리에 임시 파일 temp.txt 생성 후 소유자와 권한 설정
+  ➜ 파일 생성 : touch ~/temp.txt, 소유자 및 그룹 변경: sudo chown root:root ~/temp.txt, 권한 변경 : chmod 700 ~/temp.txt
+  - 3. temp.txt에 특수 권한 sticky bit 또는 setuid, setgid 등 추가
+  ➜ chmod u+s ~/temp.txt, ls -l ~/temp.txt
+
 ## * 6주차 수업 *
   - 리눅스 프로세스 이해 및 상태 확인: ps, pstree, jobs 등을 통해 프로세스 구조, 상태, PID 관리, 포그라운드/백그라운드 실행 방식을 학습
   - 프로세스 제어 및 종료 실습: kill, fg, bg, Ctrl+C/Z 등을 이용해 프로세스를 중단하거나 종료하며, 좀비 프로세스(Z 상태) 처리 방법도 실습
   - Cockpit 활용한 웹 기반 모니터링: Cockpit 설치 및 설정을 통해 웹 브라우저에서 서버 자원 사용 현황을 실시간으로 모니터링하고 제어
+
+####  ➜ 6주차 응용 문제 & 추가 구현 완료
+ - 1. 좀비 프로세스와 관련된 설명 중 옳은 것은?
+ 정답: 2번
+ ➜ 리눅스 부팅 시에 발생하는 프로세스는 exec 방식이다.
+ - 2. 다음 명령어는 어떤 유형인가? (find / -name type d 2>/dev/null > dir.txt &)
+ 정답: 2번
+ ➜ 백그라운드 프로세스
+ - 3. 트리처럼 실시간 프로세스를 출력하는 명령어는?
+ 정답: 2번
+ ➜ pstree
+ - 4. 서버의 주요 서비스 등록 처리를 수행하는 프로세스는?
+ 정답: 4번
+ ➜ 데몬 프로세스(백그라운드에서 실행되며 시스템 서비스 유지)
+<div align="center"> <img width="300" alt="image" src="![image](https://github.com/user-attachments/assets/e59d8533-2328-4205-a8a7-a7f059e7481d)
+"> </div>
 
 ## * 7주차 수업 *
   - GitHub 연동 실습: 리눅스 환경에서 Git 설치 후, 원격 저장소 생성, 커밋, 푸시까지 깃허브에 로그 파일을 업로드하는 전 과정을 실습
