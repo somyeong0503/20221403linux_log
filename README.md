@@ -71,9 +71,9 @@
  - 4. 서버의 주요 서비스 등록 처리를 수행하는 프로세스는?
  정답: 4번
  ➜ 데몬 프로세스(백그라운드에서 실행되며 시스템 서비스 유지)
-좀비 프로세스 ➜ <div align="center">
+ <div align="center">
   <img width="600" alt="image" src="https://github.com/user-attachments/assets/e0ab2e19-034f-433f-8a45-d690489bd974">
-</div>
+</div> 좀비 프로세스
 
 
 ## * 7주차 수업 *
