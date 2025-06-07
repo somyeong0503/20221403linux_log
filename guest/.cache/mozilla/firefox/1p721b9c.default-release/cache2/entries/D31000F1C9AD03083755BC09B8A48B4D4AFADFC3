@@ -1,0 +1,323 @@
+@charset "utf-8";
+:root{--cs-gray-color:#737373;--cs-blue-color:#1C78CE;--cs-red-color:#BB5236;--cs-light-red-color:#FF0000;}
+/* safari 자동완성 사람 아이콘 생기는 이슈  */
+input[autocomplete="off"]::-webkit-contacts-auto-fill-button,
+input[autocomplete="off"]::-webkit-credentials-auto-fill-button {
+    visibility: hidden;
+    display: none !important;
+    pointer-events: none;
+    height: 0;
+    width: 0;
+    margin: 0;
+}
+input:disabled {cursor: default;background: #F9F9F9;border-color: rgba(118, 118, 118, 0.3);} /* safari disable style 없음.. 크롬 스타일 추가 (마크없 없음;)*/
+
+/* common */
+.cs-container .common-btn-wrapper {margin-top:5px;}
+.cs-container .common-btn {border-radius: 6px; font-weight: 700; font-size: 13px; padding: 15px 20px; background: #FEE500; cursor: pointer;}
+.cs-container .desc_agree { margin-top: 15px; color: #878787;}
+.cs-container .txt-right {text-align: right}
+.cs-container .cs-color-red {color: var(--cs-red-color)}
+.cs-container .cs-light-red-color {color: var(--cs-light-red-color)}
+.cs-container .cs-color-blue {color: var(--cs-blue-color)}
+.cs-container .cs-color-gray {color: var(--cs-gray-color)}
+.cs-container .emph_result {color: var(--cs-blue-color) !important;}
+
+/* 접근성 */
+.cs-container button:focus-visible {outline: -webkit-focus-ring-color auto 1px}
+/* bread crumb */
+.cs-container .header-breadcrumb a.bread-navi {color: var(--cs-gray-color);}
+.cs-container .header-breadcrumb a.bread-navi.current{color: #191919;}
+
+/* paging */
+.cs-container .cs-paging .active {text-decoration: underline; text-underline-offset: 3px}
+
+/* modal */
+.cs-container #serviceModalLayer {z-index: 200}
+.cs-container #serviceModalLayer .service-consult-modal {display: none}
+.cs-container #serviceModalLayer .service-consult-modal .service-reset-btn {display: none;}
+.cs-container #serviceModalLayer .service-consult-modal .service-reset-btn .reset-icon {-webkit-filter:grayscale(100%) brightness(1.2); filter: grayscale(100%) brightness(1.165);}
+.cs-container #serviceModalLayer .service-consult-modal .service-reset-btn:hover .reset-icon {-webkit-filter:grayscale(100%) brightness(1); filter: grayscale(100%) brightness(1);}
+.cs-container #serviceModalLayer .service-consult-modal .service-consult-list-wrapper  + .service-consult-list-wrapper {border-top: 1px solid #F1F2F6;padding-top: 24px;}
+.cs-container #serviceModalLayer button.service-close-btn:focus:not(:focus-visible) {outline: -webkit-focus-ring-color auto 1px}
+.cs-container #commonAlertModal {}
+.cs-container #commonAlertModal {z-index: 200; display: none;}
+.cs-container #commonAlertModal .common-alert-contents {background: #fff;}
+.cs-container #commonAlertModal button.common-alert-close-btn:focus:not(:focus-visible) {outline: -webkit-focus-ring-color auto 1px}
+.cs-container #accountDeactiveVoninModal {z-index: 200;display: none;}
+.cs-container #accountDeactiveVoninModal button.account-deactive-close-btn:focus:not(:focus-visible) {outline: -webkit-focus-ring-color auto 1px}
+.cs-container #accountDeactiveVoninModal .account-deactive-inner-layer .account-deactive-layer-body{ margin-right:  0}
+.cs-container #accountDeactiveVoninModal .account-deactive-inner-layer .account-deactive-item-inquiry{ border-bottom: 0}
+.cs-container #accountDeactiveVoninModal .account-deactive-inner-layer .account-deactive-vonin-timer{display:none;padding-left:144px;color: #ff3a30;}
+.cs-container #accountDeactiveVoninModal .account-deactive-layer-body {margin-right: 0; border-bottom: 0}
+.cs-container #accountDeactiveVoninModal .account-deactive-btn-wrapper {margin: 30px 0 20px 0; text-align: center}
+.cs-container #accountDeactiveVoninModal .account-deactive-btn-wrapper button {padding: 10px 47px;font-size: 16px;background: #FEE500;border-radius: 4px; margin-right: 5px;}
+.cs-container #accountDeactiveVoninModal .account-deactive-btn-wrapper button:last-child {margin-right:0}
+.cs-container #accountDeactiveVoninModal .account-deactive-inner-layer #accountDeactiveVoninCertBtn{padding: 11px 16px 11px;border-radius: 6px;font-size: 14px;background: #F1F2F6;margin-left: 5px;border-radius:6px;font-size:14px;background:#F1F2F6;}
+.cs-container #accountDeactiveConfirmModal {z-index: 200;display: none;}
+.cs-container #accountDeactiveConfirmModal button.account-deactive-close-btn:focus:not(:focus-visible) {outline: -webkit-focus-ring-color auto 1px}
+.cs-container #accountDeactiveConfirmModal .account-deactive-alert-contents {background: #fff; line-height: 1.8; color: #000;}
+.cs-container #accountDeactiveConfirmModal .account-deactive-btn-wrapper {margin: 10px 0;}
+.cs-container #accountDeactiveConfirmModal .account-deactive-btn-wrapper button {margin-right: 5px;}
+.cs-container #accountDeactiveConfirmModal .account-deactive-btn-wrapper button:last-child {margin-right:0}
+.cs-container #accountDeactiveConfirmModal .account-deactive-btn-wrapper .account-deactive-close-btn {background-color: #e8e8e8;}
+.cs-container #accountDeactiveConfirmModal .account-deactive-btn-wrapper .account-deactive-confirm-btn {background-color: #1e1e1e; color:#fff;}
+.cs-container #accountTheftSmsModal {z-index: 200;display: none;}
+.cs-container #accountTheftSmsModal button.account-theft-sms-close-btn:focus:not(:focus-visible) {outline: -webkit-focus-ring-color auto 1px}
+.cs-container #accountTheftSmsModal button#smsSend{padding: 10px 47px;font-size: 16px;background: #FEE500;border-radius: 4px;}
+.cs-container #accountTheftSmsModal .account-theft-sms-inner-layer .account-theft-sms-layer-body{ margin-right:  0}
+.cs-container #accountTheftSmsModal .account-theft-sms-inner-layer .account-theft-sms-item-inquiry{ border-bottom: 0}
+.cs-container #accountTheftSmsModal .account-theft-sms-inner-layer .account-theft-sms-msg{display:none;padding-left:144px;color: var(--cs-red-color);}
+.cs-container #accountTheftSmsModal .account-theft-sms-inner-layer #smsCert{padding: 11px 16px 11px;border-radius: 6px;font-size: 14px;background: #F1F2F6;margin-left: 5px;border-radius:6px;font-size:14px;background:#F1F2F6;}
+.cs-container #accountTheftSmsModal .account-theft-sms-layer-body {margin-right: 0; border-bottom: 0}
+.cs-container #accountTheftSmsModal .account-theft-sms-confirm-btn-wrapper {margin: 30px 0 20px 0; text-align: center}
+.cs-container #accountTheftSmsModal .account-theft-sms-confirm-btn-wrapper button {padding: 10px 47px;font-size: 16px;background: #FEE500;border-radius: 4px; margin-right: 5px;}
+.cs-container #accountTheftSmsModal .account-theft-sms-confirm-btn-wrapper button:last-child {margin-right:0}
+.cs-container #accountTheftSmsModal .account-theft-sms-inner-layer #smsCert{padding: 11px 16px 11px;border-radius: 6px;font-size: 14px;background: #F1F2F6;margin-left: 5px;border-radius:6px;font-size:14px;background:#F1F2F6;}
+.cs-container #accountTheftSmsModal .account-theft-sms-inner-layer #moveToAccountRequests{display: none;}
+.cs-container #accountTheftConfirmModal {z-index: 200;display: none;}
+.cs-container #accountTheftConfirmModal button.account-theft-confirm-close-btn:focus:not(:focus-visible) {outline: -webkit-focus-ring-color auto 1px}
+.cs-container #accountTheftConfirmModal .account-theft-confirm-inner-layer{width: 450px;}
+.cs-container #accountTheftConfirmModal .account-theft-confirm-layer-body {margin-right: 0; border-bottom: 0; height: 200px}
+.cs-container #accountTheftConfirmModal .account-theft-confirm-layer-body .txt_bold{font-weight: bold}
+.cs-container #accountTheftConfirmModal .account-theft-confirm-layer-body .txt_emph{color: #ff3a30}
+.cs-container #accountTheftConfirmModal .account-theft-confirm-btn-wrapper {margin: 30px 0 20px 0; text-align: center}
+.cs-container #accountTheftConfirmModal .account-theft-confirm-btn-wrapper button {padding: 10px 47px;font-size: 16px;background: #FEE500;border-radius: 4px; margin-right: 5px;}
+.cs-container #accountTheftConfirmModal .account-theft-confirm-btn-wrapper button:last-child {margin-right:0}
+.cs-container #accountTheftConfirmModal h2.title-layer{ width: calc(100% - 24px);}
+.cs-container #relationFaqModal {z-index: 200}
+.cs-container #relationFaqModal {display: none;}
+.cs-container #relationFaqModal button.relation-faq-close-btn:focus:not(:focus-visible) {outline: -webkit-focus-ring-color auto 1px}
+.cs-container #requestCompleteModal {z-index: 200}
+.cs-container #requestCompleteModal {display: none;}
+.cs-container #requestCompleteModal button.request-complete-close-btn:focus:not(:focus-visible) {outline: -webkit-focus-ring-color auto 1px}
+.cs-container #requestCompleteModal.fail .request-complete-txt-sub {background: #fff;}
+.cs-container #loginAlertModal {z-index: 200}
+.cs-container #loginAlertModal {display: none;}
+.cs-container #loginAlertModal button.login-alert-close-btn:focus:not(:focus-visible) {outline: -webkit-focus-ring-color auto 1px}
+.cs-container #loginAlertModal .login-alert-contents {background: #fff; line-height: 1.8}
+.cs-container #loginAlertModal .login-alert-btn-wrapper {margin: 10px 0;}
+.cs-container #loginAlertModal .login-alert-btn-wrapper button {margin-right: 5px;}
+.cs-container #loginAlertModal .login-alert-btn-wrapper button:last-child {margin-right:0}
+
+
+/* cs-header */
+.cs-header ul.cs-language {z-index: 10}
+.cs-header ul.cs-language li a:hover {text-decoration: underline}
+
+/* cs-main */
+.cs-main #csNotice {display: flex;width: 100%;align-items:center; text-align:left;}
+.cs-main #csNotice .notice-item-wrapper { margin-right:5px; flex: 1;overflow:hidden; display: inline-block;position: relative;width: 100%; height: 34px;}
+.cs-main #csNotice .notice-item {width:100%;position: absolute;transform: translateY(34px);transition: transform 1s, opacity 0s;display: flex;align-items: center;}
+.cs-main #csNotice .notice-item .notice-item-link{flex: 1;text-overflow: ellipsis;overflow: hidden;white-space: nowrap;}
+.cs-main #serviceGroup .service-group-link {cursor: pointer; color: var(--cs-gray-color);}
+.cs-main #serviceGroup .service-group-link:focus:not(:focus-visible) {outline: -webkit-focus-ring-color auto 1px;}
+.cs-main #serviceGroup .service-group-link.active {color: #191919;}
+.cs-main #serviceIcon .service-item {display: none;}
+.cs-main #serviceIcon .service-item.active {display: grid}
+.cs-main #serviceIcon .service-item .service-link-item {cursor: pointer}
+.cs-main #favoriteHelpCategory .favorite-help-category-link {color: var(--cs-gray-color);}
+.cs-main #favoriteHelpCategory .favorite-help-category-link.active {color: #191919;}
+.cs-main #favoriteHelp .favorite-help-item {display: none;}
+.cs-main #favoriteHelp .favorite-help-item.active {display: grid}
+.cs-main #serviceGroupItemList.hide-arrow::after {background: none;}
+.cs-main #serviceGroupPrevBtn { display: none; }
+.cs-main #serviceGroupNextBtn { display: none; }
+
+/* 문의하기 */
+.cs-request .hide {display: none !important;}
+.cs-request .request-form-valid {overflow:hidden;position:absolute;width:0;height:0;line-height:0;text-indent:-9999px}
+.cs-request .request-category-wrapper[aria-expanded="true"] #categoryItem {height: 212px;}
+.cs-request .request-category-wrapper[aria-expanded="true"] #deviceItem {height: 212px;}
+.cs-request .request-category-error-wrapper {width: 100%;padding-left: 144px;display: flex;}
+.cs-container.eng .cs-request .request-category-error-wrapper {padding-left: 168px;}
+.cs-request .request-category-error-layer {flex: 1;position: relative;font-size: 14px;}
+.cs-request .request-device-error-layer {flex: 1;position: relative;font-size: 14px;margin-left: 18px;}
+.cs-request .optional-field-label::after {content: ''}
+.cs-request .cont_inquiry .info_privacy .link_blue {color: #2C88DE;text-decoration: underline;}
+.cs-request .field-mapping-item .required-field {width: calc(100% - 24px);}
+.cs-request .field-mapping-item .optional-field {width: calc(100% - 24px);}
+.cs-request .file-mapping-item .file-img-container {margin-top: 0}
+.cs-request .file-mapping-item .file-size-container {margin-top: 10px;display: flex;justify-content: space-between;flex-wrap: wrap;}
+.cs-request .file-mapping-item .file-input-wrapper {flex: 1;}
+.cs-request .file-mapping-item .file-input-wrapper label {display: inline-block;}
+.cs-request .file-mapping-item .file-thumb-no-image {width: calc(100% - 14px); height: calc(100% - 5px); align-items: center;justify-content: center;display: flex;position: absolute;word-break: break-all;padding: 3px 7px 2px 7px;top: 0;left: 0;background: #e8e8e8;z-index: -1;white-space: pre-line; font-size: 13px;}
+.cs-request .custom-select:focus {outline: -webkit-focus-ring-color auto 1px}
+.cs-request .request-select-text.selected {color:#191919;}
+.cs-request .request-select-text.disable {background-color: #F0F0F0;}
+.cs-request .custom-select .custom-option:focus {border-radius: 6px; background: #f9f9f9;}
+.cs-request .custom-select[aria-expanded="true"] .request-phone-wrapper {display: block !important;}
+.cs-request .request-phone-wrapper.active {display: block !important;}
+.cs-request .request-phone-wrapper {display: none !important;}
+.cs-request #requestPhoneItemList {width: calc(100% - 12px);}
+.cs-request #requestPhoneItemList ul {width: 100%;}
+.cs-request #requestPhoneItemList ul::-webkit-scrollbar-thumb {min-height: 100px;}
+.cs-request #requestPhoneItemList ul.ui-autocomplete {display: block !important;}
+.cs-request #requestPhoneItemList ul.ui-autocomplete a.focus {background: #f4f4f4 !important;border-radius: 8px !important;}
+.cs-request #requestPhoneResetBtn{display: inline-block;}
+.cs-request #requestPhoneResetBtn.hide{display: none;}
+.cs-request #requestPhoneResetBtn .reset-icon {-webkit-filter:grayscale(100%) brightness(1.2); filter: grayscale(100%) brightness(1.165);}
+.cs-request #requestPhoneResetBtn:hover .reset-icon {-webkit-filter:grayscale(100%) brightness(1); filter: grayscale(100%) brightness(1);}
+.cs-request .request-phone-search-icon {cursor: default;}
+.cs-request .request-phone-search-icon i{-webkit-filter: grayscale(100%) brightness(1) !important; filter: grayscale(100%) brightness(1) !important;}
+.cs-request .field-option-radio-layer .field-option-element .field-option-label {display: inline-block !important;}
+.cs-request .field-option-radio-layer .field-option-element:not(:first-of-type) {margin-top: 18px;}
+.cs-request .field-option-radio-layer .field-option-wrapper {position:relative;}
+.cs-request .field-option-radio-layer .field-option-wrapper .field-option-value{display: inline-block;position: absolute;left: 0;top: 0;width: 18px;height: 18px;opacity: 0;}
+.cs-request #requiredCollectInfo {margin-top: 16px;}
+.cs-request #requiredCollectCheck-error {color:var(--cs-red-color);}
+.cs-request .file-thumb-wrapper {margin-top: 5px;}
+.cs-request .request-button-wrapper {margin: 32px 0 40px;}
+.cs-request .required-collect-check-wrapper {position:relative;}
+.cs-request .required-collect-check-wrapper #requiredCollectCheck {display: inline-block;position: absolute;left: 0;top: 0;width: 21px;height: 22px;border-radius: 5px;appearance: none;}
+.cs-request .required-collect-check-wrapper #requiredCollectCheck:focus {outline: -webkit-focus-ring-color auto 1px;}
+.cs-request .required-collect-check-wrapper #requiredCollectCheck:checked:focus {opacity: 0}
+
+/* 카카오 이모티콘 본인인증 히든페이지 미동의 시 css 적용 */
+.cs-request .required-collect-check-wrapper #requiredRefundCheck {display: inline-block;position: absolute;left: 0;top: 0;width: 21px;height: 22px;border-radius: 5px;appearance: none;}
+.cs-request .required-collect-check-wrapper #requiredRefundCheck:focus {outline: -webkit-focus-ring-color auto 1px;}
+.cs-request .required-collect-check-wrapper #requiredRefundCheck:checked:focus {opacity: 0}
+
+.cs-request label[for='requiredCollectCheck'] {margin-bottom: 0;}
+.cs-request .optional-collect-check-wrapper {position:relative;}
+.cs-request .optional-collect-check-wrapper #optionalCollectCheck {display: inline-block;position: absolute;left: 0;top: 0;width: 21px;height: 22px;border-radius: 5px;appearance: none;}
+.cs-request .optional-collect-check-wrapper #optionalCollectCheck:focus {outline: -webkit-focus-ring-color auto 1px;}
+.cs-request .optional-collect-check-wrapper #optionalCollectCheck:checked:focus {opacity: 0}
+.cs-request .collect-check-table thead th{color: var(--cs-gray-color);}
+.cs-request .collect-check-table td {font-size: 15px !important; word-break: keep-all}
+.cs-request .collect-check-table td * {font-size: 15px !important; word-break: keep-all}
+.cs-request .collect-check-table td strong{font-size: 15px !important;}
+.cs-request .collect-check-table td .text-left {text-align: left;text-indent: -10px;padding-left: 22px;}
+.cs-request .collect-check-table td .non-indent {text-indent: 0;}
+.cs-request .privacy-link-wrapper a{color: var(--cs-blue-color) !important;}
+.cs-request textarea#contents {resize: vertical;}
+.cs-request .request-error-wrapper {margin-top: 0 !important;font-size: 14px}
+.cs-request .request-error-wrapper label{padding-top: 8px;display: inline-block; color: var(--cs-red-color);}
+.cs-request .request-error-wrapper label.valid {padding-top : 0; display:inline;}
+.cs-request #requestForm input.type_error:focus {border-color: #E65F3E !important;}
+.cs-request #requestForm textarea.type_error:focus {border-color: #E65F3E !important;}
+.cs-request #totalFileSize.exceed {color: #E65F3E; }
+.cs-request .guardian-auth-wrapper {margin-bottom: 0}
+.cs-request .guardian-auth-wrapper #phoneCertifyBtn.complete {cursor: not-allowed; opacity: 0.3;}
+
+/* suggest */
+.cs-suggest .cs-suggest-wrapper.active {display: block !important;}
+.cs-suggest .cs-suggest-wrapper {display: none !important;}
+.cs-suggest .cs-suggest-wrapper .cs-suggest-service-wrapper {border-bottom:1px solid #F1F2F6; display: none}
+.cs-suggest .cs-suggest-wrapper .cs-suggest-service-wrapper.active {display: block}
+.cs-suggest #csSuggestResetBtn{display: inline-block;}
+.cs-suggest #csSuggestResetBtn.hide{display: none;}
+.cs-suggest #csSuggestResetBtn .reset-icon {-webkit-filter:grayscale(100%) brightness(1.2); filter: grayscale(100%) brightness(1.165);}
+.cs-suggest #csSuggestResetBtn:hover .reset-icon {-webkit-filter:grayscale(100%) brightness(1); filter: grayscale(100%) brightness(1);}
+.cs-suggest #csSuggestServiceList li {display: none;}
+.cs-suggest #csSuggestServiceList li.active {display: inline; }
+.cs-suggest #csSuggestServiceList li a.cs-suggest-service-link {cursor: pointer}
+.cs-suggest #csSuggestItemList li a.cs-suggest-item-link {cursor: pointer}
+.cs-suggest #csSuggestItemList ul.ui-autocomplete {top: inherit !important; left: inherit !important; width: inherit !important; border-top: 0;}
+.cs-suggest #csSuggestItemList ul.ui-autocomplete li.focus {background: #f4f4f4 !important;border-radius: 8px !important;}
+.cs-suggest #csSuggestItemList ul.ui-autocomplete li.un-hover {background: #fff;border-radius: 0;}
+
+.cs-suggest .cs-suggest-wrapper.active #csSuggestItemList ul.ui-autocomplete {display: block !important;}
+.cs-suggest #csSuggestServiceExpandBtn {display: none;}
+.cs-suggest #csSuggestServiceCollBtn {display: none;}
+.cs-suggest #csSuggestInputText {color: var(--cs-gray-color);}
+
+/* cs-search */
+.cs-search .search-service-wrapper { padding: 20px 0 !important;}
+.cs-search .search-service-wrapper #csSearchServiceList {padding: 0;}
+.cs-search .search-service-wrapper.active #csSearchServiceList { max-height: none !important;}
+.cs-search .search-service-wrapper #csSearchServiceList a.service-item {opacity: 0.7}
+.cs-search .search-service-wrapper #csSearchServiceList a.service-item.active {opacity: 1}
+.cs-search .search-category-wrapper { padding: 20px 0 !important;}
+.cs-search .search-category-wrapper #csSearchCategoryList {padding: 0; border: 0px solid red}
+.cs-search .search-category-wrapper.active #csSearchCategoryList { max-height: none !important;}
+.cs-search #csSearchServiceMoreBtn {display: none}
+.cs-search #csSearchCategoryMoreBtn {display: none}
+.cs-search #csSearchDeviceList .help-device-item {color: var(--cs-gray-color);}
+.cs-search #csSearchDeviceList .help-device-item.active{color: #191919;}
+
+/* service */
+/* TODO {font-family: '맑은 고딕', 'Malgun Gothic', 'Apple SD Gothic Neo', sans-serif, '돋움', dotum !important;}*/
+.cs-service-main #serviceHelpfulHelpList .icon-more {opacity: 0.8}
+.cs-service-main #serviceHelpfulHelpList li:hover .icon-more {opacity: 1}
+.cs-service-main #serviceHelpfulHelpList li a.help-item {display: flex; width: 100%;}
+.cs-service-main #serviceHelpfulHelpList li a.help-item .btn-more{margin-left: auto;}
+.cs-service-help-content .service-help-content {font-size: 15px !important; font-family: 'Apple SD Gothic Neo','notoSans','돋움',dotum,sans-serif !important; line-height:1.5 !important;} /* contents 내용 size 통일 */
+.cs-service-help-content .service-help-content * {font-size: 15px !important; font-family: 'Apple SD Gothic Neo','notoSans','돋움',dotum,sans-serif !important; line-height:1.5 !important;} /* contents 내용 size 통일 */
+.cs-service-help-content .service-help-content img {padding: 0 !important; width: auto !important;vertical-align: inherit !important; max-width: 100%;}
+.cs-service-help-content #serviceRelationHelpList li a.help-item {display: flex; width: 100%;}
+.cs-service-help-content #serviceRelationHelpList li a.help-item .btn-more{margin-left: auto;}
+
+/* 공지사항 */
+.cs-notice .icon-more { opacity: 0.8}
+
+/* 내문의내역 */
+.cs-my-qna .icon-more { opacity: 0.8}
+
+/* footer */
+.kakao-web-talk-wrapper {position:relative; width:55px;height:55px;}
+#kakaoWebTalkBtn {position: absolute;width: 100%;height:100%;left: 21px;top: 21px;}
+#kakaoWebTalkBtn ._wt_kakao_envoy {position: absolute}
+#kakaoWebTalkBtn ._wt_kakao_envoy ._wt_module_webchat {position: absolute}
+#kakaoBackToTopBtn {display: none;}
+
+/* 도움말 상세페이지 content 테이블 [KCS-1215] */
+.content.help_contents .table.table-bordered {background-color: transparent;border-spacing: 0;border-collapse: collapse;}
+.content.help_contents .table.table-bordered th {text-align: left;}
+.content.help_contents .table.table-bordered {width: 100%;max-width: 100%;margin-bottom: 20px;}
+.content.help_contents .table.table-bordered > tbody > tr > td{padding: 8px;line-height: 1.42857143;vertical-align: top;border-top: 1px solid #ddd;}
+.content.help_contents .table.table-bordered > tbody + tbody {border-top: 2px solid #ddd;}
+.content.help_contents .table.table-bordered .table {background-color: #fff;}
+.content.help_contents .table.table-bordered {border: 1px solid #ddd;}
+.content.help_contents .table.table-bordered > tbody > tr > th,
+.content.help_contents .table.table-bordered > tbody > tr > td{border: 1px solid #ddd;}
+
+/*관련 FAQ 폰트 고정*/
+#relationFaqModal > .inner_layer > div.layer_body * {font-family: '맑은 고딕', 'Malgun Gothic', 'Apple SD Gothic Neo', sans-serif, '돋움', dotum !important;font-size:15px !important;line-height:27px !important; word-break: break-all;}
+#relationFaqModal > .inner_layer > div.layer_body > .relation-faq-contents > p > img {width:auto; max-width: 100%; vertical-align:middle}
+
+/* 히든페이지 - 본인인증 버튼 */
+.cont_inquiry .wrap_inquiry .btn_vonin{min-width:240px;padding:10px;border:1px solid #EBEBEB;border-radius:6px;}
+.cont_inquiry .wrap_inquiry .btn_vonin:disabled{background-color:#F9F9F9;color:#8E8E8E;pointer-events:none;}
+.cont_inquiry .wrap_inquiry .btn_txt{font-weight:700;text-decoration:underline;}
+.cont_inquiry .wrap_inquiry .list_vonin{color:#4c4c4c;font-size:14px;}
+
+/* 히든페이지 - 본인인증 개인정보 수집 이용 */
+.vonin-purpose .indented-text {padding-left: 10px; text-align: left;}
+.vonin-purpose .indented-text p {margin: 0;}
+.vonin-purpose .indented-text .indent {text-indent: -10px; padding-left: 20px;}
+
+/*이모티콘 본인인증 히든 페이지*/
+.emoticon-vonin-agree-privacy li {margin-bottom: 8px; padding-left: 20px; text-indent: -20px;}
+.emoticon-vonin-agree-privacy ul {margin-top: 10px;}
+.emoticon-vonin-agree-privacy .emoticon-privacy-ul-box {margin-top: 20px; padding-left: 0;}
+.emoticon-vonin-agree-privacy .privacy-border-top {display: block; border-top: 1px solid #ddd; margin-top: 16px;}
+.emoticon-vonin-agree-privacy .check_privacy#requiredRefundCheck + label {margin-bottom: 3px;}
+
+/* 추천 검색어 접근성 */
+.ui-helper-hidden-accessible {  overflow: hidden;position: absolute;clip: rect(0, 0, 0, 0);clip-path: polygon(0 0, 0 0, 0 0);width: 1px;height: 1px;margin: -1px;}0F�fǢ      h>�h>�HA�zj�   o    O^partitionKey=%28https%2Ckakao.com%29,:https://cs.kakao.com/css/pc/7d0471edb87c36aeb74114a8ba280411-custom.css necko:classified 1 strongly-framed 1 security-info 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 request-method GET response-head HTTP/2 200 OK
+date: Tue, 03 Jun 2025 08:32:12 GMT
+content-type: text/css
+content-length: 24316
+content-security-policy: frame-ancestors https://www.daum.net;
+vary: Origin, Access-Control-Request-Method, Access-Control-Request-Headers
+last-modified: Thu, 29 May 2025 03:37:18 GMT
+cache-control: max-age=31536000
+etag: W/"7d0471edb87c36aeb74114a8ba280411"
+accept-ranges: bytes
+strict-transport-security: max-age=31536000; includeSubDomains
+X-Firefox-Spdy: h2
+ original-response-headers date: Tue, 03 Jun 2025 08:32:12 GMT
+content-type: text/css
+content-length: 24316
+content-security-policy: frame-ancestors https://www.daum.net;
+vary: Origin
+vary: Access-Control-Request-Method
+vary: Access-Control-Request-Headers
+last-modified: Thu, 29 May 2025 03:37:18 GMT
+cache-control: max-age=31536000
+etag: W/"7d0471edb87c36aeb74114a8ba280411"
+accept-ranges: bytes
+strict-transport-security: max-age=31536000; includeSubDomains
+X-Firefox-Spdy: h2
+ ctid 5 uncompressed-len 0 net-response-time-onstart 447 net-response-time-onstop 448   ^�

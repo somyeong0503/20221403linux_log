@@ -1,0 +1,341 @@
+$(function () {
+    kcsWebPcCommon.init();
+});
+
+const kcsWebPcCommon = {
+    tiaraPageTrack : true,
+
+    init () {
+        this.initEvent();
+    },
+
+    initEvent() {
+        this.loginEvent();
+        // this.webTalkEvent();
+        this.requestEvent();
+        this.myQnaEvent();
+        this.animateNoticeEvent();
+        this.tiaraEvent();
+
+        $("#changeLangBtn").click(function (e) { // 언어 변경
+            const expand = $(this).attr("aria-expanded");
+            $(this).attr("aria-expanded", !(expand === 'true'));
+        });
+    },
+
+    tiaraEvent() {
+        // gnb 로고 아이콘 클릭
+        $('.gnb-logo').on('click', function () {
+            let url = $(this).attr('href');
+            let copy;
+            let event;
+
+            if ($(this).hasClass('ci-symbol')) { // ci 로고 클릭
+                copy = TiaraEvent.CI_LOGO.event;
+                event = TiaraEvent.CI_LOGO.track;
+            } else { // 서비스 아이콘 클릭
+                copy = TiaraEvent.SERVICE_ICON.event;
+                event = TiaraEvent.SERVICE_ICON.track;
+            }
+            kcsTiara
+                .click(
+                    new kcsTiara.clickEventBuilder()
+                        .layer(TiaraLayer.GNB.layer)
+                        .copy(copy)
+                        .url(url)
+                )
+                .trackEvent(event)
+                .track();
+        });
+
+        // gnb 로그인 클릭
+        $('#kakaoCsHeader #loginBtn').on('click', function () {
+            kcsTiara
+                .click(
+                    new kcsTiara.clickEventBuilder()
+                        .layer(TiaraLayer.GNB.layer)
+                        .copy(TiaraEvent.LOGIN.event)
+                )
+                .trackEvent(TiaraEvent.LOGIN.track)
+                .actionKind()
+                .track();
+        });
+
+        // gnb 로그아웃 클릭
+        $('#kakaoCsHeader #logoutBtn').on('click', function () {
+            kcsTiara
+                .click(
+                    new kcsTiara.clickEventBuilder()
+                        .layer(TiaraLayer.GNB.layer)
+                        .copy(TiaraEvent.LOGOUT.event)
+                )
+                .trackEvent(TiaraEvent.LOGOUT.track)
+                .track();
+        });
+
+        // gnb  내문의내역  클릭
+        $('#kakaoCsHeader #myQnaBtn').on('click', function () {
+            kcsTiara
+                .click(
+                    new kcsTiara.clickEventBuilder()
+                        .layer(TiaraLayer.GNB.layer)
+                        .copy(TiaraEvent.MY_QNA.event)
+                        .url('/my/qna')
+                )
+                .trackEvent(TiaraEvent.MY_QNA.track)
+                .track();
+        });
+    },
+
+    loginEvent() {
+        $('#loginBtn, #loginAlertModal .login-alert-confirm-btn').click(function (e) {
+            e.preventDefault();
+            movePage(kcsWebCommon.getAccountsUrl() + '/login?continue=');
+        });
+
+        $('#logoutBtn').click(function (e) {
+            e.preventDefault();
+            sessionStorage.clear();
+            movePage(kcsWebCommon.getAccountsUrl() + '/logout?continue=');
+        });
+
+        function movePage(url) {  // 로그인/로그아웃 페이지 연결
+            const returnUrl = document.location.href;
+            location.href = url + encodeURIComponent(returnUrl);
+        }
+    },
+
+    /* 2024년 8월말 웹톡 종료
+    // 엔보이
+    // 위치: 서비스홈, 서비스홈 > 도움말, 서비스홈 > 검색 > 검색결과 없음, 서비스홈 > 도움말상세
+    // 도움말상세에만 category, device 존재
+    webTalkEvent() {
+        $('#kakaoWebTalkBtn').click(function (e) {
+            const isClickOpen = !$(this).find('div._wt_module_webchat').hasClass('_wt_chat_on');
+            const serviceName = $("#serviceName").val();
+            const service = $("#serviceId").val();
+            const category = $("#categoryId").val();
+            const device = $("#deviceId").val();
+            const { browser, os } = kcsWebCommon.getUserAgentInfo();
+
+            if (isClickOpen) {
+                new TiaraEvent(
+                    TiaraSection.HELP,
+                    TiaraPage.HELP(serviceName),
+                    TiaraEvent.EventType.ENVOY_BTN_CLICK,
+                    TiaraEvent.EventMetaBuilder(os.name, os.version, browser.name, browser.version)
+                    .serviceId(service)
+                    .categoryId(category ? category : null)
+                    .deviceId(device? device : null)
+                    .build()
+                ).track();
+            }
+        });
+
+        $("#requestChatbot").click(function () { // 카톡 챗봇상담 클릭
+            document.querySelector('._wt_kakao_envoy ._wt_btn_webchat').click();
+        });
+    },
+    */
+
+    requestEvent() {
+        $("#requestMailBtn").click(function (e) { // 도움말 상세 > 문의하기 클릭
+            e.preventDefault();
+            location.href = $(this).attr("href");
+        });
+    },
+
+    myQnaEvent() {
+      $("#myQnaBtn").click(function () { // 내 문의내역 페이지 이동
+          location.href = kcsWebCommon.getUrl('/my/qna');
+      });
+    },
+
+    // 공지사항 show
+    animateNoticeEvent() {
+        const $noticeItem = $("#csNotice .notice-item");
+        const noticeCount = $noticeItem.length;
+        let timeoutId = null;
+
+        animate(true, 0);
+
+        function animate(firstFlag, index) {
+            index = index % noticeCount;
+
+            const topCss = 34;
+            $noticeItem.eq(index - 1).css({
+                "opacity": 1,
+                "transform": `translateY(${-1 * topCss}px)`
+            });
+            $noticeItem.eq(index).css({
+                "opacity": 1,
+                "transform": "translateY(0)"
+            });
+
+            for (let t = 0; t < noticeCount; t++) {
+                if (!(t === index -1 || t === index)) {
+                    $noticeItem.eq(t).css({
+                        "opacity": 0,
+                        "transform": `translateY(${topCss}px)`
+                    });
+                }
+            }
+
+            timeoutId = setTimeout(function () {
+                index++;
+                animate(false, index);
+            }, 5000); // 5초
+        }
+
+    },
+
+
+    // 로그인 Alert 메시지 ModalEvent
+    /**
+     * @param title
+     * @param contents
+     * @param closeEvent: close 버튼(취소, X ) 클릭시 이벤트
+     * @param cancelBtnHideFlag: close 버튼(취소, X  hide
+     */
+    toggleLoginModal({ title = '', contents = '', closeEvent, cancelBtnHideFlag = false } = { }) { // Alert 메시지
+        const $loginAlertModal = $("#loginAlertModal");
+        const activeClass= "layer_open";
+        const $body = $("body");
+
+        if ($body.hasClass(activeClass)) { // hide
+            kcsWebCommon.activeWebLayer(true);
+            $loginAlertModal.hide();
+            $body.removeClass(activeClass);
+            kcsWebCommon.setStorageCloseLoginLayer();
+        }
+        else { // show
+            this.tiaraPageTrack = false; // enterPage track
+            const $loginAlertTitle = $loginAlertModal.find(".login-alert-title");
+            const $loginAlertContents = $loginAlertModal.find(".login-alert-contents");
+
+            if (title !== '') {
+                $loginAlertTitle.text(title);
+            }
+            if (contents !== '') {
+                $loginAlertContents.html(contents);
+            }
+
+            kcsWebCommon.activeWebLayer(false);
+            $loginAlertModal.show();
+            $body.addClass(activeClass);
+
+            const $closeBtn = $loginAlertModal.find(".login-alert-close-btn");
+            if ($closeBtn.length > 0) {
+                if (cancelBtnHideFlag) {
+                    $closeBtn.hide();
+                }
+
+                $closeBtn.off("click")
+                .on("click", () => {
+                    closeEventFunction();
+                });
+
+                $closeBtn.first().focus(); // 접근성
+            }
+
+            const objThis = this;
+            const eventName = "keyup.login-alert-modal";
+            const $document = $(document);
+            $document.on(eventName, function (e) { // 닫기
+                if (e.keyCode === 27 && $loginAlertModal.is(":visible")) { // 27: esc
+                    $document.off(eventName);
+                    closeEventFunction();
+                }
+            });
+
+            function closeEventFunction () {
+                if (typeof closeEvent === "function") {
+                    closeEvent();
+                }
+                else {
+                    kcsTiara.track();
+                    objThis.toggleLoginModal();
+                }
+            }
+        }
+    },
+
+    // 공통 Alert 메시지 ModalEvent
+    toggleCommonAlertModal({ title = '', contents = '', closeEvent } = { }) { // Alert 메시지
+        const $commonAlertModal = $("#commonAlertModal");
+        const activeClass= "layer_open";
+        const $body = $("body");
+
+        if ($body.hasClass(activeClass)) { // hide
+            kcsWebCommon.activeWebLayer(true);
+            $commonAlertModal.hide();
+            $body.removeClass(activeClass);
+        }
+        else { // show
+            if (title === '') return;
+
+            const $commonAlertTitle = $commonAlertModal.find(".common-alert-title");
+            const $commonAlertContents = $commonAlertModal.find(".common-alert-contents");
+
+            $commonAlertTitle.text(title);
+            $commonAlertContents.html(contents);
+
+            kcsWebCommon.activeWebLayer(false);
+            $commonAlertModal.show();
+            $body.addClass(activeClass);
+
+            const $closeBtn = $commonAlertModal.find(".common-alert-close-btn");
+            if ($closeBtn.length > 0) {
+                $closeBtn.off("click")
+                .on("click", () => {
+                    closeEventFunction();
+                });
+                $closeBtn.first().focus();
+            }
+
+            const objThis = this;
+            const eventName = "keyup.common-alert-modal";
+            const $document = $(document);
+            $document.on(eventName, function (e) { // 닫기
+                if (e.keyCode === 27 && $commonAlertModal.is(":visible")) { // 27: esc
+                    $document.off(eventName);
+                    closeEventFunction();
+                }
+            });
+
+            function closeEventFunction () {
+                if (typeof closeEvent === "function") {
+                    closeEvent();
+                }
+                else {
+                    objThis.toggleCommonAlertModal();
+                }
+            }
+        }
+    }
+};<ݐ���      h>�h>�HA�zj�   t    O^partitionKey=%28https%2Ckakao.com%29,:https://cs.kakao.com/js/166cab0fbba06ba449d0a25e323a4f51/pc/common/common.js necko:classified 1 strongly-framed 1 security-info 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 request-method GET response-head HTTP/2 200 OK
+date: Tue, 03 Jun 2025 08:32:12 GMT
+content-type: text/javascript
+content-length: 10634
+content-security-policy: frame-ancestors https://www.daum.net;
+vary: Origin, Access-Control-Request-Method, Access-Control-Request-Headers
+last-modified: Thu, 29 May 2025 03:37:18 GMT
+cache-control: max-age=31536000
+etag: W/"166cab0fbba06ba449d0a25e323a4f51"
+accept-ranges: bytes
+strict-transport-security: max-age=31536000; includeSubDomains
+X-Firefox-Spdy: h2
+ original-response-headers date: Tue, 03 Jun 2025 08:32:12 GMT
+content-type: text/javascript
+content-length: 10634
+content-security-policy: frame-ancestors https://www.daum.net;
+vary: Origin
+vary: Access-Control-Request-Method
+vary: Access-Control-Request-Headers
+last-modified: Thu, 29 May 2025 03:37:18 GMT
+cache-control: max-age=31536000
+etag: W/"166cab0fbba06ba449d0a25e323a4f51"
+accept-ranges: bytes
+strict-transport-security: max-age=31536000; includeSubDomains
+X-Firefox-Spdy: h2
+ ctid 2 uncompressed-len 0 net-response-time-onstart 482 net-response-time-onstop 482   )�

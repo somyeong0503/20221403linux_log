@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<application-state>
+  <context id="">
+    <application id="org.gnome.Nautilus.desktop" score="176.25" last-seen="1749313293"/>
+    <application id="wine-Programs-KakaoTalk.desktop" score="59" last-seen="1748941382"/>
+    <application id="org.gnome.Shell.PortalHelper.desktop" score="2" last-seen="1749199910"/>
+    <application id="org.gnome.font-viewer.desktop" score="2" last-seen="1748940747"/>
+    <application id="org.gnome.Terminal.desktop" score="25570.25" last-seen="1749313308"/>
+    <application id="org.gnome.FileRoller.desktop" score="4" last-seen="1748941244"/>
+    <application id="firefox.desktop" score="818" last-seen="1749210252"/>
+    <application id="gnome-control-center.desktop" score="0" last-seen="1748941414"/>
+    <application id="org.gnome.gedit.desktop" score="281" last-seen="1749312121"/>
+  </context>
+</application-state>

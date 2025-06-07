@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta id="kakaoCsContext">
+    
+    <title>How do I login with a QR code? | Kakao Customer Service</title>
+    <link rel="icon" type="image/x-icon" href="/images/afaa5e5793a39278bdef0ce8ccfaef8c/favicon/favicon.ico">
+    <script type="text/javascript">
+        function loadKcsWebFonts() {
+            // const startDate = window.performance.now();
+            // console.log("#start load font..");
+            const contextPath = "";
+            const fontList = [{
+                fontFamily: "notoSans",
+                fontWeight: "400",
+                url: `${contextPath}/fonts/NotoSansKR-Regular.woff2`,
+            }, {
+                fontFamily: "notoSans",
+                fontWeight: "500",
+                url: `${contextPath}/fonts/NotoSansKR-Medium.woff2`,
+            }, {
+                fontFamily: "notoSans",
+                fontWeight:"700",
+                url: `${contextPath}/fonts/NotoSansKR-Bold.woff2`
+            }, {
+                fontFamily: "KakaoOTFBold",
+                fontWeight: "700",
+                url: `${contextPath}/fonts/KakaoOTFBold.woff2`
+            }];
+
+            fontList.forEach(function ({ fontFamily, fontWeight, url }) {
+                loadFont(fontFamily, fontWeight, url);
+            });
+
+            // const endDate = window.performance.now();
+            // console.log("#complete load font..", endDate - startDate + "ms");
+
+            async function loadFont(fontFamily, fontWeight, url) {
+                const font = new FontFace(fontFamily, `url(${url})`, {
+                    style: "normal",
+                    weight: fontWeight
+                });
+                await font.load();
+                document.fonts.add(font);
+            }
+        }
+
+        try {
+            loadKcsWebFonts();
+        }
+        catch (e) {
+            console.error("#error load font..");
+        }
+    </script>
+    <link rel="stylesheet" href="/css/pc/f5871b1ccb835b92d6b6d48f57134cab-common.css">
+    <link rel="stylesheet" href="/css/pc/7d0471edb87c36aeb74114a8ba280411-custom.css">
+    
+    
+    <script type="text/javascript" src="/webjars/2c872dbe60f4ba70fb85356113d8b35e/jquery/3.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="/webjars/1e2047978946a1d271356d0b557a84a3/jquery-ui/1.13.2/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="/webjars/7c9ec02e71b272ca8974fbf3ff175ef2/ua-parser-js/1.0.37/dist/ua-parser.min.js"></script>
+    <!-- tiara -->
+    
+    
+        <script type="text/javascript" src="//t1.daumcdn.net/tiara/js/v1/tiara.min.js"></script>
+    
+    <script type="text/javascript" src="/js/145c0dc858c15c8d0856877552b4493c/common/tiara/tiara.page.js"></script>
+    <script type="text/javascript" src="/js/68439ee265a067df4e1a034061c4be54/common/tiara/tiara.enum.js"></script>
+    <script type="text/javascript">
+        kcsTiara.init(
+            "kakao.cs.com",
+            "production",
+            false || true // 샌드박스, 운영일 경우만 tiara 호출
+        );
+    </script>
+    <script type="text/javascript" src="/js/24fd37dcfb914e3a93bef03368a2303c/common/common.js"></script>
+    <script type="text/javascript" src="/js/c70a34349de7a8d984cdc870a953510c/common/common_footer.js"></script>
+    <script type="text/javascript" src="/js/166cab0fbba06ba449d0a25e323a4f51/pc/common/common.js"></script>
+    <script type="text/javascript" src="/js/dba936c21ad0a0d59de0edd56275f35e/library/jquery/jquery.i18n.properties.js"></script>
+    <script type="text/javascript">
+        const locale = "en";
+        const loadOption = {};
+        loadOption[locale] = "\/i18n\/";
+
+        let INIT_I18N = false;
+        $.i18n.properties({
+            name:'messages',
+            path: loadOption[locale],
+            mode:'map',
+            language: locale,
+            // async: false, default: true TODO 추후 수정 => INIT_I18N 사용 xxxx
+            callback: function() {
+                INIT_I18N = true;
+            }
+        });
+
+        kcsWebCommon.isLogin = function () { // 로그인여부
+            return false;
+        };
+
+        kcsWebCommon.getLocale = function () { // 언어
+            return "en";
+        };
+
+        kcsWebCommon.getArenaService = function () {
+            return true ? '220' : '248'; // 카카오 아레나;
+        };
+
+        kcsWebCommon.getRequestURI = function () {
+            return "\/helps_html\/1073203913";
+        };
+
+        kcsWebCommon.getAuthUrl = function () {
+            return "https:\/\/auth.kakao.com";
+        };
+
+        kcsWebCommon.getAccountsUrl = function () {
+            return "https:\/\/accounts.kakao.com";
+        };
+    </script>
+
+    
+    <script type="text/javascript" src="/js/e8eeacd4d4fb7db01d893d5dae7a2ed1/pc/common/suggest.js"></script>
+    <script type="text/javascript" src="/js/d538f272c8c3551a7f79b6e79e6e7791/pc/service/help/contents.js"></script>
+
+    
+</head>
+<body>
+    <div id="kakaoDirectLink" class="direct-link">
+        
+        <a href="#kakaoCsContent">본문 바로가기</a>
+        <a href="#kakaoCsHeader">메뉴 바로가기</a>
+    </div>
+    <div class="cs-container container-doc eng">
+        <div id="kakaoCsHeader"><div>
+    <header class="doc-header">
+        <div class="inner_header">
+            <h1 class="doc-title">
+                
+                    <a href="/" class="link_logo ci-symbol gnb-logo">
+                        <img src="/images/b1fac511497b2ec805b617be66aa4557/img_cs_eng.png" class="img_cs" alt="Kakao Customer Service">
+                    </a>
+                
+                <a class="link_logo service-symbol gnb-logo"
+                   href="/helps?service=8&amp;locale=en">
+                    <div class="wrap_symbol">
+                        <img src="https://k.kakaocdn.net/www-img/dn/bAOgHGHzZxY/BcaXlcWV1fewmtkQtwoJpk/lkageGyH3oS.png"
+                             class="img_symbol" alt="">
+                    </div>
+                    <strong class="tit_service service-symbol-name">KakaoTalk</strong>
+                </a>
+            </h1>
+            <div class="cs-header wrap_header">
+                
+                    
+    <div class="cs-suggest wrap_search type_gnb">
+        <label for="csSuggestInputText" class="screen_out">검색창, 검색어 입력 후 추천검색어는 방향키로 탐색 가능</label>
+        <input id="csSuggestInputText" type="text" class="tf_search"
+               data-max-count="3"
+               placeholder="Enter a keyword."
+               autocomplete="off" value="">
+        <button type="button" id="csSuggestResetBtn" class="btn_reset hide">
+            <i class="ico_comm ico_reset reset-icon">검색어 초기화</i>
+        </button>
+        <button type="button" id="csSuggestSearchBtn" class="btn_search">
+            <i class="ico_comm ico_search">검색</i>
+        </button>
+        <div class="cs-suggest-wrapper box_suggest">
+            
+            <div class="cs-suggest-service-wrapper">
+                <ul id="csSuggestServiceList" class="list_service"></ul>
+                <button id="csSuggestServiceCollBtn" type="button" class="btn_close">
+                    Fold
+                    <i class="ico_comm ico_close">서비스 메뉴 최소화</i>
+                </button>
+                <button id="csSuggestServiceExpandBtn" type="button" class="btn_more">
+                    More
+                    <i class="ico_comm ico_more">서비스 메뉴 펼치기</i>
+                </button>
+                
+                    <input type="hidden" id="pageFrom" name="pageFrom" value="serviceHome">
+                    <input type="hidden" id="suggestServiceId" value="8">
+                    <input type="hidden" id="serviceName" value="KakaoTalk">
+                
+            </div>
+            
+            <div class="cs-suggest-item-wrapper" tabindex="0">
+                <strong class="screen_out">추천 검색어 목록</strong>
+                <div id="csSuggestItemList"></div>
+            </div>
+        </div>
+    </div>
+
+                
+                
+                    <div class="box_language">
+                        <button id="changeLangBtn" type="button" class="btn_language" aria-controls="kakaoCsLanguage" aria-expanded="false">
+                            English
+                            <i class="ico_comm ico_open">More</i>
+                        </button>
+                        <ul id="kakaoCsLanguage" class="cs-language list_language">
+                            <li><a href="/setLocale?locale=ko" class="link_language">Korean</a></li>
+                            <li><a href="/setLocale?locale=en" class="link_language">English</a></li>
+                        </ul>
+                    </div>
+                    
+                        <button id="loginBtn" type="button" class="btn_login">Log In</button>
+                    
+                    
+                
+            </div>
+        </div>
+        <div class="inner_breadcrumb header-breadcrumb">
+            
+                <a class="link_navi bread-navi link_home"
+                   href="/">
+                    <i class="ico_comm ico_home">home</i>
+                    
+                </a>
+            
+                <a class="link_navi bread-navi"
+                   href="/helps?service=8&amp;locale=en">
+                    
+                    KakaoTalk
+                </a>
+            
+                <a class="link_navi bread-navi"
+                   href="/helps?service=8&amp;locale=en&amp;category=5">
+                    
+                    General
+                </a>
+            
+                <a class="link_navi bread-navi  link_current current"
+                   href="/helps?service=8&amp;locale=en&amp;category=5&amp;device=16">
+                    
+                    Windows
+                </a>
+            
+        </div>
+    </header>
+</div></div>
+        <main id="kakaoCsContent" class="doc-main">
+            
+    
+    <div class="cs-service-help-content">
+        <div class="cont_content">
+            <strong id="helpTitle" class="tit_sub" data-service-name="카카오톡"
+                data-category-name="General"
+                data-device-name="KakaoTalk for PC"
+            >How do I login with a QR code?</strong>
+            
+            
+                
+            
+                <button type="button" class="btn_cate service-depth-navi" onclick="location.href=&#39;/helps?service=8&amp;locale=en&#39;">KakaoTalk</button>
+            
+                <button type="button" class="btn_cate service-depth-navi" onclick="location.href=&#39;/helps?service=8&amp;locale=en&amp;category=5&#39;">General</button>
+            
+                <button type="button" class="btn_cate service-depth-navi" onclick="location.href=&#39;/helps?service=8&amp;locale=en&amp;category=5&amp;device=16&#39;">Windows</button>
+            
+            <div class="service-help-content desc_content"><p><span style="font-family: Arial; font-size: 13px; white-space: pre-wrap;">Anyone who uses KakaoTalk </span>v9.9.5 (PC v3.4.3/Mac 3.0.8)</p><p><span style="font-family: Arial; font-size: 13px; white-space: pre-wrap;">and above can use the QR code to log into KakaoTalk in </span><span style="font-family: Arial; font-size: 13px; white-space: pre-wrap;">PC (or Mac)</span><span style="font-family: Arial; font-size: 13px; white-space: pre-wrap;"> without having to enter their Kakao Account email address. <br/><br/>Log into KakaoTalk with QR codes using the methods below. <br/><br/>1) Open KakaoTalk for PC (or Mac)<br/>2) Select login with QR code<br/>3) Open the QR code reader in mobile KakaoTalk<br/>4) Scan the QR code displayed in your</span><span style="font-family: Arial; font-size: 13px; white-space: pre-wrap;"> PC (or Mac)</span><span style="font-family: Arial; font-size: 13px; white-space: pre-wrap;"><br/>5) Select whether you are logged in or not<br/>6) Register your device if your device has not yet been registered<br/><br/>How to scan the QR code<br/>1) Open mobile KakaoTalk<br/>2) Select the scanner from the upper right search menu or the More menu</span></p></div>
+        </div>
+        <div class="cont_cs">
+            
+            
+            <input type="hidden" id="helpId" value="1073203913">
+            <input type="hidden" id="categoryId" value="5">
+            <input type="hidden" id="deviceId" value="16">
+            
+    <!-- 문의하기 / 챗봇상담 -->
+    <div class="inner_help">
+        <h3><strong class="tit_sub">Can’t find what you need?</strong></h3>
+        <div class="wrap_help">
+            
+                <a id="requestMailBtn" data-service-name="KakaoTalk"
+                        data-service="8"
+                        data-category="5"
+                        data-device="16"
+                        href="/requests?service=8" class="link_help">
+                    <i class="ico_comm ico_mail">메일 문의하기 배너</i>
+                    <div class="info_help">
+                        <strong class="tit_help">
+                            Question
+                            <i class="ico_comm ico_more">더보기</i>
+                        </strong>
+                        <span class="txt_help">If you wish to receive an answer by e-mail.</span>
+                    </div>
+                </a>
+            
+            
+        </div>
+    </div>
+
+        </div>
+    </div>
+
+        </main>
+        
+            <div id="kakaoCsFooter"><div>
+    <footer class="doc-footer">
+        <div class="inner_footer inner-footer">
+            <div class="wrap_info">
+                <ul class="list_page cs-footer-info footer-policy-list">
+                    <li data-item="'회사소개'">
+                        <a href="https://www.kakaocorp.com/page?lang=en" class="link_page" target="_blank">
+                            About Us
+                            <span class="screen_out">(새창열림)</span>
+                        </a>
+                    </li>
+                    <li data-item="이용약관">
+                        <a href="https://www.kakao.com/policy/terms?lang=en" class="link_page" target="_blank">
+                            Terms of Service
+                            <span class="screen_out">(새창열림)</span>
+                        </a>
+                    </li>
+                    <li data-item="개인정보처리방침">
+                        <a href="https://www.kakao.com/policy/privacy?lang=en" class="link_page" target="_blank">
+                            <strong>Privacy Policy</strong>
+                            <span class="screen_out">(새창열림)</span>
+                        </a>
+                    </li>
+                    <li data-item="운영정책">
+                        <a href="https://www.kakao.com/policy/oppolicy?lang=en" class="link_page" target="_blank">
+                            Operation Policy
+                            <span class="screen_out">(새창열림)</span>
+                        </a>
+                    </li>
+                    <li data-item="청소년보호정책">
+                        <a href="https://www.kakao.com/policy/safeguard?lang=en" class="link_page" target="_blank">
+                            Youth Protection Policy
+                            <span class="screen_out">(새창열림)</span>
+                        </a>
+                    </li>
+                    <li data-item="권리침해신고안내">
+                        <a href="https://www.kakao.com/policy/right?lang=en" class="link_page" target="_blank">
+                            Report rights infringement
+                            <span class="screen_out">(새창열림)</span>
+                        </a>
+                    </li>
+                    <li data-item="카카오공지사항">
+                        <a href="https://www.kakao.com/notices?lang=en" class="link_page" target="_blank">
+                            Notice
+                            <span class="screen_out">(새창열림)</span>
+                        </a>
+                    </li>
+                </ul>
+                
+                <small class="txt_copy">
+                    Copyright &copy;
+                    <a href="https://www.kakaocorp.com/page?lang=en" class="link_copy" target="_blank">
+                        Kakao Corp.
+                        <span class="screen_out">(새창열림)</span>
+                    </a> All rights reserved.
+                </small>
+            </div>
+            
+            
+        </div>
+       <div class="wrap_btn">
+           
+           <button id="kakaoBackToTopBtn" type="button" class="btn_top">
+               <i class="ico_comm ico_top">페이지 상단으로 이동</i>
+           </button>
+       </div>
+   </footer>
+</div></div>
+        
+        
+    <div id="commonAlertModal" class="comm_layer type_submit" role="dialog" aria-modal="true">
+        <div class="inner_layer">
+            <div class="layer_head">
+                <strong class="screen_out">알림</strong>
+                <button type="button" class="ico_comm btn_close common-alert-close-btn">Close</button>
+            </div>
+            <div class="layer_body">
+                <em class="common-alert-title emph_submit"></em>
+                <span class="common-alert-contents txt_sub"></span>
+                <button type="button" class="btn_close common-alert-close-btn">Ok</button>
+            </div>
+        </div>
+    </div>
+
+        <div></div>
+        <input type="hidden" id="enterKind" value="pc">
+        <input type="hidden" id="locale" value="en">
+    </div>
+</body>
+</html>��#n�      h>�h>�HA�yh>�   R    O^partitionKey=%28https%2Ckakao.com%29,:https://cs.kakao.com/helps_html/1073203913 necko:classified 1 strongly-framed 1 security-info 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 request-method GET response-head HTTP/2 200 OK
+date: Tue, 03 Jun 2025 08:32:12 GMT
+content-type: text/html;charset=UTF-8
+content-security-policy: frame-ancestors https://www.daum.net;
+content-language: en
+strict-transport-security: max-age=31536000; includeSubDomains
+X-Firefox-Spdy: h2
+ original-response-headers date: Tue, 03 Jun 2025 08:32:12 GMT
+content-type: text/html;charset=UTF-8
+content-security-policy: frame-ancestors https://www.daum.net;
+set-cookie: without_layout=N; Max-Age=604800; Expires=Tue, 10 Jun 2025 08:32:12 GMT; Path=/
+content-language: en
+strict-transport-security: max-age=31536000; includeSubDomains
+X-Firefox-Spdy: h2
+ ctid 1 uncompressed-len 0 net-response-time-onstart 159 net-response-time-onstop 211   D�

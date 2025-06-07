@@ -1,0 +1,482 @@
+will_paginate.previous_page=Previous Page
+will_paginate.next_page=Next Page
+will_paginate.first_page=First Page
+will_paginate.last_page=Last Page
+will_paginate.screen_out=Current Page
+will_paginate.page_gap=&hellip;
+will_paginate.return_previous_page=Previous Page
+
+cskakaocom.japancorp_site=Kakao Japan Corp. Homepage
+cskakaocom.title=Kakao Customer Service
+cskakaocom.head_title=Kakao Customer Service
+cskakaocom.meta_title=Kakao Customer Service
+cskakaocom.title_talk=Kakao Customer Service
+cskakaocom.title_search=Help Search Result | Kakao Customer Service
+cskakaocom.title_request=Question | Kakao Customer Service
+cskakaocom.title_helps=| Kakao Customer Service
+cskakaocom.description=
+cskakaocom.url=cs.kakao.com?locale=en
+cskakaocom.shortcut_to_main=Shortcut to Main
+cskakaocom.shortcut_to_menu=Shortcut to Menu
+cskakaocom.meta_img=/img/cskakaocom/pc/meta_en.png
+cskakaocom.btn_login=Log In
+cskakaocom.btn_logout=Log Out
+cskakaocom.btn_mypage=
+cskakaocom.home_content=Hello!<br/> How can we help you?
+cskakaocom.service_title=How can we help you?
+cskakaocom.talk_title=This is KakaoTalk.<br> How can we help you?
+cskakaocom.service_all=Service All
+cskakaocom.service_all2=Service All
+cskakaocom.languages.language=English
+cskakaocom.languages.ko=Korean
+cskakaocom.languages.en=English
+cskakaocom.error.home=Home
+cskakaocom.error.404.message=Unable to find the page.
+cskakaocom.error.404.message_detail=The URL is incorrect or the page has been deleted.<br>Please go to customer service and find the support you need.
+cskakaocom.error.500.message=Connection is unstable.
+cskakaocom.error.500.message_detail=Connection with the server is unstable.<br>Please try again later.
+cskakaocom.error.system_maintenance=System Maintenance
+cskakaocom.error.system_maintenance.message_detail=<br>Hello, Thank you for using the Kakao service.<br>This is a guide for the customer service system inspection.<br>In order to provide more stable service, we will conduct system checks.<br>\
+Please note that 1: 1 inquiry and counseling services are not available during the System maintenance time.<br><br>\u2022 System Check time: {0} (Checking time may be longer.)<br>\u2022 System impact: Kakao Customer Center Web / App Inquiry<br><br>\
+We apologize again for any inconvenience caused.<br>We look forward to providing you with a better service.<br>Thank you.
+
+page_name.main_home=Kakao customer service home
+page_name.service_home=Kakao customer service service home
+page_name.helps_detail_home=Kakao customer service detail view
+page_name.notice=notice
+page_name.search=keyword input form
+
+date.formats.default=%a, %d %b %Y %H:%M:%S %z
+date.formats.short=%d %b %H:%M
+date.formats.long=%B %d, %Y %H:%M
+date.formats.voice=%d / %b
+page_title=Kakao - Enjoy the new everyday
+meta.description=Kakao Talk is a multi-platform texting app that allows iPhone, Android, and BlackBerry users to send and receive messages for free. With Kakao Talk, users may message each other one-on-one and in groups chats with unlimited numbers of friends.
+
+main.service_title=Contact the Customer Service for questions.
+suggest.recommended_keywords=Recommended keywords
+
+helps.help_counsel=Can't find what you need?
+helps.help_counsel_text=Can\u2019t find what you need?
+helps.service_home_main=service home.main text
+helps.help_detail_main=detail view.content
+helps.helpful_title=Useful Tips
+helps.category_title=Help by Category
+helps.more=View More
+helps.more_search=View More
+helps.help_other=Related help topics
+helps.title_search=Search Result
+helps.search_placeholder=Enter a keyword.
+helps.more_search_result=If you cannot find what you are looking for, check out the integrated search results.
+helps.s_home_search_placeholder=Enter a keyword.
+helps.service_category=Service Category
+helps.non_exist_help=This help has been removed
+
+requests.guide_title=\u203B Important
+requests.more=View More
+requests.file_uploading=Uploading files.
+requests.file_error=An error occurred while uploading the file.
+requests.agree_valid=Please agree to the Collection and Use of Personal Information.
+requests.contents_empty=Enter your question.
+requests.ok_btn=Ok
+requests.account_email=Kakao Account (Email Address)
+requests.account_email_html=Kakao Account<br /> (Email Address)
+requests.account_email_desc=Enter the email address registered with the Kakao Account which you have not signed up for.
+requests.country_search=Country Selection (Country Code, Country Name)
+requests.receive_theft_mail=\uC694\uCCAD\uD558\uC9C0 \uC54A\uC740 \uBA54\uC77C\uC744 \uC218\uC2E0\uD55C \uC774\uBA54\uC77C \uC8FC\uC18C\uB97C \uC785\uB825\uD574 \uC8FC\uC138\uC694.
+requests.title=IMPORTANT!
+requests.footer_guide=Additional NOTE
+requests.sms_btn=Verify Phone Number & Report
+requests.sms_desc_html=* You may submit a report only after the relationship between the verified phone number and the account is confirmed.<br />If verification fails repeatedly, please check if the number is the right number you used to log into the compromised account.
+requests.sms_phone=Phone Number
+requests.send_passcode=Send Verification Code
+requests.input_passcode=Verification Code
+requests.process_continue=Verify and Report
+requests.kakao_account=Kakao Account
+requests.important=Important
+requests.select_service=Select Service
+requests.select_category=Select a Category.
+requests.select_os=Select a Category
+requests.email_input_placeholder=Enter Email Address.
+requests.category=Category
+requests.email=Enter Email Address
+requests.email_require=Email Address *
+requests.email.input=Enter
+requests.response_email_desc=An answer has been sent to the email provided.
+requests.receive_mail_html=Contact Email *
+requests.receive_mail_2_html=Contact Email *
+requests.receive_phone_html=Contact Phone Number *
+requests.report_phone_html=Phone Number<br />Used for Reporting *
+requests.report_desc=The phone number/account used for reporting are the same as my contact number/email.
+requests.report_accounts_stolen=Report my account stolen
+requests.sympathies_report_accounts_stolen=sympathies when your accounts are stolen
+requests.detail_report_accounts_stolen=details that you report about your account stolen
+requests.span_desc1=Have you been unregistered from Kakao Talk unwillingly?
+requests.span_desc2=Were you involved in the act of selling/exchanging your account?
+requests.country=Country Code
+requests.phone=Phone Number
+requests.phone_require=Phone Number *
+requests.phone_desc=(Enter the mobile phone number used to sign up for Kakao Services.)
+requests.order_id=Order Id
+requests.order_desc=Gift Box > Enter the 8-digit Order ID shown in Purchase History.
+requests.subject_require=Title *
+requests.subject=Title
+requests.subject_desc=Enter the title.
+requests.subject_num=number of characters
+requests.contents_require=Contents *
+requests.contents=Contents
+requests.contents_desc=Enter the contents.
+requests.attach_file=Attach file
+requests.file_add_button=Add Files
+requests.file_add_txt=Add
+requests.file_open=Open
+requests.mobile_attach_file_button=Browse
+requests.mobile_file_add_button=+ Add Files
+requests.desc_attach_html=you can attach up to 5 files, 30MB each.
+requests.desc_file_check=current file size
+requests.allow_file_ext=Files can be attached : .png, .jpg .zip (Max 5MB)
+requests.agree_type_1=Agree
+requests.question_category=Question Category
+requests.question_category_require=Question Category *
+requests.question_template=Question Template
+requests.use_of_personal_info=Collection and Use of Personal Information
+requests.required_agree_info=(Requirement) Information on collection and use of personal information
+requests.required_agree_info_sub=You have the right to refuse the above consent, and if you refuse to consent, your inquiry processing and result reply will be restricted. Do not enter any personal information that is not required.
+requests.optional_agree_info=(Optional) Information on collection and use of personal information
+requests.optional_agree_info_sub=You have the right to refuse the above consent, and if you refuse to consent, you may be restricted from handling inquiries through authenticity verification and replying to results. Do not enter any personal information that is not required.
+requests.required_items=Kakao Co., Ltd. collects and uses personal information as follows to handle user inquiries, and is doing its best to safely handle user's personal information.
+requests.required_items_collect_purpose=Check inquiries, requests, inconvenient matters and reply to processing results
+requests.required_items_html=<em class='emph_txt'>Required Items</em><br />(Minimum personal information required for receiving and handling questions and replying to the customer. Your agreement is required.)
+requests.required_default_item=Email Address
+requests.required_items_type_1=Items to be Collected
+requests.required_items_type_2=Collect Purpose
+requests.required_items_type_3=Retention Period
+requests.required_items_type_4=Email Address
+requests.required_items_td_1=Replies to customers' questions and customer service requests, access to customers' service usage history to provide customer service
+requests.required_items_td_1_html=Replies to customers' questions and customer service requests,<br />access to customers' service usage history to provide customer service
+requests.required_items_td_2=3 years after receipt of inquiry
+requests.required_items_td_2_html=3 years after receipt of inquiry
+requests.collection_period_default=3 years after receipt of inquiry
+requests.collection_period_file=Dispose of inquiries immediately after processing
+requests.collection_period_file_years={0} years after receipt of inquiry
+requests.collection_purpose_refund=Refund Inquiry/Process
+requests.collection_period_refund=3 years after receipt of inquiry<br>However, the details of refund processing shall be destroyed without delay after five years of storage in accordance with the relevant statutes<br>(e.g., the Electronic Commerce Act, etc.).
+requests.details_info_html=Please see <a class="link_blue" href="https://www.kakao.com/en/privacy" target="_blank">Kakao's Privacy Policy<span class="screen_out">(\uC0C8\uCC3D\uC5F4\uB9BC)</span></a> for details.
+requests.details_info_games_html=Please see <a class="link_blue" href="https://terms-zinny3.game.kakao.com/terms/privacy?country=us" target="_blank">Kakao Games Privacy Policy</a> for details.
+requests.details_info_mobil_html=Please see <a class="link_blue" href="https://policy.kakaomobility.com/ko/privacy_171023.html" target="_blank">Kakao Mobility Privacy Policy</a> for details.
+requests.details_info_pay_html=Please see <a class="link_blue" href="https://www.kakao.com/kakaopay/index.php/terms03/" target="_blank">Kakao Pay Policy</a> for details.
+requests.details_info_page_html=Please see <a class="link_blue" href="https://page.kakao.com/policy/ko/privacy" target="_blank">Privacy Policy</a> for details.
+requests.details_info_hair_shop_html=Please see <a class="link_blue" href="https://kakaohairshop.kr/terms/privacy_policy.html" target="_blank">Privacy Policy</a> for details.
+requests.details_info_commerce_html=Please see <a class="link_blue" href="https://www.kakaocommerce.com/privacy" target="_blank">Privacy Policy</a> for details.
+requests.details_info_lazzy_html=Please see <a class="link_blue" href="https://lazzy.kakao.com/static/policy/privacy_policy_ko.html" target="_blank">Lazzy Service Privacy Policy</a> for details.
+requests.details_info_enterprise_html=Please see <a class="link_blue" href="https://policy.kakaoi.ai/privacy" target="_blank">Kakao Enterprise Privacy Policy</a> for details.
+
+requests.agree=I Agree
+requests.helps_tips=Useful Tips
+
+requests.report_sms_verification_template=Report Form After SMS Verification
+requests.report_sms_verification=Report Sms Verification
+requests.report_sms_mobile_confirm_html=Are you sure to submit a report Kakao Account({0}) theft?\n\nThe relevant Kakao account and KakaoTalk will be immediately suspended so that reporter is also unable to use them.\nPlease submit a report after confirming that damage has been caused by account theft.
+requests.report_sms_confirm_html=Are you sure to submit a report Kakao Account(<span class="email_insert"></span>) theft?
+requests.report_sms_confirm2_html=The relevant Kakao account and KakaoTalk will be immediately suspended so that reporter is also unable to use them. Please submit a report after confirming that damage has been caused by account theft.
+requests.report_sms_submit_btn=Account Compromise Report
+requests.report_sms_cancel_btn=Cancel
+requests.sms_already_stolen_check=This account has already been suspended. Please contact us for more details.
+requests.sms_self_solvable=Reset your password to start using the account again. Check HELP for information about actions to take if you suspect your account has been compromised.
+requests.requests_kakao_accounts=KakaoAccount Inquire
+requests.sms_stolen_check=This number does not match the phone number linked to your Kakao Account. Please check your phone number or the Kakao Account and try again.
+requests.check_help=Check HELP
+requests.report_sms_userdeactive_verification=\uC778\uC99D \uBC0F \uCE74\uCE74\uC624\uD1A1 \uD0C8\uD1F4\uD558\uAE30
+requests.report_question=Submit
+requests.kakao_account_blacklist=Kakao Account Email Registration Blacklist
+requests.kakao_account_blacklist_html=\uCE74\uCE74\uC624\uACC4\uC815<br />\uB4F1\uB85D\uAC70\uBD80 \uC774\uBA54\uC77C<br />\uC8FC\uC18C \uC124\uC815
+requests.kakao_account_blacklist_desc=Do you want to have the above email address blocked from being used in Kakao Services? Once it is registered in the blacklist, other users as well as you cannot use it for Kakao Account.
+requests.search_result=Help Search Result
+requests.search_placeholder=Check out Help if you have questions.
+requests.search_placeholder_2=Enter a keyword.
+requests.search_validation=Please enter at least two characters.
+requests.search_result_empty=No result.
+requests.notice=Notices
+requests.kakao_email_desc=An answer has been sent to the email provided.
+requests.tit_main=Contact the Customer Service for questions.
+requests.service_main=See Customer Service for All Services
+requests.sub_main=Customer Service for Major Services
+requests.sort_by=Sort By
+
+requests.question=Question
+requests.question_desc=If you wish to receive an answer by e-mail.
+requests.consulting=Consulting
+requests.consulting_desc=If you want to talk to a chatbot or agent in real time.
+requests.floating_chatbot=Consulting
+requests.consulting_banner=If you can not find the answer, please contact our service center.
+
+requests.back=back
+requests.list=list
+requests.home=home
+requests.empty_category=Select a category.
+requests.category_optgroup=Select a major category
+requests.category_optgroup2=Select subcategory category
+requests.country_code=Country Code
+requests.country_code_change=Change Country Code
+requests.search_term=Enter a keyword.
+requests.service_body=Kakao Customer Service Main
+requests.more_view=More
+requests.main=Main
+requests.close_content=Close the content area.
+requests.open_content=Open the content area.
+requests.this_page=Current Page
+requests.help_by_category=Help by Category
+requests.phone_desc_2=join to kakao Service insert Phone number
+requests.required_personal_info_html=[Required] Collection and Use of Personal Information
+requests.view_full_article_more=View
+requests.view_full_article_fold=Hide
+requests.accuracy=Accuracy
+requests.new=Latest
+requests.view_count=Views
+requests.all=All
+requests.least_two_characters=Please enter at least two characters.
+requests.select=selected
+requests.notices_from_customer_service=Notices from Customer Service.
+requests.required_fields=Required Fields
+requests.search=Search
+requests.menu=Menu
+requests.kakao_customer_category=Kakao Customer Service Category
+requests.product_id=\uC0C1\uD488 \uC544\uC774\uB514
+requests.product_name=\uC0C1\uD488\uBA85
+requests.member_flag=Kakaotalk User
+
+requests.kakao_account_require=Please enter your Kakao Account.
+requests.error.kakao_email_require=Enter here.
+requests.error.email_require=Enter your email address.
+requests.error.email_incorrect=Invalid email address.
+requests.error.phone_require=Enter phone number.
+requests.error.phone_incorrect=Enter numbers only.
+requests.error.phone_form_incorrect_kr=Invalid phone number (Please enter only numbers from 10 or more digits.)
+requests.error.phone_form_incorrect=Invalid phone number (Please enter only numbers from 4 to 15 digits.)
+requests.error.order_id_incorrect=Invalid Order ID (Please enter only one order number.)
+requests.error.privacy_agree=Please accept our privacy policy.
+requests.error.file_incorrect=This file cannot be attached.
+requests.error.file_virus_include=This file is unsafe.
+requests.error.file_v3_error=Virus scan failed.
+requests.error.file_exceed_max_size=File exceeded size limit.
+requests.error.file_exceed_max_size_title=File exceeded size limit.
+requests.error.file_exceed_max_size_message=\uC774\uD558\uB85C \uB4F1\uB85D\uD574 \uC8FC\uC138\uC694.
+requests.error.system_error=System error
+requests.error.mail_send_fail=An error occurred while receiving your inquiry. Please try again later.
+requests.error.file_error=An error occurred while uploading the file.
+requests.error.agree_valid=Please agree to the Collection and Use of Personal Information.
+requests.error.subject_empty=Enter the title.
+requests.error.contents_empty=Enter your contents.
+requests.error.select_category=Select Category
+requests.error.account_theft_require=Please answer all questions related to the account compromise report.
+requests.error.privacy_field_require=Enter your Privacy Info.
+requests.error.require_message=Enter the\u0020
+requests.error.require_file_message=Please attach the file.
+requests.error.require_radio_message=This is a required question.
+requests.success.ok=Inquiries have been completed.<br>We will promptly check and respond to the received information.
+requests.complete_desc=Your inquiry has been successfully received. <br> We will reply by email after confirmation.
+requests.complete_success_desc1=Your inquiry has been successfully received.
+requests.complete_success_desc2=We will reply by email after confirmation.
+requests.complete_fail_desc1=An error occurred while submitting an inquiry.
+requests.complete_fail_desc2=Please try again later.
+requests.report_success_html=Your question has been submitted.<br />The result will be sent to you via the contact information provided (mobile phone or email).
+requests.report_success_text=*  Responses may be delayed if there is an increase in inquiries.<br>We will do our best to provide you with a quick response.
+requests.go_to_home=Move to Home
+requests.custom_complete_desc=Your inquiry has been successfully received.
+requests.sms.success=A verification code has been sent. You can send to the same phone number up to 3 times a day.
+requests.sms.pass_success=Succeeded in verification.
+requests.sms.fail.limit=You have reached the maximum number(3rd time) of attempts allowed. Please try again in 24 hours.
+requests.sms.fail.country_code=This service is only available with Korean phone numbers.
+requests.sms.fail.to_many_try=You have reached the maximum number of attempts. Please request a new verification code.
+requests.sms.fail.wrong_passcode=The verification code is incorrect. Please check the verification code and try again.
+requests.sms.fail.not_found_request=Invalid Access. Please try again.
+requests.sms.fail.not_found_phonenumber=This phone number cannot be found on KakaoTalk.
+requests.sms.fail.wait=Please try again later.
+requests.send=Submit
+requests.request=Submit
+requests.login_title=Do you want to log in?
+requests.login_message=We will be able to provide a quick response<br/>if you submit an inquiry using your Kakao Account or an email you used for previous consultations.<br/>(Inquiries is possible without logging in.)
+requests.required_detail=Collected item details
+requests.file_delete=Delete file
+requests.relation.faq=Related FAQ
+requests.relation.faq_sub=Did you want to know about the following?
+requests.field.radio.etc.name=Other
+
+## \uBCF8\uC778\uC778\uC99D
+requests.vonin.vonin_cert=\uBCF8\uC778 \uD655\uC778
+requests.vonin.legal_represent_cert=\uBCF4\uD638\uC790 \uBCF8\uC778\uD655\uC778(\uBD80\uBAA8)
+requests.vonin.minor_cert_at_guardian_page=\uBCF4\uD638\uC870\uCE58 \uB300\uC0C1\uC790 \uBCF8\uC778\uD655\uC778(\uC790\uB140)
+requests.vonin.minor_cert_at_self=\uBCF4\uD638\uC870\uCE58 \uB300\uC0C1\uC790 \uBCF8\uC778\uD655\uC778
+requests.vonin.vonin_phone_cert=\uD734\uB300\uD3F0 \uBCF8\uC778 \uC778\uC99D
+requests.vonin.vonin_minor_phone_cert=\uBBF8\uC131\uB144\uC790 \uBCF8\uC778 \uC778\uC99D
+requests.vonin.vonin_card_cert=\uBCF8\uC778 \uBA85\uC758 \uCE74\uB4DC
+requests.vonin.legal_represent_detail1=\uBCF4\uD638\uC790 \uBCF8\uC778 \uBA85\uC758\uC758 \uD734\uB300\uD3F0\uC73C\uB85C \uC778\uC99D\uD574 \uC8FC\uC138\uC694.
+requests.vonin.minor_detail1=\uCE74\uCE74\uC624\uACC4\uC815 \uC18C\uC720\uC8FC \uD655\uC778\uC744 \uC704\uD574 \uBCF4\uD638\uC870\uCE58 \uB300\uC0C1\uC790 \uBCF8\uC778 \uBA85\uC758\uC758 \uD734\uB300\uD3F0\uC73C\uB85C \uC778\uC99D\uD574 \uC8FC\uC138\uC694.
+requests.vonin.vonin_detail1=\uACC4\uC815 \uC18C\uC720\uC8FC \uD655\uC778\uC744 \uC704\uD574 \uBCF8\uC778 \uBA85\uC758 \uD734\uB300\uD3F0\uC73C\uB85C \uC778\uC99D\uD574 \uC8FC\uC138\uC694.
+requests.vonin.vonin_detail2=\uB9CC\uC57D \uBCF8\uC778 \uBA85\uC758 \uD734\uB300\uD3F0\uC774 \uC5C6\uB294 \uACBD\uC6B0
+requests.vonin.vonin_detail3=\uB85C \uC778\uC99D\uD560 \uC218 \uC788\uC2B5\uB2C8\uB2E4.
+requests.vonin.collectField=<div class="text-left">\uBCF8\uC778\uC778\uC99D \uC815\uBCF4</div>\
+  <div class="text-left">- \uD734\uB300\uD3F0 \uBCF8\uC778 \uC778\uC99D \uC2DC: \uC774\uB984, \uC131\uBCC4, \uC0DD\uB144\uC6D4\uC77C, \uD734\uB300\uC804\uD654\uBC88\uD638, \uB0B4/\uC678\uAD6D\uC778 \uC5EC\uBD80, \uC554\uD638\uD654\uB41C \uC774\uC6A9\uC790 \uD655\uC778\uAC12(CI)</div>\
+  <div class="text-left">- \uC2E0\uC6A9\uCE74\uB4DC \uBCF8\uC778 \uC778\uC99D \uC2DC: \uC774\uB984, \uC131\uBCC4, \uC0DD\uB144\uC6D4\uC77C, \uB0B4/\uC678\uAD6D\uC778 \uC5EC\uBD80, \uC554\uD638\uD654\uB41C \uC774\uC6A9\uC790 \uD655\uC778\uAC12(CI)</div>
+requests.vonin.collectFieldNoneCard=<div class="text-left">\uBCF8\uC778\uC778\uC99D \uC815\uBCF4</div>\
+  <div class="text-left">- \uD734\uB300\uD3F0 \uBCF8\uC778 \uC778\uC99D \uC2DC: \uC774\uB984, \uC131\uBCC4, \uC0DD\uB144\uC6D4\uC77C, \uD734\uB300\uC804\uD654\uBC88\uD638, \uB0B4/\uC678\uAD6D\uC778 \uC5EC\uBD80, \uC554\uD638\uD654\uB41C \uC774\uC6A9\uC790 \uD655\uC778\uAC12(CI)</div>
+requests.vonin.legalRepresent.collectField=<div class="text-left">\uBCF8\uC778\uC778\uC99D \uC815\uBCF4</div>\
+  <div class="text-left">- \uD734\uB300\uD3F0 \uBCF8\uC778 \uC778\uC99D \uC2DC: \uC774\uB984, \uC131\uBCC4, \uC0DD\uB144\uC6D4\uC77C, \uD734\uB300\uC804\uD654\uBC88\uD638, \uB0B4/\uC678\uAD6D\uC778 \uC5EC\uBD80</div>\
+  <div class="text-left">- \uC2E0\uC6A9\uCE74\uB4DC \uBCF8\uC778 \uC778\uC99D \uC2DC: \uC774\uB984, \uC131\uBCC4, \uC0DD\uB144\uC6D4\uC77C, \uB0B4/\uC678\uAD6D\uC778 \uC5EC\uBD80</div>
+requests.vonin.minor.collectField=<div class="text-left">\uBCF8\uC778\uC778\uC99D \uC815\uBCF4</div>\
+  <div class="text-left">- \uD734\uB300\uD3F0 \uBCF8\uC778 \uC778\uC99D \uC2DC: \uC774\uB984, \uC131\uBCC4, \uC0DD\uB144\uC6D4\uC77C, \uD734\uB300\uC804\uD654\uBC88\uD638, \uB0B4/\uC678\uAD6D\uC778 \uC5EC\uBD80</div>
+requests.vonin.kakao_account=\uCE74\uCE74\uC624 \uACC4\uC815
+requests.vonin.purpose=\uBB38\uC758\u2022\uC694\uCCAD \uCC98\uB9AC\uB97C \uC704\uD55C \uBCF8\uC778\uD655\uC778
+requests.vonin.retentionPeriod=1\uB144\uAC04 \uBCF4\uAD00 \uD6C4 \uC9C0\uCCB4\uC5C6\uC774 \uD30C\uAE30<br>(\uB2E8, CI\uB294 \uCD5C\uCD08 \uBCF8\uC778 \uD655\uC778 \uD6C4 \uC989\uC2DC \uD30C\uAE30)
+requests.vonin.protectOpenChatRetentionPeriod=1\uB144\uAC04 \uBCF4\uAD00 \uD6C4 \uC9C0\uCCB4\uC5C6\uC774 \uD30C\uAE30
+requests.vonin.alert_to_child_after_cert=\uB9CC 14\uC138 \uBBF8\uB9CC \uD68C\uC6D0\uC740 \uBC95\uC815\uB300\uB9AC\uC778 \uB3D9\uC758 \uD6C4 \uBB38\uC758\uC811\uC218\uAC00 \uAC00\uB2A5\uD569\uB2C8\uB2E4.\r\uB85C\uADF8\uC778\uC744 \uD574\uC8FC\uC138\uC694.
+requests.vonin.pass_success=Succeeded in verification.
+
+# \uD0C8\uD1F4 \uD788\uB4E0\uD398\uC774\uC9C0
+requests.account.deactive.vonin.fail.country_code=This service is only available with Korean phone numbers.
+requests.account.deactive.vonin.fail.not_found_phonenumber=This phone number cannot be found on KakaoTalk.
+requests.account.deactive.vonin.not_same_user=\uD68C\uC6D0\uC774 \uC544\uB2D9\uB2C8\uB2E4.
+requests.account.deactive.vonin.fail.wait=Please try again later.
+requests.account.deactive.vonin.wrong=verification is not correct.
+
+
+## 14\uC138 \uBBF8\uB9CC
+requests.auth.guardian.guide=Privacy Policy For Guardians (Legal Representatives) of Children Under Age 14
+requests.auth.guardian.guide_detail=Consent of guardians is required when processing personal data of children under 14 in accordance with the Personal Information Protection Act.<br><br>\
+To proceed, enter the information of the guardian below.<br>\
+The entered information is used only to confirm the consent of the guardian.
+requests.auth.guardian.success=Guardian (Legal Representative) verification was successful.
+requests.auth.guardian.fail=An error has occurred. Please try again.
+requests.auth.guardian.retry=Already verified.
+requests.auth.guardian.auth_check=Please proceed with the guardian verification.
+requests.auth.guardian.phone_cert_valid=Guardian Verification
+requests.auth.guardian.phone_cert_valid_complete=Verified
+requests.auth.guardian.collect_purpose_field=<br>Guardian Name, Guardian Date of Birth, Guardian Mobile Number
+requests.auth.guardian.collect_purpose_text=Guardian Verification
+
+## \uACC4\uC815 \uB3C4\uC6A9
+requests.account.theft.sms.timer.msg=Valid time :
+
+## \uACC4\uC815 \uD0C8\uD1F4
+requests.account.deactive.sms.timer.msg=Valid time :
+requests.account.deactive.sms.verification=SMS \uC778\uC99D \uD6C4 \uCE74\uCE74\uC624\uD1A1 \uD0C8\uD1F4\uD558\uAE30
+requests.account.deactive.sms.desc=\uC785\uB825\uD558\uC2DC\uB294 \uD734\uB300\uD3F0 \uBC88\uD638\uB85C \uC778\uC99D\uBC88\uD638\uAC00 \uBC1C\uC1A1\uB418\uBA70, <br><span class='cs-light-red-color'>\uD574\uB2F9 \uBC88\uD638\uC758 \uCE74\uCE74\uC624\uD1A1\uC774 \uD0C8\uD1F4\uB429\uB2C8\uB2E4.(\uD574\uC678\uBC88\uD638 \uC81C\uC678)</span><br><span class='cs-light-red-color'>SMS \uC778\uC99D \uD6C4 \uD0C8\uD1F4\uAC00 \uC644\uB8CC\uB41C \uD734\uB300\uD3F0 \uBC88\uD638\uC758 \uCE74\uCE74\uC624\uD1A1\uC740 \uCD5C\uC18C 60\uC77C\uAC04 \uC7AC\uAC00\uC785\uC774 \uC81C\uD55C\uB429\uB2C8\uB2E4.</span>
+requests.account.deactive.sms.valid.required.phone=\uD734\uB300\uD3F0 \uBC88\uD638\uB97C \uC785\uB825\uD574 \uC8FC\uC138\uC694.
+requests.account.deactive.sms.valid.pattern.phone=\uD734\uB300\uD3F0 \uD615\uC2DD\uC774 \uC62C\uBC14\uB974\uC9C0 \uC54A\uC2B5\uB2C8\uB2E4.
+requests.account.deactive.sms.valid.required.passcode=\uC778\uC99D\uBC88\uD638\uB97C \uC785\uB825\uD574 \uC8FC\uC138\uC694.
+requests.account.deactive.sms.valid.check.passcode=\uC778\uC99D\uBC88\uD638 \uBC1C\uC1A1 \uBC84\uD2BC\uC744 \uB20C\uB7EC\uC8FC\uC138\uC694.
+requests.account.deactive.sms.valid.msg.timeout=The request timed out. Please try again.
+requests.account.deactive.confirm.body.message=<span class='cs-color-red'><span id='accountDeactivePhoneNumberConfirm'></span>\uB85C \uAC00\uC785\uB41C<br>\uCE74\uCE74\uC624\uD1A1\uC744 \uD0C8\uD1F4</span>\uD558\uC2DC\uACA0\uC2B5\uB2C8\uAE4C?<br><br>\uB2E4\uB978 \uBC88\uD638\uC758 \uCE74\uCE74\uC624\uD1A1\uC744 \uD0C8\uD1F4\uD558\uB824\uBA74<br>[\uCDE8\uC18C] \uBC84\uD2BC\uC744 \uB20C\uB7EC\uC8FC\uC138\uC694.<br><br>\uD0C8\uD1F4 \uC2DC <span class='cs-color-red'>60\uC77C \uB3D9\uC548</span> \uD734\uB300\uD3F0\uBC88\uD638\uB85C<br><span class='cs-color-red'>\uCE74\uCE74\uC624\uD1A1 \uC7AC\uAC00\uC785\uC774 \uBD88\uAC00</span>\uD569\uB2C8\uB2E4.
+requests.account.deactive.confirm.cancel=\uCDE8\uC18C
+requests.account.deactive.confirm.request=\uD0C8\uD1F4
+
+## \uD1A1 \uC774\uC6A9\uC81C\uD55C \uC774\uC758\uC2E0\uCCAD (\uBBF8\uC218\uAE0D CS)
+requests.account.restricted.restriction_date_label=Restriction Period
+requests.account.restricted.restriction_expired_label=Restriction Expired
+requests.account.restricted.subject_label=Request for Review of Restrictions
+requests.account.restricted.contents_label=Reported content
+requests.account.restricted.error.contents_empty=Please provide detailed reasons for your appeal. (You may send attachments, if necessary.)
+requests.account.restricted.content_list_label=Reason for request
+requests.account.restricted.content_list.message=Please select the content for review.
+requests.account.restricted.alert.login_title=This page requires you to log in.
+requests.account.restricted.alert.login_content=You must log in to file an appeal.<br>Would you like to log in?
+requests.account.restricted.alert.content_empty=There is no content for review.
+
+policy.term.about_us=About Us
+policy.term.term=Terms of Service
+policy.privacy=Privacy Policy
+policy.policy=Operation Policy
+policy.safeguard=Youth Protection Policy
+policy.rights=Report rights infringement
+policy.conflict=
+policy.location=Location-Based Services
+policy.location_html=Terms and Conditions of\\nLocation-Based Services
+policy.notice=Notice
+policy.urgent_notice=Urgent Notice
+policy.urgent_notice2=Attention,
+policy.urgent_notice2_desc=From 23 Sep 2015, we are supposed to utilize this website\u2019s domain(kakao.com) as our official corporate website for a while.For customers who want to get information about Kakao services, please visit our official corporate website and find \u2018Kakao Service\u2019 menu on the main page.Thank you.
+policy.urgent_notice2_close=close
+policy.delivery_partners=KAKAO Delivery Partners
+policy.sellers=Sellers
+policy.delivery_companies=Delivery Companies
+policy.txt_connect=If you link your Kakao Account with your Daum ID, only Kakao Comprehensive Terms and Conditions will apply.
+policy.link_service=Kakao Terms of Service
+policy.link_right=Kakao Comprehensive Terms and Conditions
+policy.talk.terms_and_policy=Terms and Policies
+policy.talk.terms_of_service=Terms of Service
+policy.talk.location_based_service=Location-Based Services
+policy.talk.privacy_policy=Privacy Policy
+policy.talk.operation_policy=Operation Policy
+policy.talk.youth_protection=Youth Protection Policy
+policy.talk.open_source_license=Open Source License
+policy.talk.kakao_custom_ads=Kakao Customized Ads
+policy.talk.business_name_text=Business Name
+policy.talk.business_name=Kakao
+policy.talk.ceo_text=CEO
+policy.talk.ceo=Shina Chung
+policy.talk.biz_regist_text=Business Registration No.
+policy.talk.biz_regist_no=120-81-47521
+policy.talk.e_commerce_regist_text=E-Commerce Registation No.
+policy.talk.e_commerce_regist_no=2015-Jeju Ara-0032
+policy.talk.address_text=Address
+policy.talk.address=242 Cheomdan-ro, Jeju-si, Jeju-do, Korea
+policy.talk.host_biz_text=\uD638\uC2A4\uD305\uC0AC\uC5C5
+policy.talk.host_biz=(\uC8FC)\uCE74\uCE74\uC624
+policy.talk.terms_link=https://www.kakao.com/en/terms?type=ts&etc=base&showDownload=true&showAccountBanner=
+policy.talk.privacy_link=https://www.kakao.com/policy/privacy?type=p&lang=en
+
+general.do_not_show_again=Do not show again.
+general.all=All
+general.open=Open
+general.fold=Fold
+general.more=More
+general.close=Close
+general.confirm=Ok
+general.search=Search
+general.cancel=Cancel
+general.logout_message=Would you like to log out?
+general.init=text clear
+general.down=Down
+general.open_new_window=open new window
+general.delete=delete
+
+search.no_result=No Search Results
+search.search_again=Search again
+search.go_to_search_all_desc=Check out for more results with integrated search
+search.go_to_search_all=Check Now
+search.search_all=All
+search.category_all=All
+search.search_result=Search Result
+search.view_all_service=View all services
+search.select_service=Categories
+search.search_trend=Trending
+search.search_recent=Recent
+search.search_no_recent=No search history.
+search.search_clear_all=Clear All
+search.go_to_service=Service
+search.item_count=Number of cases
+search.select_category=Select category
+search.select_detail_category=Select detailed category
+search.search_input=Input search word
+search.view_all_category=View all category
+search.area_suggest=Update, Trending
+
+merger2014.title=Regarding Kakao's merger
+merger2014.policy_title_html=Regarding Kakao's merger
+
+myqna.title=My Inquiries
+myqna.desc=You can inquire only the inquiry details for the last 1 year.<br>The My Inquiries feature may not be available in some services.
+myqna.empty=No inquiries
+myqna.inquiry_label_status.received=Accept
+myqna.inquiry_label_status.progress=Processing
+myqna.inquiry_label_status.done=Completed
+gºÜøAH      h>³h>³HAÏzh>³   h    O^partitionKey=%28https%2Ckakao.com%29,:https://cs.kakao.com/i18n/messages_en.properties?_=1748939533334 necko:classified 1 strongly-framed 1 security-info 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 request-method GET response-head HTTP/2 200 OK
+date: Tue, 03 Jun 2025 08:32:13 GMT
+content-security-policy: frame-ancestors https://www.daum.net;
+strict-transport-security: max-age=31536000; includeSubDomains
+X-Firefox-Spdy: h2
+ original-response-headers date: Tue, 03 Jun 2025 08:32:13 GMT
+content-security-policy: frame-ancestors https://www.daum.net;
+strict-transport-security: max-age=31536000; includeSubDomains
+X-Firefox-Spdy: h2
+ ctid 1 uncompressed-len 0 net-response-time-onstart 76 net-response-time-onstop 78   «

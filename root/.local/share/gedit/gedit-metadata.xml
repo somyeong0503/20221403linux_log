@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<metadata>
+  <document uri="file:///etc/vsftpd.conf" atime="1749117969325">
+    <entry key="gedit-encoding" value="UTF-8"/>
+    <entry key="gedit-spell-language" value="en_CA"/>
+    <entry key="gedit-position" value="430"/>
+  </document>
+  <document uri="file:///etc/ssh/sshd_config" atime="1747964508178">
+    <entry key="gedit-encoding" value="UTF-8"/>
+    <entry key="gedit-spell-language" value="en_US"/>
+    <entry key="gedit-position" value="0"/>
+  </document>
+  <document uri="file:///etc/modsecurity/crs/crs-setup.conf" atime="1749209076222">
+    <entry key="gedit-encoding" value="UTF-8"/>
+    <entry key="gedit-spell-language" value="en_CA"/>
+    <entry key="gedit-position" value="5596"/>
+  </document>
+  <document uri="file:///etc/fstab" atime="1748943388665">
+    <entry key="gedit-encoding" value="UTF-8"/>
+    <entry key="gedit-spell-language" value="en_CA"/>
+    <entry key="gedit-position" value="737"/>
+  </document>
+  <document uri="file:///etc/apache2/conf-enabled/security.conf" atime="1749126536938">
+    <entry key="gedit-encoding" value="UTF-8"/>
+    <entry key="gedit-spell-language" value="en_CA"/>
+    <entry key="gedit-position" value="790"/>
+  </document>
+  <document uri="file:///etc/apache2/sites-available/000-default.conf" atime="1749122481681">
+    <entry key="gedit-encoding" value="UTF-8"/>
+    <entry key="gedit-spell-language" value="en_CA"/>
+    <entry key="gedit-position" value="603"/>
+  </document>
+  <document uri="file:///etc/apache2/apache2.conf" atime="1749197342563">
+    <entry key="gedit-encoding" value="UTF-8"/>
+    <entry key="gedit-spell-language" value="en_CA"/>
+    <entry key="gedit-position" value="3374"/>
+  </document>
+  <document uri="file:///etc/modsecurity/modsecurity.conf" atime="1749209132220">
+    <entry key="gedit-encoding" value="UTF-8"/>
+    <entry key="gedit-spell-language" value="en_CA"/>
+    <entry key="gedit-position" value="261"/>
+  </document>
+  <document uri="file:///etc/php/7.4/apache2/php.ini" atime="1749127828045">
+    <entry key="gedit-encoding" value="UTF-8"/>
+    <entry key="gedit-spell-language" value="en_CA"/>
+    <entry key="gedit-position" value="34366"/>
+  </document>
+  <document uri="file:///etc/apache2/mods-enabled/security2.conf" atime="1749208984207">
+    <entry key="gedit-encoding" value="UTF-8"/>
+    <entry key="gedit-spell-language" value="en_CA"/>
+    <entry key="gedit-position" value="561"/>
+  </document>
+</metadata>

@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=KakaoTalk(32-bit)
+MimeType=x-scheme-handler/kakaotalk;
+Exec=env WINEPREFIX="/home/guest/.wine" wine start %u
+NoDisplay=true
+StartupNotify=true
+Icon=E51E_KakaoTalk.0

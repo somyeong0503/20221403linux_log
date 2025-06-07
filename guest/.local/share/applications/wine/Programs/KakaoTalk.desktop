@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=KakaoTalk
+Exec=env WINEPREFIX="/home/guest/.wine" wine C:\\\\ProgramData\\\\Microsoft\\\\Windows\\\\Start\\ Menu\\\\Programs\\\\KakaoTalk.lnk
+Type=Application
+StartupNotify=true
+Path=/home/guest/kakao/KakaoTalk
+Icon=5923_KakaoTalk.0
+StartupWMClass=kakaotalk.exe

@@ -1,0 +1,518 @@
+$(function () {
+    kcsWebSuggest.init();
+});
+
+const kcsWebSuggest = {
+    init() {
+        this.initEvent()
+    },
+
+    initEvent() {
+        this.searchEvent(); // 검색 이벤트
+        this.categoryEvent();
+        this.suggestEvent();
+        this.faqKeywordEvent(); // 자주 찾는 키워드
+    },
+
+    searchEvent() {
+        // emptyResult > 통합검색 결과 보기
+        $("#searchAllBtn").click(function () {
+            const query = $("#emptyQuery").text();
+            let requestUrl = `/search?query=${encodeURIComponent(query)}`;
+            let copy = kcsWebCommon.getTextFromElement($(this));
+
+            kcsTiara
+                .click(
+                    new kcsTiara.clickEventBuilder()
+                        .url(requestUrl)
+                        .layer(TiaraLayer.GO_SEARCH_ALL.layer)
+                        .copy(copy)
+                )
+                .trackEvent(TiaraEvent.GO_SEARCH_ALL.track)
+                .track();
+            location.href = kcsWebCommon.getUrl(requestUrl);
+        });
+    },
+
+    categoryEvent() {
+        const activeClass= "active";
+        const $searchServiceWrapper = $(".cs-search .search-service-wrapper");
+
+        if ($searchServiceWrapper.length > 0) {
+            const $csSearchServiceList = $("#csSearchServiceList");
+            const $csSearchServiceMoreBtn = $("#csSearchServiceMoreBtn");
+
+            $searchServiceWrapper.addClass(activeClass);
+            const serviceHeight = $csSearchServiceList.height(); // overflow height 계산
+            const itemHeight = $csSearchServiceList.find("li").outerHeight();
+            const maxHeight = itemHeight * 2;
+            $searchServiceWrapper.removeClass(activeClass);
+            $csSearchServiceList.css("maxHeight", maxHeight);
+
+            // 서비스 더보기 버튼 show/hide
+            if (serviceHeight > maxHeight) {
+                $csSearchServiceMoreBtn.show();
+            }
+            else {
+                $csSearchServiceMoreBtn.hide();
+            }
+
+            activeAriaElement($csSearchServiceList,false);
+
+            const $moreIcon = $csSearchServiceMoreBtn.find("i.icon-more");
+            $csSearchServiceMoreBtn.click(function () {
+                $searchServiceWrapper.toggleClass(activeClass);
+
+                const allActive = $searchServiceWrapper.hasClass(activeClass); // true: 펼쳐짐
+                $(this).attr("aria-expanded", allActive);
+                $moreIcon.text(allActive ? $.i18n.prop("general.fold") : $.i18n.prop("general.more"));
+                activeAriaElement($csSearchServiceList, allActive);
+            });
+        }
+
+        const $searchCategoryWrapper = $(".cs-search .search-category-wrapper");
+        if ($searchCategoryWrapper.length > 0) {
+            const $csSearchCategoryList = $("#csSearchCategoryList");
+            const $csSearchCategoryMoreBtn = $("#csSearchCategoryMoreBtn");
+
+            $searchCategoryWrapper.addClass(activeClass);
+            const categoryHeight = $csSearchCategoryList.height(); // overflow height 계산
+            const itemHeight = $csSearchCategoryList.find("li").outerHeight();
+            const maxHeight = itemHeight * 2;
+            $searchCategoryWrapper.removeClass(activeClass);
+            $csSearchCategoryList.css("maxHeight", maxHeight);
+
+            // 카테고리 더보기 버튼 show/hide
+            if (categoryHeight > maxHeight) {
+                $csSearchCategoryMoreBtn.show();
+            }
+            else {
+                $csSearchCategoryMoreBtn.hide();
+            }
+
+            activeAriaElement($csSearchCategoryList,false);
+
+            const $moreIcon = $csSearchCategoryMoreBtn.find("i.icon-more");
+            $csSearchCategoryMoreBtn.click(function () {
+                $searchCategoryWrapper.toggleClass(activeClass);
+
+                const allActive = $searchCategoryWrapper.hasClass(activeClass); // true: 펼쳐짐
+                $(this).attr("aria-expanded", allActive);
+                $moreIcon.text(allActive ? $.i18n.prop("general.fold") : $.i18n.prop("general.more"));
+                activeAriaElement($csSearchCategoryList, allActive);
+            });
+
+            const $activeCategory = $csSearchCategoryList.find(".link_active");
+            if ($activeCategory.length > 0 && $activeCategory.position().top > maxHeight) {
+                $csSearchCategoryMoreBtn.trigger("click"); // 활성화된 카테고리가 숨겨져 있을경우 펼치기
+            }
+        }
+
+        // 접근성
+        function activeAriaElement($list, allActive = false) {
+            if (!$list || $list.length === 0) return;
+
+            const $li = $list.find("li");
+            if (allActive) {
+                $li.removeAttr("aria-hidden");
+                $li.children("a").removeAttr("tabindex");
+            }
+            else {
+                const maxHeight = parseInt($list.css("maxHeight"));
+                $li.filter(function() {
+                    if ($(this).position().top > maxHeight) {
+                        $(this).attr("aria-hidden", true);
+                        $(this).children("a").attr("tabindex", -1);
+                    }
+                });
+            }
+        }
+
+    },
+
+    suggestEvent() {
+        const $csSuggestInputText = $("#csSuggestInputText");
+        const $csSuggestWrapper = $(".cs-suggest-wrapper");
+        const $csSuggestServiceWrapper = $csSuggestWrapper.find(".cs-suggest-service-wrapper");
+        const $csSuggestSearchBtn = $("#csSuggestSearchBtn");
+        const $csSuggestResetBtn = $("#csSuggestResetBtn");
+        const $csSuggestServiceList = $("#csSuggestServiceList");
+        const $csSuggestItemList = $("#csSuggestItemList");
+        const $csSuggestServiceCollBtn =  $("#csSuggestServiceCollBtn");
+        const $csSuggestServiceExpandBtn =  $("#csSuggestServiceExpandBtn");
+
+        const maxCount = $csSuggestInputText.data("maxCount");
+        const activeClass= "active";
+
+        const objThis = this;
+        $csSuggestServiceCollBtn.click(function () {
+            displayServiceBtn(true);
+            // $csSuggestInputText.focus();
+        });
+
+        $csSuggestServiceExpandBtn.click(function () {
+            displayServiceBtn(false);
+            // $csSuggestInputText.focus();
+        });
+
+        $csSuggestResetBtn.click(function () {
+            $csSuggestInputText.val("");
+            $csSuggestInputText.focus();
+            $csSuggestInputText.trigger("keyup");
+        });
+
+        $csSuggestInputText.focus(function () {
+            const query = $(this).val();
+            if ($.trim(query) !== "") {
+                $(this).autocomplete("search", query);
+            }
+        });
+
+        $(document).click(function (e) {
+            const $target = $(e.target);
+            if (!($target.hasClass("cs-suggest-wrapper")
+                || $target.closest(".cs-suggest-wrapper").length > 0
+                || $target.attr("id") === 'csSuggestInputText')) { // 검색레이어 or 검색Input 이 아니면
+                displaySuggest(true);
+            }
+        });
+
+        const disableClass = "disable";
+        $csSuggestInputText.keyup(function (e) { // 서제스트 검색 Input 키보드 입력
+            const query = $(this).val();
+
+            if ($.trim(query) === "") {
+                $(this).val("");
+                displaySuggest(true);
+            }
+            else {
+                if (e.keyCode === 13 && !$(this).hasClass(disableClass)) { // 엔터 && 한글 입력후 엔터 호출시 중복호출 방지
+                    $(this).addClass(disableClass);
+                    $csSuggestSearchBtn.trigger("click"); // 검색
+                }
+                else {
+                    $(this).removeClass(disableClass);
+                }
+            }
+        });
+
+        // 서제스트 검색버튼 클릭
+        $csSuggestSearchBtn.click(function () {
+            if (!$(this).hasClass(disableClass) && objThis.validateSearch()) { // 서버 중복호출 방지
+                $(this).addClass(disableClass);
+                kcsTiara
+                    .search(
+                        new kcsTiara.searchBuilder()
+                            .searchType(TiaraSearchType.KEYWORD.type)
+                            .searchTerm($csSuggestInputText.val())
+                            .build()
+                    )
+                    .trackEvent(TiaraEvent.SEARCH.event)
+                    .actionKind(TiaraActionKind.SEARCH.actionKind)
+                    .track();
+                objThis.searchSuggestItem($.trim($csSuggestInputText.val()), TiaraSearchType.KEYWORD.type);
+            }
+        });
+
+        function initServiceBtn() {
+            $csSuggestServiceCollBtn.hide();
+            $csSuggestServiceExpandBtn.hide();
+            $csSuggestServiceList.html("");
+        }
+
+        function displayServiceBtn(collFlag = true) {
+            const $csSuggestServiceItem = $csSuggestServiceList.find(`li:gt(${maxCount - 1})`);
+
+            if (collFlag) { //축소
+                $csSuggestServiceItem.removeClass(activeClass);
+                $csSuggestServiceCollBtn.hide();
+                $csSuggestServiceExpandBtn.show();
+            }
+            else { //확장
+                $csSuggestServiceItem.addClass(activeClass);
+                $csSuggestServiceExpandBtn.hide();
+                $csSuggestServiceCollBtn.show();
+            }
+        }
+
+        function displaySuggest(hideFlag = true) {
+            const hideClass= "hide";
+            if ($.trim($csSuggestInputText.val()) === "") {
+                $csSuggestResetBtn.addClass(hideClass);
+            }
+            else {
+                $csSuggestResetBtn.removeClass(hideClass);
+            }
+
+            if (hideFlag) {
+                $csSuggestWrapper.removeClass(activeClass);
+            }
+            else {
+                $csSuggestWrapper.addClass(activeClass);
+
+                const eventName = "keyup.cs-suggest";
+                const $document = $(document);
+                $document.off(eventName);
+                $document.on(eventName, function (e) { // 닫기
+                    if (e.keyCode === 9) { // 9: tab
+                        if ($(e.target).closest(".cs-suggest").length === 0) {
+                            $document.off(eventName);
+                            objThis.hideSuggest();
+                        }
+                    }
+                });
+
+                const $ul = $csSuggestInputText.data("ui-autocomplete").menu.element;
+                $ul.scrollTop(0);
+            }
+        }
+
+        // jquery-ui
+        $csSuggestInputText.autocomplete({ // 서제스트 리스트
+            classes: {
+                "ui-autocomplete": "list_content"
+            },
+            autoFocus: false,
+            appendTo: $csSuggestItemList,
+            source: function (request, response) {
+                if ($csSuggestInputText.hasClass(disableClass)) {
+                    return;
+                }
+
+                const query = request.term;
+                $.ajax({
+                    url: kcsWebCommon.getUrl('/suggest_all'),
+                    type: 'GET',
+                    dataType: 'json',
+                    data: {
+                        query
+                    },
+                })
+                .done(function ({ suggestItemVO = {}, suggestServiceVO = {}}) {
+                    renderSuggestService(suggestServiceVO);
+                    renderSuggestItem(response, suggestItemVO);
+                })
+                .fail(function (xhr, textStatus) {
+                    // console.log('suggest_all fail')
+                });
+            },
+            select: function (event, ui) {
+                const query = ui.item.value;
+                // 제안어 선택
+                kcsTiara
+                    .search(
+                        new kcsTiara.searchBuilder()
+                            .searchType(TiaraSearchType.SUGGEST.type)
+                            .searchTerm(query)
+                            .build()
+                    )
+                    .trackEvent(TiaraEvent.SEARCH.event)
+                    .actionKind(TiaraActionKind.SEARCH.actionKind)
+                    .track();
+                objThis.searchSuggestItem(query, TiaraSearchType.SUGGEST.type);
+            },
+            focus: function (event, ui) {
+                const query = ui.item.value;
+
+                const focusClass = "focus";
+                const $ul = $(this).data("ui-autocomplete").menu.element;
+                const $li =  $ul.find('li');
+                $li.removeClass(focusClass);
+                $li.addClass("un-hover"); // hover와 중복
+                $li.filter(`[data-value="${query}"]`).addClass(focusClass);
+
+                $(this).val(query);
+                return false; // 한글 이벤트 문제
+            },
+            open: function () {
+                const $ul = $(this).data("ui-autocomplete").menu.element;
+                if ($csSuggestInputText.val() === '') {
+                    $ul.html("");
+                }
+            },
+            messages: { // 접근성 .ui-helper-hidden-accessible
+                noResults: '추천 검색어 없음',
+                results: function (suggestLength) {
+                    return `${suggestLength}개 추천 검색어 표시됨`;
+                }
+            }
+        }).data('ui-autocomplete')._renderItem = function (ul, item) {
+            return $("<li>")
+                .attr("data-value", item.value)
+                .append((`<a class="cs-suggest-item-link link_content">${item.label}</a>`))
+                .appendTo(ul);
+        };
+
+        function renderSuggestItem(response, { query, suggestions = [] }) {
+            const suggestLength = suggestions.length;
+            if (suggestLength === 0) {
+                displaySuggest(true);
+                response([]);
+                return;
+            }
+
+            response($.map(suggestions, function (item) {
+                const regExp = new RegExp(query, "gi");
+                const resultMatch = item.replace(regExp, function (match) {
+                    return `<em class="emph_result">${match}</em>`;
+                });
+
+                return {
+                    label: resultMatch,
+                    value: item
+                }
+            }));
+
+            displaySuggest(false);
+        }
+
+        function renderSuggestService({ query, suggestions = []}) {
+            initServiceBtn();
+
+            const serviceCount = suggestions.length;
+            if (serviceCount === 0) {
+                $csSuggestServiceWrapper.removeClass(activeClass);
+            }
+            else {
+                $csSuggestServiceWrapper.addClass(activeClass);
+                if (serviceCount > maxCount) {
+                    $csSuggestServiceExpandBtn.show(); // 더보기버튼
+                }
+
+                $.map(suggestions, function (item, index) {
+                    const {
+                        id,
+                        name,
+                        pcImageUrl
+                    } = item;
+
+                    const regExp = new RegExp(query, "gi");
+                    const resultMatch = name.replace(regExp, function (match) {
+                        return `<em class="emph_result">${match}</em>`;
+                    });
+                    const imgUrl = pcImageUrl ? pcImageUrl : kcsWebCommon.getUrl('/images/symbol/img_default.png');
+
+                    const $li = $("<li></li>");
+                    if (index < maxCount) {
+                        $li.addClass(activeClass);
+                    }
+                    const $aLink = $('<a class="cs-suggest-service-link link_service" href="javascript:void(0)"></a>');
+                    $aLink.append(`<div class="wrap_symbol"><img src="${imgUrl}" class="img_symbol" alt=""></div>`); // alt 빈값 [KCSACC-169]
+                    $aLink.click(function () {
+                        location.href = kcsWebCommon.getUrl(`/helps?service=${id}`);
+                    });
+
+                    $aLink.append(`<span class="txt_service">${resultMatch}</span>`).appendTo($li);
+                    $csSuggestServiceList.append($li);
+                });
+            }
+        }
+    },
+
+    faqKeywordEvent() {
+        const objThis = this;
+        $("#csFaqKeywordList .cs-faq-keyword-link").click(function () {
+            const { linkOption, linkUrl } = $(this).data();
+
+            // 추천키워드 클릭
+            let copy = $(this).find('.cs-faq-keyword-text').text();
+            kcsTiara
+                .click(
+                    new kcsTiara.clickEventBuilder()
+                        .layer(TiaraLayer.RCMD_KEYWORD.layer)
+                        .url(linkUrl)
+                        .copy(copy)
+                )
+                .trackEvent(TiaraEvent.RCMD_KEYWORD.track)
+                .track();
+
+            if (linkOption === 'L') { // L : 링크, H: 도움말
+                let requestUrl = linkUrl ? linkUrl : kcsWebCommon.getUrl("");
+                if (!linkUrl.match("^http(s)?://")) {
+                    requestUrl = `https://${linkUrl}`
+                }
+                location.href = requestUrl;
+            }
+            else {
+                const query = $(this).find(".cs-faq-keyword-text").text();
+                objThis.searchSuggestItem(query, TiaraSearchType.RECOMMEND.type);
+            }
+        });
+    },
+
+    searchSuggestItem(query, searchType) {
+        const serviceId = $("#suggestServiceId").val();
+        const pageFrom = $("#pageFrom").val();
+
+        const encodeQuery = encodeURIComponent(query);
+        let requestUrl = '/search';
+        if (pageFrom && pageFrom === "serviceHome") { // 서비스홈 검색시
+            requestUrl = '/search/service';
+        }
+        requestUrl += `?query=${encodeQuery}`;
+
+        if (serviceId !== null && serviceId !== undefined) {
+            requestUrl += `&service=${serviceId}`;
+        }
+
+        this.hideSuggest();
+        requestUrl += `&searchType=${searchType}`;
+        location.href = kcsWebCommon.getUrl(requestUrl);
+    },
+
+    hideSuggest() {
+        const $csSuggestWrapper = $(".cs-suggest-wrapper");
+        $csSuggestWrapper.removeClass("active");
+    },
+
+    // 검색 validation
+    validateSearch() {
+        const $csSuggestInputText = $("#csSuggestInputText");
+        if ($csSuggestInputText.val() === "") {
+            kcsWebPcCommon.toggleCommonAlertModal({
+                title: $.i18n.prop("requests.search_term"),
+                closeEvent: function () {
+                    kcsWebPcCommon.toggleCommonAlertModal();
+                    $csSuggestInputText.focus();
+                }
+            });
+            return false;
+        }
+        else {
+            // 기존  앞 공백 제거 replace(/^[\s]+/, '') => // TODO 앞뒤 공백 전체 제거 방향 (trim) -> 모바일 수정 (searchFormValidation)
+            $csSuggestInputText.val($csSuggestInputText.val().replace(/^[\s]+/, ''));
+            if ($csSuggestInputText.val().length < 2) {
+                kcsWebPcCommon.toggleCommonAlertModal({
+                    title: $.i18n.prop("requests.search_validation"),
+                });
+                return false;
+            }
+        }
+        return true;
+    }
+}"�%g�G      h>�h>�HA�zj�   u    O^partitionKey=%28https%2Ckakao.com%29,:https://cs.kakao.com/js/e8eeacd4d4fb7db01d893d5dae7a2ed1/pc/common/suggest.js necko:classified 1 strongly-framed 1 security-info FnhllAKWRHGAlo+ESXykKAAAAAAAAAAAwAAAAAAAAEaphjojH6pBabDSgSnsfLHeAAAAAgAAAAAAAAAAAAAAAAAAAAEAOQFmCjImkVxP+7sgiYWmMt8FvcOXmlQiTNWFiWlrbpbqgwAAAAAAAAZgMIIGXDCCBUSgAwIBAgIQCcI+65G/+xGGjgArGV0WwTANBgkqhkiG9w0BAQsFADBeMQswCQYDVQQGEwJVUzEVMBMGA1UEChMMRGlnaUNlcnQgSW5jMRkwFwYDVQQLExB3d3cuZGlnaWNlcnQuY29tMR0wGwYDVQQDExRUaGF3dGUgVExTIFJTQSBDQSBHMTAeFw0yNDA5MDIwMDAwMDBaFw0yNTA5MjkyMzU5NTlaMF0xCzAJBgNVBAYTAktSMRAwDgYDVQQIEwdKZWp1LWRvMRAwDgYDVQQHEwdKZWp1LXNpMRQwEgYDVQQKEwtLYWthbyBDb3JwLjEUMBIGA1UEAwwLKi5rYWthby5jb20wggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQCUYrQCyt9RoTxsI9UGMPcKn2P6nhSrPDZgoWAeHMaxGL5Zegeej1jqMfmVHJofj2gVddzo0IgiAQNX8zciSfbRoZ0yswLpBah83FzAtUumVv+jUw3lNgJYiZ8JZD57mxAhr7sBjTbsNnWQwSQHHU4RwkaOUkIIpptgxly2RLQZfQGXszadKsQt6JQIN3SKWsYdwL7rvOOjTsuFkrkL8VD+O+BZ+Vygi8WoFA03FXqB3/ZozBPZ63GsCtMX8R/fIVHauYN8uon7NgdFv03bkyMEQRhTN4x4V9bZBI4tHuJaQQKqo0aXL19ajFcZfU31sg0VUhUlBdPxU4tymQGoxUulAgMBAAGjggMVMIIDETAfBgNVHSMEGDAWgBSljP4yzOsPLNQZxgi4ACSIXcPFtzAdBgNVHQ4EFgQULYHFPZeJYSS2GU5r3cP6GZKDFDAwIQYDVR0RBBowGIILKi5rYWthby5jb22CCWtha2FvLmNvbTA+BgNVHSAENzA1MDMGBmeBDAECAjApMCcGCCsGAQUFBwIBFhtodHRwOi8vd3d3LmRpZ2ljZXJ0LmNvbS9DUFMwDgYDVR0PAQH/BAQDAgWgMB0GA1UdJQQWMBQGCCsGAQUFBwMBBggrBgEFBQcDAjA7BgNVHR8ENDAyMDCgLqAshipodHRwOi8vY2RwLnRoYXd0ZS5jb20vVGhhd3RlVExTUlNBQ0FHMS5jcmwwcAYIKwYBBQUHAQEEZDBiMCQGCCsGAQUFBzABhhhodHRwOi8vc3RhdHVzLnRoYXd0ZS5jb20wOgYIKwYBBQUHMAKGLmh0dHA6Ly9jYWNlcnRzLnRoYXd0ZS5jb20vVGhhd3RlVExTUlNBQ0FHMS5jcnQwDAYDVR0TAQH/BAIwADCCAX4GCisGAQQB1nkCBAIEggFuBIIBagFoAHUA3dzKNJXX4RYF55Uy+sef+D0cUN/bADoUEnYKLKy7yCoAAAGRsBHz1wAABAMARjBEAiBf+r1MYrtGyKMdKL5Ki70uyLixh08hsKB84Z3GtGOnrgIgPvrKvoKO5lrHvPDuh6JSJj0hfGvCh/aAmlDHBtp+gs4AdgB9WR4S4XgqexxhZ3xe/fjQh1wUoE6VnrkDL9kOjC55uAAAAZGwEfPRAAAEAwBHMEUCIH72goc+J5aqWtdkIZgdkXQROOcfkLCUXEI0pe4NgsbEAiEAlOrZgTfQqloanUY+og7pQXmQ0visIswhNRUgRMR5Qy8AdwDm0jFjQHeMwRBBBtdxuc7B0kD2loSG+7qHMh39HjeOUAAAAZGwEfPyAAAEAwBIMEYCIQCVOTmU9r/GC6tYNZnjQvWbHIHIMbOtctHYCp861ZOKdAIhAI3rYocpxAuyPdUsTVRV4nUM4YT8Iirf/8YpFJwNdONZMA0GCSqGSIb3DQEBCwUAA4IBAQAGhp+PD+OOujkJlR9qn9l0N5L3+zCcIyjtgLz1SwIaSjeE7GkHs3YVEt7ZoRU/iBZltidxRUSqsCqYCJw7bArKg3QyOUIcbD7Xrlm+k6ZX2XDXs5wAyB7xP+Ax4ycMrtPFUgLqEkPdHl43uhp3nEcuvlUCeaD9gMuJ/h9VFE6qydR0T+1cOr0Mvwc4lTrj+7oO3lRutTUrTiD1CmqTuMYZ119MR/68H45KRDR1tZIxwTbC+qZy1kHXRkeA4SoctbFIXSmg9vdl1qL2+TGLEebzB26KJbUTV0GBj2ASYNBXUr4nY31ZSOpGd6UKTANVYwsQVuSE2qvwVABWtLwMYIsDwC8AAwAAAAAAAQEAAAAAAAAGeDI1NTE5AAAADlJTQS1QU1MtU0hBMjU2AANmCjImkVxP+7sgiYWmMt8FvcOXmlQiTNWFiWlrbpbqgwAAAAAAAAZgMIIGXDCCBUSgAwIBAgIQCcI+65G/+xGGjgArGV0WwTANBgkqhkiG9w0BAQsFADBeMQswCQYDVQQGEwJVUzEVMBMGA1UEChMMRGlnaUNlcnQgSW5jMRkwFwYDVQQLExB3d3cuZGlnaWNlcnQuY29tMR0wGwYDVQQDExRUaGF3dGUgVExTIFJTQSBDQSBHMTAeFw0yNDA5MDIwMDAwMDBaFw0yNTA5MjkyMzU5NTlaMF0xCzAJBgNVBAYTAktSMRAwDgYDVQQIEwdKZWp1LWRvMRAwDgYDVQQHEwdKZWp1LXNpMRQwEgYDVQQKEwtLYWthbyBDb3JwLjEUMBIGA1UEAwwLKi5rYWthby5jb20wggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQCUYrQCyt9RoTxsI9UGMPcKn2P6nhSrPDZgoWAeHMaxGL5Zegeej1jqMfmVHJofj2gVddzo0IgiAQNX8zciSfbRoZ0yswLpBah83FzAtUumVv+jUw3lNgJYiZ8JZD57mxAhr7sBjTbsNnWQwSQHHU4RwkaOUkIIpptgxly2RLQZfQGXszadKsQt6JQIN3SKWsYdwL7rvOOjTsuFkrkL8VD+O+BZ+Vygi8WoFA03FXqB3/ZozBPZ63GsCtMX8R/fIVHauYN8uon7NgdFv03bkyMEQRhTN4x4V9bZBI4tHuJaQQKqo0aXL19ajFcZfU31sg0VUhUlBdPxU4tymQGoxUulAgMBAAGjggMVMIIDETAfBgNVHSMEGDAWgBSljP4yzOsPLNQZxgi4ACSIXcPFtzAdBgNVHQ4EFgQULYHFPZeJYSS2GU5r3cP6GZKDFDAwIQYDVR0RBBowGIILKi5rYWthby5jb22CCWtha2FvLmNvbTA+BgNVHSAENzA1MDMGBmeBDAECAjApMCcGCCsGAQUFBwIBFhtodHRwOi8vd3d3LmRpZ2ljZXJ0LmNvbS9DUFMwDgYDVR0PAQH/BAQDAgWgMB0GA1UdJQQWMBQGCCsGAQUFBwMBBggrBgEFBQcDAjA7BgNVHR8ENDAyMDCgLqAshipodHRwOi8vY2RwLnRoYXd0ZS5jb20vVGhhd3RlVExTUlNBQ0FHMS5jcmwwcAYIKwYBBQUHAQEEZDBiMCQGCCsGAQUFBzABhhhodHRwOi8vc3RhdHVzLnRoYXd0ZS5jb20wOgYIKwYBBQUHMAKGLmh0dHA6Ly9jYWNlcnRzLnRoYXd0ZS5jb20vVGhhd3RlVExTUlNBQ0FHMS5jcnQwDAYDVR0TAQH/BAIwADCCAX4GCisGAQQB1nkCBAIEggFuBIIBagFoAHUA3dzKNJXX4RYF55Uy+sef+D0cUN/bADoUEnYKLKy7yCoAAAGRsBHz1wAABAMARjBEAiBf+r1MYrtGyKMdKL5Ki70uyLixh08hsKB84Z3GtGOnrgIgPvrKvoKO5lrHvPDuh6JSJj0hfGvCh/aAmlDHBtp+gs4AdgB9WR4S4XgqexxhZ3xe/fjQh1wUoE6VnrkDL9kOjC55uAAAAZGwEfPRAAAEAwBHMEUCIH72goc+J5aqWtdkIZgdkXQROOcfkLCUXEI0pe4NgsbEAiEAlOrZgTfQqloanUY+og7pQXmQ0visIswhNRUgRMR5Qy8AdwDm0jFjQHeMwRBBBtdxuc7B0kD2loSG+7qHMh39HjeOUAAAAZGwEfPyAAAEAwBIMEYCIQCVOTmU9r/GC6tYNZnjQvWbHIHIMbOtctHYCp861ZOKdAIhAI3rYocpxAuyPdUsTVRV4nUM4YT8Iirf/8YpFJwNdONZMA0GCSqGSIb3DQEBCwUAA4IBAQAGhp+PD+OOujkJlR9qn9l0N5L3+zCcIyjtgLz1SwIaSjeE7GkHs3YVEt7ZoRU/iBZltidxRUSqsCqYCJw7bArKg3QyOUIcbD7Xrlm+k6ZX2XDXs5wAyB7xP+Ax4ycMrtPFUgLqEkPdHl43uhp3nEcuvlUCeaD9gMuJ/h9VFE6qydR0T+1cOr0Mvwc4lTrj+7oO3lRutTUrTiD1CmqTuMYZ119MR/68H45KRDR1tZIxwTbC+qZy1kHXRkeA4SoctbFIXSmg9vdl1qL2+TGLEebzB26KJbUTV0GBj2ASYNBXUr4nY31ZSOpGd6UKTANVYwsQVuSE2qvwVABWtLwMYIsDZgoyJpFcT/u7IImFpjLfBb3Dl5pUIkzVhYlpa26W6oMAAAAAAAAEjzCCBIswggNzoAMCAQICEAkO6MXeW/pi0q4v9wl8SFcwDQYJKoZIhvcNAQELBQAwYTELMAkGA1UEBhMCVVMxFTATBgNVBAoTDERpZ2lDZXJ0IEluYzEZMBcGA1UECxMQd3d3LmRpZ2ljZXJ0LmNvbTEgMB4GA1UEAxMXRGlnaUNlcnQgR2xvYmFsIFJvb3QgRzIwHhcNMTcxMTAyMTIyNDI1WhcNMjcxMTAyMTIyNDI1WjBeMQswCQYDVQQGEwJVUzEVMBMGA1UEChMMRGlnaUNlcnQgSW5jMRkwFwYDVQQLExB3d3cuZGlnaWNlcnQuY29tMR0wGwYDVQQDExRUaGF3dGUgVExTIFJTQSBDQSBHMTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAMY54Jj4VXrQtG/6M22CXczgVANbDKIOO9N9HAD/j9twDVDfIK1xAi/DYQxBeBdUfbS9MGNJnMx2kdGu5WGp5cbcFqNbNrhp58g7OpjgrOunsNsN2BE6+k29eMYI6btYBhbQHnsGopDvRbnfIcRiU0sJ/MXjZHylVqQ9i+LxTd+hTYMXopSumhOMpIBgMzZaJE6eoTTiwGKQ8knSwDys7iUkOyQhGejvkgyssCHVy6DE56cbgShkhvPDVk6NwhwjhpkBAomtsqnTw44C6pxImDY8EC/LjKo/Kzr5TIL4gXBwO8bcvu/7mCzemUu1atfxf5VYVTn+Xo+o2XZgfObMxW0CAwEAAaOCAUAwggE8MB0GA1UdDgQWBBSljP4yzOsPLNQZxgi4ACSIXcPFtzAfBgNVHSMEGDAWgBROIlQgGJXm427mD/r6uRLtBhePOTAOBgNVHQ8BAf8EBAMCAYYwHQYDVR0lBBYwFAYIKwYBBQUHAwEGCCsGAQUFBwMCMBIGA1UdEwEB/wQIMAYBAf8CAQAwNAYIKwYBBQUHAQEEKDAmMCQGCCsGAQUFBzABhhhodHRwOi8vb2NzcC5kaWdpY2VydC5jb20wQgYDVR0fBDswOTA3oDWgM4YxaHR0cDovL2NybDMuZGlnaWNlcnQuY29tL0RpZ2lDZXJ0R2xvYmFsUm9vdEcyLmNybDA9BgNVHSAENjA0MDIGBFUdIAAwKjAoBggrBgEFBQcCARYcaHR0cHM6Ly93d3cuZGlnaWNlcnQuY29tL0NQUzANBgkqhkiG9w0BAQsFAAOCAQEAupJtCgOLE29lWKRAZv7i9hy/6WV/Qey/4WyeDXKAXu1eeqAp7e2niKPLDIwkVkwlmQ9XWNPtimTgtXSo/HdVV1wLZ48rQw7jz3+v4qMNJmEEzvxgIPzC8i+gg5txcwwfFbbB/2njID+qYA9V0Ks/oWg535yUygbsYXKZ8dwHW5Xrnv0Jz39YR2GvC/kb/D4uVIeFfRcBzn6YXTFzsYteDqprIk23OXDrPf7rpB/mFbLhXVk52uiFcNaofrRLch9ekb5ou6ZKsmWFCzjzCBO2r65Y1VQWbopMAEbWPLQlVej6fZd1XmoAam9n34KjSbdwtE2DWECPgVxtUdXAAZaJXWYKMiaRXE/7uyCJhaYy3wW9w5eaVCJM1YWJaWtuluqDAAAAAAAAA5IwggOOMIICdqADAgECAhADOvHmpxGpoLsoZLEdCfrlMA0GCSqGSIb3DQEBCwUAMGExCzAJBgNVBAYTAlVTMRUwEwYDVQQKEwxEaWdpQ2VydCBJbmMxGTAXBgNVBAsTEHd3dy5kaWdpY2VydC5jb20xIDAeBgNVBAMTF0RpZ2lDZXJ0IEdsb2JhbCBSb290IEcyMB4XDTEzMDgwMTEyMDAwMFoXDTM4MDExNTEyMDAwMFowYTELMAkGA1UEBhMCVVMxFTATBgNVBAoTDERpZ2lDZXJ0IEluYzEZMBcGA1UECxMQd3d3LmRpZ2ljZXJ0LmNvbTEgMB4GA1UEAxMXRGlnaUNlcnQgR2xvYmFsIFJvb3QgRzIwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQC7N8003HtrybJokK1Kdf9GuiEKCI31GVTJ+4jb867yOomRPHrmqwYaa8+sLeheCSREumKaftajqH7gVHUgBaxQt5xjGmww3NofGbHXHt791+DLlIM3ruwfQ07deyzSvS6lL+SpuK061JmktiXpm2sAYJJg/08hSRj3Z5CrYQacj/K66bTpkjJrtfNX6F0bzYwdq5UElUnzNS2W40lt3Xfj+0lLtKxVB6mPlbO0I7tMbUXw9qmylTC0/UxVjCdKVxR8gp3Nc5LTFkoGDIxQ0Y8eCb4XoeYhyv2D5RC8g6UKxGco9nMUFD1GdsOHFIkhNE2vD0UMpkmhurucxbEzgymFAgMBAAGjQjBAMA8GA1UdEwEB/wQFMAMBAf8wDgYDVR0PAQH/BAQDAgGGMB0GA1UdDgQWBBROIlQgGJXm427mD/r6uRLtBhePOTANBgkqhkiG9w0BAQsFAAOCAQEAYGcolG8OSGPrMd3qZxjViX08xYtKf+m+2ysX37Bfc3cqMhM5gWdChCPyRWc17Ii/+I+wYQw0pK4gTITG2/g14XbZ36ZCu8dECIZ/NnQkWtpsDRRZNb3ySd22H8mzDUcqPZkvu1y7tdQg4ZlfU0YV22ib8PMw1T4x4o2EnuOK2tqWPjUTpV/w+XBQcEdBEVcZTsCPrgbElRMXLxsln3XysY6ZoW8TsUFx/ogqyE8QIFXX8xRF5eBE9OqHlTKTDv5TRvosnf+LIrlL2QlFpN6kuJpY3Rt9Up+OWUOIgaSeJtVvrd0Nxjd97QOSG+V3X3buPI3EXVZbotlmbrM1N+UytgAAAAEAAAACaDIAAQAAAABIdGxzZmxhZ3MweDAwMDAwMDAwOmNzLmtha2FvLmNvbTo0NDNecGFydGl0aW9uS2V5PSUyOGh0dHBzJTJDa2FrYW8uY29tJTI5AAA= request-method GET response-head HTTP/2 200 OK
+date: Tue, 03 Jun 2025 08:32:12 GMT
+content-type: text/javascript
+content-length: 19211
+content-security-policy: frame-ancestors https://www.daum.net;
+vary: Origin, Access-Control-Request-Method, Access-Control-Request-Headers
+last-modified: Thu, 29 May 2025 03:37:18 GMT
+cache-control: max-age=31536000
+etag: W/"e8eeacd4d4fb7db01d893d5dae7a2ed1"
+accept-ranges: bytes
+strict-transport-security: max-age=31536000; includeSubDomains
+X-Firefox-Spdy: h2
+ original-response-headers date: Tue, 03 Jun 2025 08:32:12 GMT
+content-type: text/javascript
+content-length: 19211
+content-security-policy: frame-ancestors https://www.daum.net;
+vary: Origin
+vary: Access-Control-Request-Method
+vary: Access-Control-Request-Headers
+last-modified: Thu, 29 May 2025 03:37:18 GMT
+cache-control: max-age=31536000
+etag: W/"e8eeacd4d4fb7db01d893d5dae7a2ed1"
+accept-ranges: bytes
+strict-transport-security: max-age=31536000; includeSubDomains
+X-Firefox-Spdy: h2
+ ctid 2 uncompressed-len 0 net-response-time-onstart 492 net-response-time-onstop 493   K

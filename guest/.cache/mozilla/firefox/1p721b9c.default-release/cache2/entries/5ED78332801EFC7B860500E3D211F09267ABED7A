@@ -1,0 +1,214 @@
+//섹션
+class TiaraSectionItem {
+    constructor(section) {
+        this.section = section;
+    }
+}
+
+const TiaraSection = {
+    MAIN: new TiaraSectionItem('메인'),
+    NOTICE: new TiaraSectionItem('공지사항'),
+    MY_QNA: new TiaraSectionItem('내문의내역'),
+    HIDDEN: new TiaraSectionItem('히든페이지'),
+    SEARCH: new TiaraSectionItem('통합검색'),
+    SERVICE_SEARCH: new TiaraSectionItem('서비스검색'),
+    SERVICE_ALL: new TiaraSectionItem('서비스_전체보기'),
+    REQUEST_COMP: new TiaraSectionItem('문의하기_완료'),
+};
+
+// 페이지
+class TiaraPageItem {
+    constructor(page, track) {
+        this.page = page;
+        this.track = this.getEnterWord(track);
+    }
+
+    getEnterWord(track) {
+        return `${track}_보기`;
+    }
+}
+
+const TiaraPage = {
+    MAIN: new TiaraPageItem('MAIN', '메인'),
+    SEARCH: new TiaraPageItem('SEARCH', '검색'),
+    SERVICE_SEARCH: new TiaraPageItem('SERVICE_SEARCH', '검색'),
+    SERVICE_TOP: new TiaraPageItem('SERVICE_TOP', '서비스_탑'),
+    SERVICE_ALL: new TiaraPageItem('SERVICE_ALL', '서비스_전체보기'),
+    HELP_LIST: new TiaraPageItem('HELP_LIST', '도움말_목록'),
+    HELP_CONTENT: new TiaraPageItem('HELP_CONTENT', '도움말_콘텐츠'),
+    REQUEST: new TiaraPageItem('REQUEST', '문의하기'),
+    REQUEST_COMP: new TiaraPageItem('REQUEST_COMP', '문의하기_완료'),
+    NOTICE: new TiaraPageItem('NOTICE', '공지사항'),
+    MY_QNA: new TiaraPageItem('MY_QNA', '내문의내역'),
+
+    // 히든페이지
+    ACCOUNT_THEFT_REQUESTS: new TiaraPageItem('ACCOUNT_THEFT_REQUESTS', '계정_도용신고'),
+    ACCOUNT_RESTRICTED_REQUESTS: new TiaraPageItem('ACCOUNT_RESTRICTED_REQUESTS', '톡_이용제한_이의신청'),
+    VONIN_CERT: new TiaraPageItem('VONIN_CERT', '계정_본인확인'),
+    EMOTICON_VONIN_CERT: new TiaraPageItem('EMOTICON_VONIN_CERT', '이모티콘_본인확인'),
+    DELETE_ACCOUNT: new TiaraPageItem('DELETE_ACCOUNT', '톡_즉시탈퇴'),
+    CONFLICT: new TiaraPageItem('CONFLICT', '전자상거래_피해구제신청_대행접수'),
+
+    // request html 의 커스텀 페이지
+    ALREADY_JOINED_REQUESTS: new TiaraPageItem('ALREADY_JOINED_REQUESTS', '계정_내계정이_아님'),
+    EMAIL_THEFT_REQUESTS: new TiaraPageItem('EMAIL_THEFT_REQUESTS', '계정_요청하지않은메일수신'),
+    DEL_REFUND: new TiaraPageItem('DEL_REFUND', '계정_탈퇴환불'),
+    EXTORT_IMPERSONATION_REQUESTS: new TiaraPageItem('EXTORT_IMPERSONATION_REQUESTS', '톡_금전요구사칭'),
+    LOCATION_TERM_REQUESTS: new TiaraPageItem('LOCATION_TERM_REQUESTS', '개인정보_위치정보'),
+    BILLING_SERVICE_REQUESTS: new TiaraPageItem('BILLING_SERVICE_REQUESTS', '결제_통신과금문의'),
+    BILLING_BUYER_INFO_REQUESTS: new TiaraPageItem('BILLING_BUYER_INFO_REQUESTS', '결제_구매자정보요청'),
+    ANTI_MONEY_LAUNDERING: new TiaraPageItem('ANTI_MONEY_LAUNDERING', '자금세탁방지'),
+    REPORT_ILLEGAL_FILMING: new TiaraPageItem('REPORT_ILLEGAL_FILMING',' 불법촬영물_유통_신고'),
+    FAIL_INAPP_SUBSCRIBE_PAYMENT: new TiaraPageItem('FAIL_INAPP_SUBSCRIBE_PAYMENT', '인앱_결제_구독_실패'),
+    PROTECT_OPENCHAT_U14_GUARDIAN: new TiaraPageItem('PROTECT_OPENCHAT_U14_GUARDIAN', '미성년자_보호조치_보호자'),
+    PROTECT_OPENCHAT_O14_SELF: new TiaraPageItem('PROTECT_OPENCHAT_O14_SELF', '미성년자_보호조치_14세_본인')
+};
+
+//레이어
+class TiaraLayerItem {
+    constructor(layer) {
+        this.layer = layer;
+    }
+}
+
+const TiaraLayer = {
+    NOTICE: new TiaraLayerItem('공지사항'),
+    VONIN: new TiaraLayerItem('본인인증'),
+    RELATION_HELP: new TiaraLayerItem('연관도움말'),
+    SERVICE_ICON: new TiaraLayerItem('서비스_아이콘'),
+    CATEGORY_ICON: new TiaraLayerItem('카테고리_아이콘'),
+    DEVICE_ICON: new TiaraLayerItem('디바이스_아이콘'),
+    HELP_LIST: new TiaraLayerItem('도움말_목록'),
+    MAIL_REQUEST: new TiaraLayerItem('메일문의하기'),
+    REQUEST: new TiaraLayerItem('문의하기'),
+    RCMD_KEYWORD: new TiaraLayerItem('추천키워드'),
+    GNB: new TiaraLayerItem('gnb'),
+    FREQUENCY_QUESTION: new TiaraLayerItem('자주_묻는_질문'),
+    CATEGORY: new TiaraLayerItem('카테고리'),
+    DEVICE: new TiaraLayerItem('디바이스'),
+    HELPS: new TiaraLayerItem('도움말'),
+    SERVICE_CS: new TiaraLayerItem('서비스별_고객센터'),
+    MY_QNA: new TiaraLayerItem('내문의내역_레이어'),
+    FOOTER: new TiaraLayerItem('푸터'),
+    CLEAN_CENTER: new TiaraLayerItem('카카오_신고센터_바로가기'),
+    FIRST_DEPTH_CATEGORY: new TiaraLayerItem('1뎁스_카테고리'),
+    SECOND_DEPTH_CATEGORY: new TiaraLayerItem('2뎁스_카테고리'),
+    THIRD_DEPTH_CATEGORY: new TiaraLayerItem('3뎁스_카테고리'),
+    GO_SEARCH_ALL: new TiaraLayerItem('통합검색_결과보기'),
+
+};
+
+//이벤트
+class TiaraEventItem {
+    constructor(event) {
+        this.event = event;
+        this.track = this.getClickWord(event);
+    }
+
+    getClickWord() {
+        return `${this.event}_클릭`;
+    }
+}
+
+const TiaraEvent = {
+    VONIN_FAIL: new TiaraEventItem('본인실패'),
+    VONIN_SUCCESS: new TiaraEventItem('본인성공'),
+    ACCOUNT_DEACTIVE_SUCCESS: new TiaraEventItem('계정_탈퇴_성공'),
+    ACCOUNT_DEACTIVE_FAIL: new TiaraEventItem('계정_탈퇴_실패'),
+    RELATION_HELP: new TiaraEventItem('연관도움말'),
+    REQUEST: new TiaraEventItem('문의하기'),
+    REQUEST_SUCCESS: new TiaraEventItem('문의_접수_성공'),
+    SERVICE_ICON: new TiaraEventItem('서비스_아이콘'),
+    FIRST_DEPTH_CATEGORY: new TiaraEventItem('1뎁스_카테고리'),
+    SECOND_DEPTH_CATEGORY: new TiaraEventItem('2뎁스_카테고리'),
+    THIRD_DEPTH_CATEGORY: new TiaraEventItem('3뎁스_카테고리'),
+    HELP_LIST: new TiaraEventItem('도움말_목록'),
+    MAIL_REQUEST: new TiaraEventItem('메일문의하기'),
+    RCMD_KEYWORD: new TiaraEventItem('추천키워드'),
+    LOGIN: new TiaraEventItem('로그인'),
+    LOGOUT: new TiaraEventItem('로그아웃'),
+    MY_QNA: new TiaraEventItem('내문의내역'),
+    FREQUENCY_QUESTION: new TiaraEventItem('자주_묻는_질문'),
+    TAB: new TiaraEventItem('탭'),
+    SERVICE: new TiaraEventItem('서비스'),
+    SERVICE_ALL: new TiaraEventItem('서비스_전체보기'),
+    NOTICE_ALL: new TiaraEventItem('공지사항_전체보기'),
+    NOTICE: new TiaraEventItem('공지사항'),
+    QUESTION: new TiaraEventItem('질문'),
+    TAG: new TiaraEventItem('태그'),
+    QUESTION_LIST: new TiaraEventItem('문의_목록'),
+    ARS_DETAIL: new TiaraEventItem('ARS_상세보기_버튼클릭'),
+    CLEAN_CENTER: new TiaraEventItem('카카오_신고센터_바로가기'),
+    CI_LOGO: new TiaraEventItem('CI_로고_아이콘'),
+    SERVICE_LOGO: new TiaraEventItem('서비스_아이콘'),
+    SEARCH: new TiaraEventItem('검색'),
+    GO_SEARCH_ALL: new TiaraEventItem('통합검색_결과_보기'),
+    THEFT_REPORT_SMS_CERT: new TiaraEventItem('SMS_인증_후_신고하기'),
+};
+
+class TiaraSearchTypeItem {
+    constructor(type) {
+        this.type = type;
+    }
+}
+
+const TiaraSearchType = {
+    KEYWORD: new TiaraSearchTypeItem('keyword'),
+    SUGGEST: new TiaraSearchTypeItem('suggest'),
+    RECOMMEND: new TiaraSearchTypeItem('recommend'),
+}
+
+//actionKind
+class TiaraActionKindItem {
+    constructor(actionKind) {
+        this.actionKind = actionKind;
+    }
+}
+
+const TiaraActionKind = {
+    CLICK_CONTENT: new TiaraActionKindItem('ClickContent'),
+    VIEW_CONTENT: new TiaraActionKindItem('ViewContent'),
+    VIEW_SEARCH_RESULTS: new TiaraActionKindItem('ViewSearchResults'),
+    SEARCH: new TiaraActionKindItem('Search'),
+}
+
+// meta (페이지, 이벤트)
+class TiaraMetaItem {
+    constructor(type, name) {
+        this.type = type;
+        this.name = name;
+    }
+}
+
+const TiaraMeta = {
+    HELPS_LIST: new TiaraMetaItem('help_list', '도움말_목록'),
+    HELPS: new TiaraMetaItem('helps_id', '도움말'),
+    NOTICE: new TiaraMetaItem('notice_id', '공지사항'),
+    SEARCH: new TiaraMetaItem('search', '검색'),
+    REQUEST: new TiaraMetaItem('request', '문의하기'),
+}Ba�C      h>�h>�HA�zj�   {    O^partitionKey=%28https%2Ckakao.com%29,:https://cs.kakao.com/js/68439ee265a067df4e1a034061c4be54/common/tiara/tiara.enum.js necko:classified 1 strongly-framed 1 security-info FnhllAKWRHGAlo+ESXykKAAAAAAAAAAAwAAAAAAAAEaphjojH6pBabDSgSnsfLHeAAAAAgAAAAAAAAAAAAAAAAAAAAEAOQFmCjImkVxP+7sgiYWmMt8FvcOXmlQiTNWFiWlrbpbqgwAAAAAAAAZgMIIGXDCCBUSgAwIBAgIQCcI+65G/+xGGjgArGV0WwTANBgkqhkiG9w0BAQsFADBeMQswCQYDVQQGEwJVUzEVMBMGA1UEChMMRGlnaUNlcnQgSW5jMRkwFwYDVQQLExB3d3cuZGlnaWNlcnQuY29tMR0wGwYDVQQDExRUaGF3dGUgVExTIFJTQSBDQSBHMTAeFw0yNDA5MDIwMDAwMDBaFw0yNTA5MjkyMzU5NTlaMF0xCzAJBgNVBAYTAktSMRAwDgYDVQQIEwdKZWp1LWRvMRAwDgYDVQQHEwdKZWp1LXNpMRQwEgYDVQQKEwtLYWthbyBDb3JwLjEUMBIGA1UEAwwLKi5rYWthby5jb20wggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQCUYrQCyt9RoTxsI9UGMPcKn2P6nhSrPDZgoWAeHMaxGL5Zegeej1jqMfmVHJofj2gVddzo0IgiAQNX8zciSfbRoZ0yswLpBah83FzAtUumVv+jUw3lNgJYiZ8JZD57mxAhr7sBjTbsNnWQwSQHHU4RwkaOUkIIpptgxly2RLQZfQGXszadKsQt6JQIN3SKWsYdwL7rvOOjTsuFkrkL8VD+O+BZ+Vygi8WoFA03FXqB3/ZozBPZ63GsCtMX8R/fIVHauYN8uon7NgdFv03bkyMEQRhTN4x4V9bZBI4tHuJaQQKqo0aXL19ajFcZfU31sg0VUhUlBdPxU4tymQGoxUulAgMBAAGjggMVMIIDETAfBgNVHSMEGDAWgBSljP4yzOsPLNQZxgi4ACSIXcPFtzAdBgNVHQ4EFgQULYHFPZeJYSS2GU5r3cP6GZKDFDAwIQYDVR0RBBowGIILKi5rYWthby5jb22CCWtha2FvLmNvbTA+BgNVHSAENzA1MDMGBmeBDAECAjApMCcGCCsGAQUFBwIBFhtodHRwOi8vd3d3LmRpZ2ljZXJ0LmNvbS9DUFMwDgYDVR0PAQH/BAQDAgWgMB0GA1UdJQQWMBQGCCsGAQUFBwMBBggrBgEFBQcDAjA7BgNVHR8ENDAyMDCgLqAshipodHRwOi8vY2RwLnRoYXd0ZS5jb20vVGhhd3RlVExTUlNBQ0FHMS5jcmwwcAYIKwYBBQUHAQEEZDBiMCQGCCsGAQUFBzABhhhodHRwOi8vc3RhdHVzLnRoYXd0ZS5jb20wOgYIKwYBBQUHMAKGLmh0dHA6Ly9jYWNlcnRzLnRoYXd0ZS5jb20vVGhhd3RlVExTUlNBQ0FHMS5jcnQwDAYDVR0TAQH/BAIwADCCAX4GCisGAQQB1nkCBAIEggFuBIIBagFoAHUA3dzKNJXX4RYF55Uy+sef+D0cUN/bADoUEnYKLKy7yCoAAAGRsBHz1wAABAMARjBEAiBf+r1MYrtGyKMdKL5Ki70uyLixh08hsKB84Z3GtGOnrgIgPvrKvoKO5lrHvPDuh6JSJj0hfGvCh/aAmlDHBtp+gs4AdgB9WR4S4XgqexxhZ3xe/fjQh1wUoE6VnrkDL9kOjC55uAAAAZGwEfPRAAAEAwBHMEUCIH72goc+J5aqWtdkIZgdkXQROOcfkLCUXEI0pe4NgsbEAiEAlOrZgTfQqloanUY+og7pQXmQ0visIswhNRUgRMR5Qy8AdwDm0jFjQHeMwRBBBtdxuc7B0kD2loSG+7qHMh39HjeOUAAAAZGwEfPyAAAEAwBIMEYCIQCVOTmU9r/GC6tYNZnjQvWbHIHIMbOtctHYCp861ZOKdAIhAI3rYocpxAuyPdUsTVRV4nUM4YT8Iirf/8YpFJwNdONZMA0GCSqGSIb3DQEBCwUAA4IBAQAGhp+PD+OOujkJlR9qn9l0N5L3+zCcIyjtgLz1SwIaSjeE7GkHs3YVEt7ZoRU/iBZltidxRUSqsCqYCJw7bArKg3QyOUIcbD7Xrlm+k6ZX2XDXs5wAyB7xP+Ax4ycMrtPFUgLqEkPdHl43uhp3nEcuvlUCeaD9gMuJ/h9VFE6qydR0T+1cOr0Mvwc4lTrj+7oO3lRutTUrTiD1CmqTuMYZ119MR/68H45KRDR1tZIxwTbC+qZy1kHXRkeA4SoctbFIXSmg9vdl1qL2+TGLEebzB26KJbUTV0GBj2ASYNBXUr4nY31ZSOpGd6UKTANVYwsQVuSE2qvwVABWtLwMYIsDwC8AAwAAAAAAAQEAAAAAAAAGeDI1NTE5AAAADlJTQS1QU1MtU0hBMjU2AANmCjImkVxP+7sgiYWmMt8FvcOXmlQiTNWFiWlrbpbqgwAAAAAAAAZgMIIGXDCCBUSgAwIBAgIQCcI+65G/+xGGjgArGV0WwTANBgkqhkiG9w0BAQsFADBeMQswCQYDVQQGEwJVUzEVMBMGA1UEChMMRGlnaUNlcnQgSW5jMRkwFwYDVQQLExB3d3cuZGlnaWNlcnQuY29tMR0wGwYDVQQDExRUaGF3dGUgVExTIFJTQSBDQSBHMTAeFw0yNDA5MDIwMDAwMDBaFw0yNTA5MjkyMzU5NTlaMF0xCzAJBgNVBAYTAktSMRAwDgYDVQQIEwdKZWp1LWRvMRAwDgYDVQQHEwdKZWp1LXNpMRQwEgYDVQQKEwtLYWthbyBDb3JwLjEUMBIGA1UEAwwLKi5rYWthby5jb20wggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQCUYrQCyt9RoTxsI9UGMPcKn2P6nhSrPDZgoWAeHMaxGL5Zegeej1jqMfmVHJofj2gVddzo0IgiAQNX8zciSfbRoZ0yswLpBah83FzAtUumVv+jUw3lNgJYiZ8JZD57mxAhr7sBjTbsNnWQwSQHHU4RwkaOUkIIpptgxly2RLQZfQGXszadKsQt6JQIN3SKWsYdwL7rvOOjTsuFkrkL8VD+O+BZ+Vygi8WoFA03FXqB3/ZozBPZ63GsCtMX8R/fIVHauYN8uon7NgdFv03bkyMEQRhTN4x4V9bZBI4tHuJaQQKqo0aXL19ajFcZfU31sg0VUhUlBdPxU4tymQGoxUulAgMBAAGjggMVMIIDETAfBgNVHSMEGDAWgBSljP4yzOsPLNQZxgi4ACSIXcPFtzAdBgNVHQ4EFgQULYHFPZeJYSS2GU5r3cP6GZKDFDAwIQYDVR0RBBowGIILKi5rYWthby5jb22CCWtha2FvLmNvbTA+BgNVHSAENzA1MDMGBmeBDAECAjApMCcGCCsGAQUFBwIBFhtodHRwOi8vd3d3LmRpZ2ljZXJ0LmNvbS9DUFMwDgYDVR0PAQH/BAQDAgWgMB0GA1UdJQQWMBQGCCsGAQUFBwMBBggrBgEFBQcDAjA7BgNVHR8ENDAyMDCgLqAshipodHRwOi8vY2RwLnRoYXd0ZS5jb20vVGhhd3RlVExTUlNBQ0FHMS5jcmwwcAYIKwYBBQUHAQEEZDBiMCQGCCsGAQUFBzABhhhodHRwOi8vc3RhdHVzLnRoYXd0ZS5jb20wOgYIKwYBBQUHMAKGLmh0dHA6Ly9jYWNlcnRzLnRoYXd0ZS5jb20vVGhhd3RlVExTUlNBQ0FHMS5jcnQwDAYDVR0TAQH/BAIwADCCAX4GCisGAQQB1nkCBAIEggFuBIIBagFoAHUA3dzKNJXX4RYF55Uy+sef+D0cUN/bADoUEnYKLKy7yCoAAAGRsBHz1wAABAMARjBEAiBf+r1MYrtGyKMdKL5Ki70uyLixh08hsKB84Z3GtGOnrgIgPvrKvoKO5lrHvPDuh6JSJj0hfGvCh/aAmlDHBtp+gs4AdgB9WR4S4XgqexxhZ3xe/fjQh1wUoE6VnrkDL9kOjC55uAAAAZGwEfPRAAAEAwBHMEUCIH72goc+J5aqWtdkIZgdkXQROOcfkLCUXEI0pe4NgsbEAiEAlOrZgTfQqloanUY+og7pQXmQ0visIswhNRUgRMR5Qy8AdwDm0jFjQHeMwRBBBtdxuc7B0kD2loSG+7qHMh39HjeOUAAAAZGwEfPyAAAEAwBIMEYCIQCVOTmU9r/GC6tYNZnjQvWbHIHIMbOtctHYCp861ZOKdAIhAI3rYocpxAuyPdUsTVRV4nUM4YT8Iirf/8YpFJwNdONZMA0GCSqGSIb3DQEBCwUAA4IBAQAGhp+PD+OOujkJlR9qn9l0N5L3+zCcIyjtgLz1SwIaSjeE7GkHs3YVEt7ZoRU/iBZltidxRUSqsCqYCJw7bArKg3QyOUIcbD7Xrlm+k6ZX2XDXs5wAyB7xP+Ax4ycMrtPFUgLqEkPdHl43uhp3nEcuvlUCeaD9gMuJ/h9VFE6qydR0T+1cOr0Mvwc4lTrj+7oO3lRutTUrTiD1CmqTuMYZ119MR/68H45KRDR1tZIxwTbC+qZy1kHXRkeA4SoctbFIXSmg9vdl1qL2+TGLEebzB26KJbUTV0GBj2ASYNBXUr4nY31ZSOpGd6UKTANVYwsQVuSE2qvwVABWtLwMYIsDZgoyJpFcT/u7IImFpjLfBb3Dl5pUIkzVhYlpa26W6oMAAAAAAAAEjzCCBIswggNzoAMCAQICEAkO6MXeW/pi0q4v9wl8SFcwDQYJKoZIhvcNAQELBQAwYTELMAkGA1UEBhMCVVMxFTATBgNVBAoTDERpZ2lDZXJ0IEluYzEZMBcGA1UECxMQd3d3LmRpZ2ljZXJ0LmNvbTEgMB4GA1UEAxMXRGlnaUNlcnQgR2xvYmFsIFJvb3QgRzIwHhcNMTcxMTAyMTIyNDI1WhcNMjcxMTAyMTIyNDI1WjBeMQswCQYDVQQGEwJVUzEVMBMGA1UEChMMRGlnaUNlcnQgSW5jMRkwFwYDVQQLExB3d3cuZGlnaWNlcnQuY29tMR0wGwYDVQQDExRUaGF3dGUgVExTIFJTQSBDQSBHMTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAMY54Jj4VXrQtG/6M22CXczgVANbDKIOO9N9HAD/j9twDVDfIK1xAi/DYQxBeBdUfbS9MGNJnMx2kdGu5WGp5cbcFqNbNrhp58g7OpjgrOunsNsN2BE6+k29eMYI6btYBhbQHnsGopDvRbnfIcRiU0sJ/MXjZHylVqQ9i+LxTd+hTYMXopSumhOMpIBgMzZaJE6eoTTiwGKQ8knSwDys7iUkOyQhGejvkgyssCHVy6DE56cbgShkhvPDVk6NwhwjhpkBAomtsqnTw44C6pxImDY8EC/LjKo/Kzr5TIL4gXBwO8bcvu/7mCzemUu1atfxf5VYVTn+Xo+o2XZgfObMxW0CAwEAAaOCAUAwggE8MB0GA1UdDgQWBBSljP4yzOsPLNQZxgi4ACSIXcPFtzAfBgNVHSMEGDAWgBROIlQgGJXm427mD/r6uRLtBhePOTAOBgNVHQ8BAf8EBAMCAYYwHQYDVR0lBBYwFAYIKwYBBQUHAwEGCCsGAQUFBwMCMBIGA1UdEwEB/wQIMAYBAf8CAQAwNAYIKwYBBQUHAQEEKDAmMCQGCCsGAQUFBzABhhhodHRwOi8vb2NzcC5kaWdpY2VydC5jb20wQgYDVR0fBDswOTA3oDWgM4YxaHR0cDovL2NybDMuZGlnaWNlcnQuY29tL0RpZ2lDZXJ0R2xvYmFsUm9vdEcyLmNybDA9BgNVHSAENjA0MDIGBFUdIAAwKjAoBggrBgEFBQcCARYcaHR0cHM6Ly93d3cuZGlnaWNlcnQuY29tL0NQUzANBgkqhkiG9w0BAQsFAAOCAQEAupJtCgOLE29lWKRAZv7i9hy/6WV/Qey/4WyeDXKAXu1eeqAp7e2niKPLDIwkVkwlmQ9XWNPtimTgtXSo/HdVV1wLZ48rQw7jz3+v4qMNJmEEzvxgIPzC8i+gg5txcwwfFbbB/2njID+qYA9V0Ks/oWg535yUygbsYXKZ8dwHW5Xrnv0Jz39YR2GvC/kb/D4uVIeFfRcBzn6YXTFzsYteDqprIk23OXDrPf7rpB/mFbLhXVk52uiFcNaofrRLch9ekb5ou6ZKsmWFCzjzCBO2r65Y1VQWbopMAEbWPLQlVej6fZd1XmoAam9n34KjSbdwtE2DWECPgVxtUdXAAZaJXWYKMiaRXE/7uyCJhaYy3wW9w5eaVCJM1YWJaWtuluqDAAAAAAAAA5IwggOOMIICdqADAgECAhADOvHmpxGpoLsoZLEdCfrlMA0GCSqGSIb3DQEBCwUAMGExCzAJBgNVBAYTAlVTMRUwEwYDVQQKEwxEaWdpQ2VydCBJbmMxGTAXBgNVBAsTEHd3dy5kaWdpY2VydC5jb20xIDAeBgNVBAMTF0RpZ2lDZXJ0IEdsb2JhbCBSb290IEcyMB4XDTEzMDgwMTEyMDAwMFoXDTM4MDExNTEyMDAwMFowYTELMAkGA1UEBhMCVVMxFTATBgNVBAoTDERpZ2lDZXJ0IEluYzEZMBcGA1UECxMQd3d3LmRpZ2ljZXJ0LmNvbTEgMB4GA1UEAxMXRGlnaUNlcnQgR2xvYmFsIFJvb3QgRzIwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQC7N8003HtrybJokK1Kdf9GuiEKCI31GVTJ+4jb867yOomRPHrmqwYaa8+sLeheCSREumKaftajqH7gVHUgBaxQt5xjGmww3NofGbHXHt791+DLlIM3ruwfQ07deyzSvS6lL+SpuK061JmktiXpm2sAYJJg/08hSRj3Z5CrYQacj/K66bTpkjJrtfNX6F0bzYwdq5UElUnzNS2W40lt3Xfj+0lLtKxVB6mPlbO0I7tMbUXw9qmylTC0/UxVjCdKVxR8gp3Nc5LTFkoGDIxQ0Y8eCb4XoeYhyv2D5RC8g6UKxGco9nMUFD1GdsOHFIkhNE2vD0UMpkmhurucxbEzgymFAgMBAAGjQjBAMA8GA1UdEwEB/wQFMAMBAf8wDgYDVR0PAQH/BAQDAgGGMB0GA1UdDgQWBBROIlQgGJXm427mD/r6uRLtBhePOTANBgkqhkiG9w0BAQsFAAOCAQEAYGcolG8OSGPrMd3qZxjViX08xYtKf+m+2ysX37Bfc3cqMhM5gWdChCPyRWc17Ii/+I+wYQw0pK4gTITG2/g14XbZ36ZCu8dECIZ/NnQkWtpsDRRZNb3ySd22H8mzDUcqPZkvu1y7tdQg4ZlfU0YV22ib8PMw1T4x4o2EnuOK2tqWPjUTpV/w+XBQcEdBEVcZTsCPrgbElRMXLxsln3XysY6ZoW8TsUFx/ogqyE8QIFXX8xRF5eBE9OqHlTKTDv5TRvosnf+LIrlL2QlFpN6kuJpY3Rt9Up+OWUOIgaSeJtVvrd0Nxjd97QOSG+V3X3buPI3EXVZbotlmbrM1N+UytgAAAAEAAAACaDIAAQAAAABIdGxzZmxhZ3MweDAwMDAwMDAwOmNzLmtha2FvLmNvbTo0NDNecGFydGl0aW9uS2V5PSUyOGh0dHBzJTJDa2FrYW8uY29tJTI5AAA= request-method GET response-head HTTP/2 200 OK
+date: Tue, 03 Jun 2025 08:32:12 GMT
+content-type: text/javascript
+content-length: 8144
+content-security-policy: frame-ancestors https://www.daum.net;
+vary: Origin, Access-Control-Request-Method, Access-Control-Request-Headers
+last-modified: Thu, 29 May 2025 03:37:18 GMT
+cache-control: max-age=31536000
+etag: W/"68439ee265a067df4e1a034061c4be54"
+accept-ranges: bytes
+strict-transport-security: max-age=31536000; includeSubDomains
+X-Firefox-Spdy: h2
+ original-response-headers date: Tue, 03 Jun 2025 08:32:12 GMT
+content-type: text/javascript
+content-length: 8144
+content-security-policy: frame-ancestors https://www.daum.net;
+vary: Origin
+vary: Access-Control-Request-Method
+vary: Access-Control-Request-Headers
+last-modified: Thu, 29 May 2025 03:37:18 GMT
+cache-control: max-age=31536000
+etag: W/"68439ee265a067df4e1a034061c4be54"
+accept-ranges: bytes
+strict-transport-security: max-age=31536000; includeSubDomains
+X-Firefox-Spdy: h2
+ ctid 2 uncompressed-len 0 net-response-time-onstart 473 net-response-time-onstop 477   �

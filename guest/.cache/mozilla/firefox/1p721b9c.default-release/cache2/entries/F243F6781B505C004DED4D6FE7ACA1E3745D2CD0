@@ -1,0 +1,481 @@
+will_paginate.previous_page=\uC774\uC804 \uD398\uC774\uC9C0\uB85C \uC774\uB3D9
+will_paginate.next_page=\uB2E4\uC74C \uD398\uC774\uC9C0\uB85C \uC774\uB3D9
+will_paginate.first_page=\uB9E8 \uCCAB \uD398\uC774\uC9C0\uB85C \uC774\uB3D9
+will_paginate.last_page=\uB9C8\uC9C0\uB9C9 \uD398\uC774\uC9C0\uB85C \uC774\uB3D9
+will_paginate.screen_out=\uD604\uC7AC\uD398\uC774\uC9C0
+will_paginate.page_gap=&hellip;
+will_paginate.return_previous_page=\uC774\uC804 \uD398\uC774\uC9C0\uB85C \uB3CC\uC544\uAC00\uAE30
+
+cskakaocom.japancorp_site=\uCE74\uCE74\uC624 Japan \uBC95\uC778 \uC0AC\uC774\uD2B8
+cskakaocom.title=\uCE74\uCE74\uC624 \uACE0\uAC1D\uC13C\uD130
+cskakaocom.head_title=kakao \uACE0\uAC1D\uC13C\uD130
+cskakaocom.meta_title=\uACE0\uAC1D\uC13C\uD130
+cskakaocom.title_talk=\uACE0\uAC1D\uC13C\uD130
+cskakaocom.title_search=\uB3C4\uC6C0\uB9D0 \uAC80\uC0C9\uACB0\uACFC
+cskakaocom.title_request=\uBB38\uC758\uD558\uAE30 | kakao \uACE0\uAC1D\uC13C\uD130
+cskakaocom.title_helps=| kakao \uACE0\uAC1D\uC13C\uD130
+cskakaocom.description=\uCE74\uCE74\uC624 \uACE0\uAC1D\uC13C\uD130\uB97C \uD1B5\uD574 \uAC01 \uC11C\uBE44\uC2A4 \uB3C4\uC6C0\uB9D0\uC744 \uD655\uC778\uD574 \uBCF4\uC138\uC694.
+cskakaocom.url=cs.kakao.com
+cskakaocom.shortcut_to_main=\uBCF8\uBB38 \uBC14\uB85C\uAC00\uAE30
+cskakaocom.shortcut_to_menu=\uBA54\uB274 \uBC14\uB85C\uAC00\uAE30
+cskakaocom.meta_img=/img/cskakaocom/pc/meta.png
+cskakaocom.btn_login=\uB85C\uADF8\uC778
+cskakaocom.btn_logout=\uB85C\uADF8\uC544\uC6C3
+cskakaocom.btn_mypage=\uB0B4 \uBB38\uC758\uB0B4\uC5ED
+cskakaocom.home_content=\uC548\uB155\uD558\uC138\uC694.<br/> \uBB34\uC5C7\uC744 \uB3C4\uC640\uB4DC\uB9B4\uAE4C\uC694?
+cskakaocom.service_title=\uBB34\uC5C7\uC744 \uB3C4\uC640\uB4DC\uB9B4\uAE4C\uC694?
+cskakaocom.talk_title=\uCE74\uCE74\uC624\uD1A1\uC785\uB2C8\uB2E4.<br> \uBB34\uC5C7\uC744 \uB3C4\uC640\uB4DC\uB9B4\uAE4C\uC694?
+cskakaocom.service_all=\uC11C\uBE44\uC2A4 \uC804\uCCB4\uBCF4\uAE30
+cskakaocom.service_all2=\uC11C\uBE44\uC2A4 \uC804\uCCB4
+cskakaocom.languages.language=\uD55C\uAD6D\uC5B4
+cskakaocom.languages.ko=\uD55C\uAD6D\uC5B4
+cskakaocom.languages.en=English
+cskakaocom.error.home=\uD648\uC73C\uB85C
+cskakaocom.error.404.message=\uD398\uC774\uC9C0\uB97C \uCC3E\uC744 \uC218 \uC5C6\uC2B5\uB2C8\uB2E4.
+cskakaocom.error.404.message_detail=\uC8FC\uC18C\uAC00 \uC798\uBABB\uB418\uC5C8\uAC70\uB098 \uD398\uC774\uC9C0\uAC00 \uC0AD\uC81C\uB418\uC5C8\uC744 \uC218 \uC788\uC2B5\uB2C8\uB2E4.<br>\uACE0\uAC1D\uC13C\uD130 \uD648\uC73C\uB85C \uC624\uC154\uC11C \uB3C4\uC6C0\uC774 \uD544\uC694\uD55C \uC11C\uBE44\uC2A4\uB97C \uCC3E\uC544\uBCF4\uC138\uC694.
+cskakaocom.error.500.message=\uC811\uC18D\uC774 \uC6D0\uD65C\uD558\uC9C0 \uC54A\uC2B5\uB2C8\uB2E4.
+cskakaocom.error.500.message_detail=\uD604\uC7AC \uC11C\uBC84\uC640\uC758 \uC811\uC18D\uC774 \uC6D0\uD65C\uD558\uC9C0 \uC54A\uC2B5\uB2C8\uB2E4.<br>\uC7A0\uC2DC \uD6C4 \uB2E4\uC2DC \uC2DC\uB3C4\uD574 \uC8FC\uC138\uC694.
+cskakaocom.error.system_maintenance=\uC2DC\uC2A4\uD15C \uC810\uAC80 \uC911\uC785\uB2C8\uB2E4.
+cskakaocom.error.system_maintenance.message_detail=<br>\uC548\uB155\uD558\uC138\uC694. \uCE74\uCE74\uC624 \uACE0\uAC1D\uC13C\uD130\uC785\uB2C8\uB2E4.<br><br>\uC548\uC815\uC801\uC778 \uC2DC\uC2A4\uD15C \uC6B4\uC601\uC744 \uC704\uD574<br>\uACE0\uAC1D\uC13C\uD130 \uC2DC\uC2A4\uD15C \uC810\uAC80\uC774 \uC9C4\uD589\uB420 \uC608\uC815\uC785\uB2C8\uB2E4.<br>\
+\uC810\uAC80 \uC911\uC5D0\uB294 1:1 \uBB38\uC758 \uBC0F \uC0C1\uB2F4 \uC11C\uBE44\uC2A4 \uC774\uC6A9\uC774 \uBD88\uAC00\uB2A5\uD569\uB2C8\uB2E4.<br><br>\u2022 \uC791\uC5C5 \uC2DC\uAC04 : {0}<br>(\uC791\uC5C5 \uC9C4\uD589 \uC0C1\uD669\uC5D0 \uB530\uB77C \uC810\uAC80 \uC2DC\uAC04\uC774 \uB2E4\uC18C \uBCC0\uACBD\uB420 \uC218 \uC788\uC2B5\uB2C8\uB2E4.)<br>\u2022 \uC791\uC5C5 \uC601\uD5A5 : \uCE74\uCE74\uC624 \uACE0\uAC1D\uC13C\uD130 \uC6F9/\uC571 \uBB38\uC758\uD558\uAE30<br><br>\
+\uBCF4\uB2E4 \uBE60\uB974\uACE0 \uC548\uC815\uB41C \uC11C\uBE44\uC2A4 \uC81C\uACF5\uC744 \uC704\uD574 \uC9C4\uD589\uB418\uB294 \uC791\uC5C5\uC774\uB2C8 \uB108\uB978 \uB9C8\uC74C\uC73C\uB85C \uC591\uD574 \uBD80\uD0C1\uB4DC\uB9BD\uB2C8\uB2E4.<br><br>\uAC10\uC0AC\uD569\uB2C8\uB2E4.
+
+page_name.main_home=\uCE74\uCE74\uC624 \uACE0\uAC1D\uC13C\uD130 \uD648
+page_name.service_home=\uCE74\uCE74\uC624 \uACE0\uAC1D\uC13C\uD130 \uC11C\uBE44\uC2A4\uD648
+page_name.helps_detail_home=\uCE74\uCE74\uC624 \uACE0\uAC1D\uC13C\uD130 \uC0C1\uC138\uBDF0
+page_name.notice=\uC54C\uB9BC
+page_name.search=\uAC80\uC0C9 \uCC3D
+
+date.formats.default=%a, %d %b %Y %H:%M:%S %z
+date.formats.short=%d %b %H:%M
+date.formats.long=%B %d, %Y %H:%M
+date.formats.voice=%m\uC6D4 %d\uC77C
+page_title=\uCE74\uCE74\uC624 - \uC0C8\uB85C\uC6B4 \uC77C\uC0C1\uC744 \uC990\uAE30\uB2E4
+meta.description=\uCE74\uCE74\uC624 \uC11C\uBE44\uC2A4 \uC18C\uAC1C
+
+main.service_title=\uC11C\uBE44\uC2A4\uBCC4 \uACE0\uAC1D\uC13C\uD130
+suggest.recommended_keywords=\uCD94\uCC9C \uD0A4\uC6CC\uB4DC
+
+helps.help_counsel=\uB3C4\uC6C0\uB9D0\uC744 \uD1B5\uD574<br> \uBB38\uC81C\uB97C \uD574\uACB0\uD558\uC9C0 \uBABB\uD558\uC168\uB098\uC694?
+helps.help_counsel_text=\uB3C4\uC6C0\uB9D0\uC744 \uD1B5\uD574 \uBB38\uC81C\uB97C \uD574\uACB0\uD558\uC9C0 \uBABB\uD558\uC168\uB098\uC694?
+helps.service_home_main=\uC11C\uBE44\uC2A4\uD648.\uBCF8\uBB38
+helps.help_detail_main=\uC0C1\uC138\uBDF0.\uBCF8\uBB38
+helps.helpful_title=\uC790\uC8FC \uBB3B\uB294 \uC9C8\uBB38
+helps.category_title=\uCE74\uD14C\uACE0\uB9AC\uBCC4\uB85C \uCC3E\uC544\uBCF4\uC138\uC694
+helps.more=\uB354\uBCF4\uAE30
+helps.more_search=\uB3C4\uC6C0\uB9D0 \uB354\uBCF4\uAE30
+helps.help_other=\uB2E4\uB978 \uB3C4\uC6C0\uB9D0\uC744 \uCC3E\uACE0 \uACC4\uC2E0\uAC00\uC694?
+helps.title_search=\uAC80\uC0C9\uACB0\uACFC
+helps.search_placeholder=\uC11C\uBE44\uC2A4\uBA85\uACFC \uD568\uAED8 \uAC80\uC0C9\uD574 \uBCF4\uC138\uC694.
+helps.more_search_result=\uC6D0\uD558\uB294 \uAC80\uC0C9\uACB0\uACFC\uAC00 \uC5C6\uB2E4\uBA74 <br>\uD1B5\uD569\uAC80\uC0C9 \uACB0\uACFC\uB97C \uD655\uC778\uD574 \uBCF4\uC138\uC694.
+helps.s_home_search_placeholder=\uAD81\uAE08\uD558\uC2E0 \uC810\uC744 \uAC80\uC0C9\uD574 \uBCF4\uC138\uC694.
+helps.service_category=\uC11C\uBE44\uC2A4 \uCE74\uD14C\uACE0\uB9AC
+helps.non_exist_help=\uC0AD\uC81C\uB41C \uB3C4\uC6C0\uB9D0\uC785\uB2C8\uB2E4.
+
+requests.guide_title=\u203B \uBB38\uC758 \uC804 \uC548\uB0B4\uB97C \uAF2D! \uD655\uC778\uD574 \uC8FC\uC138\uC694.
+requests.more=\uB354\uBCF4\uAE30
+requests.file_uploading=\uD30C\uC77C\uC744 \uC5C5\uB85C\uB4DC\uC911\uC785\uB2C8\uB2E4.
+requests.file_error=\uD30C\uC77C \uC5C5\uB85C\uB4DC \uC911 \uC5D0\uB7EC \uBC1C\uC0DD
+requests.agree_valid=\uAC1C\uC778\uC815\uBCF4\uC218\uC9D1\u00B7\uC774\uC6A9\uC5D0 \uB3D9\uC758\uD574 \uC8FC\uC138\uC694
+requests.contents_empty=\uBB38\uC758\uD558\uC2E4 \uB0B4\uC6A9\uC744 \uC785\uB825\uD574 \uC8FC\uC138\uC694
+requests.ok_btn=\uD655\uC778
+requests.account_email=\uCE74\uCE74\uC624\uACC4\uC815\uC5D0 \uB4F1\uB85D\uB41C \uC774\uBA54\uC77C \uC8FC\uC18C
+requests.account_email_html=\uCE74\uCE74\uC624\uACC4\uC815\uC5D0 \uB4F1\uB85D\uB41C<br />\uC774\uBA54\uC77C \uC8FC\uC18C
+requests.account_email_desc=\uC9C1\uC811 \uAC00\uC785\uD55C \uC801 \uC5C6\uB294\uB370, \uC774\uBBF8 \uB4F1\uB85D\uB41C \uCE74\uCE74\uC624\uACC4\uC815\uC758 \uC774\uBA54\uC77C \uC8FC\uC18C\uB97C \uC785\uB825\uD574 \uC8FC\uC138\uC694.
+requests.country_search=\uAD6D\uAC00 \uAC80\uC0C9(\uAD6D\uAC00\uBC88\uD638, \uAD6D\uAC00\uBA85)
+requests.receive_theft_mail=\uC694\uCCAD\uD558\uC9C0 \uC54A\uC740 \uBA54\uC77C\uC744 \uC218\uC2E0\uD55C \uC774\uBA54\uC77C \uC8FC\uC18C\uB97C \uC785\uB825\uD574 \uC8FC\uC138\uC694.
+requests.title=\uAF2D \uD655\uC778\uD574 \uC8FC\uC138\uC694!
+requests.footer_guide=\uCD94\uAC00 \uC548\uB0B4 \uC0AC\uD56D
+requests.sms_btn=SMS \uC778\uC99D \uD6C4 \uC2E0\uACE0\uD558\uAE30
+requests.sms_desc_html=* \uC778\uC99D\uBC1B\uC740 \uBC88\uD638\uC640 \uACC4\uC815\uC758 \uC5F0\uAD00\uC131\uC774 \uD655\uC778\uB418\uC5B4\uC57C \uC2E0\uACE0\uAC00 \uAC00\uB2A5\uD569\uB2C8\uB2E4.<br />\uC778\uC99D\uC5D0 \uC9C0\uC18D\uC801\uC73C\uB85C \uC2E4\uD328\uD560 \uACBD\uC6B0 \uB3C4\uC6A9\uC2E0\uACE0\uD55C \uACC4\uC815\uC5D0 \uB85C\uADF8\uC778\uD588\uB358 \uBC88\uD638\uAC00 \uB9DE\uB294\uC9C0 \uD655\uC778\uD574 \uC8FC\uC138\uC694.
+requests.sms_phone=\uD734\uB300\uD3F0\uBC88\uD638
+requests.send_passcode=\uC778\uC99D\uBC88\uD638 \uBC1C\uC1A1
+requests.input_passcode=\uC778\uC99D\uBC88\uD638 \uC785\uB825
+requests.process_continue=\uC778\uC99D \uBC0F \uC2E0\uACE0\uD558\uAE30
+requests.kakao_account=\uCE74\uCE74\uC624\uACC4\uC815
+requests.select_service=\uC11C\uBE44\uC2A4\uB97C \uC120\uD0DD\uD558\uC138\uC694
+requests.select_category=\uCE74\uD14C\uACE0\uB9AC\uB97C \uC120\uD0DD\uD574 \uC8FC\uC138\uC694.
+requests.select_os=\uCE74\uD14C\uACE0\uB9AC\uB97C \uC120\uD0DD\uD558\uC138\uC694
+requests.email_input_placeholder=\uC785\uB825\uD574 \uC8FC\uC138\uC694.
+requests.category=\uCE74\uD14C\uACE0\uB9AC
+requests.important=\uAF2D<br/>\uD655\uC778\uD574<br/>\uC8FC\uC138\uC694
+requests.email=\uC774\uBA54\uC77C \uC8FC\uC18C
+requests.email_require=\uC774\uBA54\uC77C \uC8FC\uC18C *
+requests.email.input=\uC9C1\uC811 \uC785\uB825
+requests.response_email_desc=(\uC785\uB825\uD558\uC2E0 \uC774\uBA54\uC77C \uC8FC\uC18C\uB85C \uB2F5\uBCC0\uC774 \uBC1C\uC1A1 \uB428)
+requests.receive_mail_html=\uC5F0\uB77D\uBC1B\uC744<br />\uC774\uBA54\uC77C \uC8FC\uC18C *
+requests.receive_mail_2_html=\uC5F0\uB77D\uBC1B\uC744 \uC774\uBA54\uC77C \uC8FC\uC18C *
+requests.receive_phone_html=\uC5F0\uB77D\uBC1B\uC744<br />\uD734\uB300\uD3F0 \uBC88\uD638 *
+requests.report_phone_html=\uC2E0\uACE0\uD558\uB294<br />\uD734\uB300\uD3F0 \uBC88\uD638 *
+requests.report_desc=\uC2E0\uACE0\uD558\uB294 \uBC88\uD638/\uACC4\uC815\uACFC \uC5F0\uB77D\uBC1B\uC744 \uC804\uD654/\uC774\uBA54\uC77C\uC774 \uAC19\uC2B5\uB2C8\uB2E4.
+requests.report_accounts_stolen=\uACC4\uC815 \uB3C4\uC6A9 \uC2E0\uACE0 \uD558\uAE30
+requests.sympathies_report_accounts_stolen=\uB3C4\uC6A9 \uAC00\uB2A5\uC131 \uC5EC\uBD80
+requests.detail_report_accounts_stolen=\uACC4\uC815 \uB3C4\uC6A9 \uBB38\uC758\uD560 \uB0B4\uC6A9
+requests.span_desc1=\uAC11\uC790\uAE30 \uCE74\uCE74\uC624\uD1A1\uC774 \uD0C8\uD1F4\uB418\uC5C8\uB098\uC694?
+requests.span_desc2=\uACC4\uC815 \uAC70\uB798/\uC591\uB3C4\uB97C \uC2DC\uB3C4\uD55C \uC801 \uC788\uB098\uC694?
+requests.country=\uAD6D\uAC00\uBC88\uD638
+requests.phone=\uD734\uB300\uD3F0 \uBC88\uD638
+requests.phone_require=\uD734\uB300\uD3F0 \uBC88\uD638 *
+requests.phone_desc=(\uCE74\uCE74\uC624 \uC11C\uBE44\uC2A4 \uAC00\uC785 \uC2DC \uC785\uB825\uD55C \uD734\uB300\uD3F0 \uBC88\uD638 \uC785\uB825)
+requests.order_id =\uC8FC\uBB38 \uBC88\uD638
+requests.order_desc =\uC120\uBB3C\uD568 > \uAD6C\uB9E4\uB0B4\uC5ED \uC0C1\uC138\uBCF4\uAE30\uC758 \uC8FC\uBB38\uBC88\uD638 \uC22B\uC790 8\uC790\uB9AC\uB97C \uC785\uB825\uD574 \uC8FC\uC138\uC694.
+requests.subject_require=\uBB38\uC758 \uC81C\uBAA9 *
+requests.subject=\uBB38\uC758 \uC81C\uBAA9
+requests.subject_desc=\uC81C\uBAA9\uC744 \uC785\uB825\uD574 \uC8FC\uC138\uC694.({0}\uC790 \uC774\uB0B4)
+requests.subject_num=\uC785\uB825 \uAE00\uC790\uC218
+requests.contents_require=\uBB38\uC758 \uB0B4\uC6A9 *
+requests.contents=\uBB38\uC758 \uB0B4\uC6A9
+requests.contents_desc=\uB0B4\uC6A9\uC744 \uC785\uB825\uD574 \uC8FC\uC138\uC694.
+requests.attach_file=\uD30C\uC77C \uCCA8\uBD80
+requests.file_add_button=+ \uD30C\uC77C\uCCA8\uBD80
+requests.file_add_txt= \uCD94\uAC00
+requests.file_open=\uD30C\uC77C \uC5F4\uAE30
+requests.mobile_attach_file_button=\uD30C\uC77C \uCC3E\uAE30
+requests.mobile_file_add_button=+ \uD30C\uC77C\uCCA8\uBD80
+requests.desc_attach_html=\uCCA8\uBD80\uD30C\uC77C\uC740 \uCD5C\uB300 5\uAC1C, 30MB\uAE4C\uC9C0 \uB4F1\uB85D \uAC00\uB2A5\uD569\uB2C8\uB2E4.
+requests.desc_file_check=\uD604\uC7AC \uB4F1\uB85D \uB41C \uD30C\uC77C\uC6A9\uB7C9
+requests.allow_file_ext=.png, .jpg, zip \uB9CC \uAC00\uB2A5 (\uCD5C\uB300 5MB)
+requests.agree_type_1=\uC704 \uB0B4\uC6A9\uC5D0 \uB3D9\uC758\uD569\uB2C8\uB2E4.
+requests.question_category=\uBB38\uC758 \uBD84\uB958
+requests.question_category_require=\uBB38\uC758 \uBD84\uB958 *
+requests.question_template=\uBB38\uC758\uD558\uAE30 \uD3FC
+requests.use_of_personal_info=\uAC1C\uC778\uC815\uBCF4 \uC218\uC9D1\u00B7\uC774\uC6A9\uC5D0 \uB300\uD55C \uC548\uB0B4
+requests.required_agree_info=(\uD544\uC218) \uAC1C\uC778\uC815\uBCF4 \uC218\uC9D1\u00B7\uC774\uC6A9\uC5D0 \uB300\uD55C \uC548\uB0B4
+requests.required_agree_info_sub=\uC704 \uB3D9\uC758\uB97C \uAC70\uBD80\uD560 \uAD8C\uB9AC\uAC00 \uC788\uC73C\uBA70, \uB3D9\uC758\uB97C \uAC70\uBD80\uD558\uC2E4 \uACBD\uC6B0 \uBB38\uC758 \uCC98\uB9AC \uBC0F \uACB0\uACFC \uD68C\uC2E0\uC774 \uC81C\uD55C\uB429\uB2C8\uB2E4. \uC694\uAD6C\uD558\uC9C0 \uC54A\uC740 \uAC1C\uC778\uC815\uBCF4\uB294 \uC785\uB825\uD558\uC9C0 \uC54A\uB3C4\uB85D \uC8FC\uC758\uD574 \uC8FC\uC138\uC694.
+requests.optional_agree_info=(\uC120\uD0DD) \uAC1C\uC778\uC815\uBCF4 \uC218\uC9D1\u00B7\uC774\uC6A9\uC5D0 \uB300\uD55C \uC548\uB0B4
+requests.optional_agree_info_sub=\uC704 \uB3D9\uC758\uB97C \uAC70\uBD80 \uD560 \uAD8C\uB9AC\uAC00 \uC788\uC73C\uBA70, \uB3D9\uC758\uB97C \uAC70\uBD80\uD558\uC2E4 \uACBD\uC6B0 \uC9C4\uC704\uD655\uC778 \uB4F1\uC744 \uD1B5\uD55C \uBB38\uC758\uCC98\uB9AC \uBC0F \uACB0\uACFC \uD68C\uC2E0\uC774 \uC81C\uD55C\uB420 \uC218 \uC788\uC2B5\uB2C8\uB2E4. \uC694\uAD6C\uD558\uC9C0 \uC54A\uC740 \uAC1C\uC778\uC815\uBCF4\uB294 \uC785\uB825\uD558\uC9C0 \uC54A\uB3C4\uB85D \uC8FC\uC758\uD574 \uC8FC\uC138\uC694.
+requests.required_items=\uB294 \uC774\uC6A9\uC790 \uBB38\uC758\uB97C \uCC98\uB9AC\uD558\uAE30 \uC704\uD574 \uB2E4\uC74C\uACFC \uAC19\uC774 \uAC1C\uC778\uC815\uBCF4\uB97C \uC218\uC9D1 \uBC0F \uC774\uC6A9\uD558\uBA70, \uC774\uC6A9\uC790\uC758 \uAC1C\uC778\uC815\uBCF4\uB97C \uC548\uC804\uD558\uAC8C \uCDE8\uAE09\uD558\uB294\uB370 \uCD5C\uC120\uC744 \uB2E4\uD558\uACE0 \uC788\uC2B5\uB2C8\uB2E4.
+requests.required_items_collect_purpose=\uBB38\uC758\u30FB\uC694\uCCAD\u30FB\uBD88\uD3B8\uC0AC\uD56D \uD655\uC778 \uBC0F \uCC98\uB9AC\uACB0\uACFC \uD68C\uC2E0
+requests.required_items_html=<em class="emph_txt">\uD544\uC218 \uC218\uC9D1\u00B7\uC774\uC6A9 \uD56D\uBAA9</em><br />(\uBB38\uC758\uC811\uC218\uC640 \uCC98\uB9AC,\uD68C\uC2E0\uC744 \uC704\uD55C \uCD5C\uC18C\uD55C\uC758 \uAC1C\uC778\uC815\uBCF4\uC785\uB2C8\uB2E4. \uB3D9\uC758\uAC00 \uD544\uC694\uD569\uB2C8\uB2E4.)
+requests.required_default_item=\uC774\uBA54\uC77C \uC8FC\uC18C
+requests.required_items_type_1=\uC218\uC9D1\uD56D\uBAA9
+requests.required_items_type_2=\uC218\uC9D1\uBAA9\uC801
+requests.required_items_type_3=\uBCF4\uC720\uAE30\uAC04
+requests.required_items_type_4=\uC774\uBA54\uC77C \uC8FC\uC18C
+requests.required_items_td_1=\uACE0\uAC1D\uBB38\uC758 \uBC0F \uC0C1\uB2F4\uC694\uCCAD\uC5D0 \uB300\uD55C \uD68C\uC2E0, \uC0C1\uB2F4\uC744 \uC704\uD55C \uC11C\uBE44\uC2A4 \uC774\uC6A9\uAE30\uB85D \uC870\uD68C
+requests.required_items_td_1_html=\uACE0\uAC1D\uBB38\uC758 \uBC0F \uC0C1\uB2F4\uC694\uCCAD\uC5D0 \uB300\uD55C \uD68C\uC2E0,<br />\uC0C1\uB2F4\uC744 \uC704\uD55C \uC11C\uBE44\uC2A4 \uC774\uC6A9\uAE30\uB85D \uC870\uD68C
+requests.required_items_td_2=\uBB38\uC758 \uC811\uC218 \uD6C4 3\uB144\uAC04 \uBCF4\uAD00
+requests.required_items_td_2_html=\uBB38\uC758 \uC811\uC218 \uD6C4 3\uB144\uAC04 \uBCF4\uAD00
+requests.collection_period_default={0}\uB144\uAC04 \uBCF4\uAD00 \uD6C4 \uC9C0\uCCB4\uC5C6\uC774 \uD30C\uAE30
+requests.collection_period_file=\uBB38\uC758 \uCC98\uB9AC \uD6C4 \uC9C0\uCCB4\uC5C6\uC774 \uD30C\uAE30
+requests.collection_period_file_years={0}\uB144\uAC04 \uBCF4\uAD00 \uD6C4 \uC9C0\uCCB4\uC5C6\uC774 \uD30C\uAE30
+requests.collection_purpose_refund=\uD658\uBD88 \uBB38\uC758/\uCC98\uB9AC
+requests.collection_period_refund=3\uB144\uAC04 \uBCF4\uAD00 \uD6C4 \uC9C0\uCCB4\uC5C6\uC774 \uD30C\uAE30<br>\uB2E8, \uD658\uBD88 \uCC98\uB9AC \uB0B4\uC5ED\uC740 \uAD00\uACC4\uBC95\uB839(\uC804\uC790\uC0C1\uAC70\uB798\uBC95 \uB4F1)\uC5D0 \uB530\uB77C 5\uB144\uAC04 \uBCF4\uAD00 \uD6C4 \uC9C0\uCCB4\uC5C6\uC774 \uD30C\uAE30
+requests.details_info_html=\uB354 \uC790\uC138\uD55C \uB0B4\uC6A9\uC5D0 \uB300\uD574\uC11C\uB294 <a class="link_blue" href="https://www.kakao.com/ko/privacy" target="_blank">\uCE74\uCE74\uC624 \uAC1C\uC778\uC815\uBCF4\uCC98\uB9AC\uBC29\uCE68<span class="screen_out">(\uC0C8\uCC3D\uC5F4\uB9BC)</span></a>\uC744 \uCC38\uACE0\uD558\uC2DC\uAE30 \uBC14\uB78D\uB2C8\uB2E4.
+requests.details_info_games_html=\uB354 \uC790\uC138\uD55C \uB0B4\uC6A9\uC5D0 \uB300\uD574\uC11C\uB294 <a class="link_blue" href="https://terms-zinny3.game.kakao.com/terms/privacy?country=kr" target="_blank">\uCE74\uCE74\uC624\uAC8C\uC784\uC988 \uAC1C\uC778\uC815\uBCF4\uCC98\uB9AC\uBC29\uCE68</a>\uC744 \uCC38\uACE0\uD558\uC2DC\uAE30 \uBC14\uB78D\uB2C8\uB2E4.
+requests.details_info_mobil_html=\uB354 \uC790\uC138\uD55C \uB0B4\uC6A9\uC5D0 \uB300\uD574\uC11C\uB294 <a class="link_blue" href="https://policy.kakaomobility.com/ko/privacy_171023.html" target="_blank">\uCE74\uCE74\uC624\uBAA8\uBE4C\uB9AC\uD2F0 \uAC1C\uC778\uC815\uBCF4\uCC98\uB9AC\uBC29\uCE68</a>\uC744 \uCC38\uACE0\uD558\uC2DC\uAE30 \uBC14\uB78D\uB2C8\uB2E4.
+requests.details_info_pay_html=\uB354 \uC790\uC138\uD55C \uB0B4\uC6A9\uC5D0 \uB300\uD574\uC11C\uB294 <a class="link_blue" href="https://www.kakao.com/kakaopay/index.php/terms03/" target="_blank">\uCE74\uCE74\uC624\uD398\uC774 \uAC1C\uC778\uC815\uBCF4\uCC98\uB9AC\uBC29\uCE68</a>\uC744 \uCC38\uACE0\uD558\uC2DC\uAE30 \uBC14\uB78D\uB2C8\uB2E4.
+requests.details_info_page_html=\uB354 \uC790\uC138\uD55C \uB0B4\uC6A9\uC5D0 \uB300\uD574\uC11C\uB294 <a class="link_blue" href="https://page.kakao.com/policy/ko/privacy" target="_blank">\uCE74\uCE74\uC624\uD398\uC774\uC9C0 \uAC1C\uC778\uC815\uBCF4\uCC98\uB9AC\uBC29\uCE68</a>\uC744 \uCC38\uACE0\uD558\uC2DC\uAE30 \uBC14\uB78D\uB2C8\uB2E4.
+requests.details_info_hair_shop_html=\uB354 \uC790\uC138\uD55C \uB0B4\uC6A9\uC5D0 \uB300\uD574\uC11C\uB294 <a class="link_blue" href="https://kakaohairshop.kr/terms/privacy_policy.html" target="_blank">\uCE74\uCE74\uC624\uD5E4\uC5B4\uC0F5 \uAC1C\uC778\uC815\uBCF4\uCC98\uB9AC\uBC29\uCE68</a>\uC744 \uCC38\uACE0\uD558\uC2DC\uAE30 \uBC14\uB78D\uB2C8\uB2E4.
+requests.details_info_commerce_html=\uB354 \uC790\uC138\uD55C \uB0B4\uC6A9\uC5D0 \uB300\uD574\uC11C\uB294 <a class="link_blue" href="https://www.kakaocommerce.com/privacy" target="_blank">\uCE74\uCE74\uC624\uCEE4\uBA38\uC2A4 \uAC1C\uC778\uC815\uBCF4\uCC98\uB9AC\uBC29\uCE68</a>\uC744 \uCC38\uACE0\uD558\uC2DC\uAE30 \uBC14\uB78D\uB2C8\uB2E4.
+requests.details_info_lazzy_html=\uB354 \uC790\uC138\uD55C \uB0B4\uC6A9\uC5D0 \uB300\uD574\uC11C\uB294 <a class="link_blue" href="https://lazzy.kakao.com/static/policy/privacy_policy_ko.html" target="_blank">Lazzy \uC11C\uBE44\uC2A4 \uAC1C\uC778\uC815\uBCF4\uCC98\uB9AC\uBC29\uCE68</a>\uC744 \uCC38\uACE0\uD558\uC2DC\uAE30 \uBC14\uB78D\uB2C8\uB2E4.
+requests.details_info_enterprise_html=\uB354 \uC790\uC138\uD55C \uB0B4\uC6A9\uC5D0 \uB300\uD574\uC11C\uB294 <a class="link_blue" href="https://policy.kakaoi.ai/privacy" target="_blank">\uCE74\uCE74\uC624\uC5D4\uD130\uD504\uB77C\uC774\uC988 \uAC1C\uC778\uC815\uBCF4\uCC98\uB9AC\uBC29\uCE68</a>\uC744 \uCC38\uACE0\uD558\uC2DC\uAE30 \uBC14\uB78D\uB2C8\uB2E4.
+
+requests.agree=\uC704 \uB0B4\uC6A9\uC5D0 \uB3D9\uC758\uD569\uB2C8\uB2E4.
+requests.helps_tips=\uC720\uC6A9\uD55C \uB3C4\uC6C0\uB9D0
+
+requests.report_sms_verification_template=SMS \uC778\uC99D \uD6C4 \uC2E0\uACE0\uD558\uAE30 \uD3FC
+requests.report_sms_verification=SMS \uC778\uC99D \uD6C4 \uC2E0\uACE0\uD558\uAE30
+requests.report_sms_mobile_confirm_html=\uCE74\uCE74\uC624\uACC4\uC815({0})\n\uB3C4\uC6A9 \uC2E0\uACE0\uB97C \uC811\uC218\uD558\uC2DC\uACA0\uC2B5\uB2C8\uAE4C?\n\n\uC2E0\uACE0\uB97C \uC811\uC218\uD558\uBA74\n\uCE74\uCE74\uC624\uACC4\uC815 \uBC0F \uCE74\uCE74\uC624\uD1A1 \uC774\uC6A9\uC774 \uC989\uC2DC \uC815\uC9C0\uB429\uB2C8\uB2E4.\n\uC2E0\uACE0\uB97C \uC811\uC218\uD558\uC2E0 \uBD84\uB3C4 \uACC4\uC815 \uBC0F \uD1A1\uC744 \uC774\uC6A9\uD560 \uC218 \uC5C6\uC73C\uB2C8 \uC2E0\uC911\uD558\uAC8C \uC9C4\uD589\uD574 \uC8FC\uC138\uC694.
+requests.report_sms_confirm_html=\uCE74\uCE74\uC624\uACC4\uC815(<span class="email_insert"></span>)<br>\uB3C4\uC6A9 \uC2E0\uACE0\uB97C \uC811\uC218\uD558\uC2DC\uACA0\uC2B5\uB2C8\uAE4C?
+requests.report_sms_confirm2_html=<span class="txt_bold">\uC2E0\uACE0\uB97C \uC811\uC218\uD558\uBA74 <br /><span class="txt_emph">\uCE74\uCE74\uC624\uACC4\uC815 \uBC0F \uCE74\uCE74\uC624\uD1A1 \uC774\uC6A9\uC774 \uC989\uC2DC \uC815\uC9C0</span>\uB429\uB2C8\uB2E4.<br/> \uC2E0\uACE0\uB97C \uC811\uC218\uD558\uC2E0 \uBD84\uB3C4 \uACC4\uC815 \uBC0F \uD1A1\uC744 \uC774\uC6A9\uD560 \uC218 \uC5C6\uC73C\uB2C8<br/>\uC2E0\uC911\uD558\uAC8C \uC9C4\uD589\uD574 \uC8FC\uC138\uC694.</span>
+requests.report_sms_submit_btn=\uACC4\uC815\uB3C4\uC6A9\uC2E0\uACE0 \uC811\uC218
+requests.report_sms_cancel_btn=\uCDE8\uC18C
+requests.sms_stolen_check=\uC778\uC99D\uBC1B\uC740 \uBC88\uD638\uC640 \uC2E0\uACE0\uD55C \uACC4\uC815\uC758 \uC5F0\uAD00\uC131\uC774 \uD655\uC778\uB418\uC9C0 \uC54A\uC558\uC2B5\uB2C8\uB2E4. \uC778\uC99D\uBC1B\uC740 \uBC88\uD638\uC640 \uC2E0\uACE0\uD55C \uACC4\uC815\uC774 \uC815\uD655\uD55C\uC9C0 \uB2E4\uC2DC \uD55C \uBC88 \uD655\uC778\uD574 \uC8FC\uC138\uC694.
+requests.sms_already_stolen_check=\uC774\uBBF8 \uC774\uC6A9\uC774 \uC815\uC9C0\uB41C \uACC4\uC815\uC785\uB2C8\uB2E4. \uC790\uC138\uD55C \uC0AC\uD56D\uC740 \uC77C\uBC18 \uBB38\uC758\uB85C \uC811\uC218\uD574 \uC8FC\uC138\uC694.
+requests.sms_self_solvable=\uBE44\uBC00\uBC88\uD638 \uBCC0\uACBD \uD6C4 \uB2E4\uC2DC \uACC4\uC815\uC744 \uC774\uC6A9\uD560 \uC218 \uC788\uC2B5\uB2C8\uB2E4. \uB3C4\uC6A9 \uC758\uC2EC \uC0C1\uD669\uACFC \uAD00\uB828\uD55C \uC790\uC138\uD55C \uB0B4\uC6A9\uC740 \uB3C4\uC6C0\uB9D0\uC744 \uD655\uC778\uD574 \uC8FC\uC138\uC694.
+requests.requests_kakao_accounts=\uCE74\uCE74\uC624\uACC4\uC815 \uBB38\uC758\uD558\uAE30
+requests.check_help=\uB3C4\uC6C0\uB9D0 \uD655\uC778
+requests.report_sms_userdeactive_verification=\uC778\uC99D \uBC0F \uCE74\uCE74\uC624\uD1A1 \uD0C8\uD1F4\uD558\uAE30
+requests.report_question=\uBB38\uC758\uC811\uC218
+requests.kakao_account_blacklist=\uCE74\uCE74\uC624\uACC4\uC815 \uB4F1\uB85D\uAC70\uBD80 \uC774\uBA54\uC77C \uC8FC\uC18C \uC124\uC815
+requests.kakao_account_blacklist_html=\uCE74\uCE74\uC624\uACC4\uC815<br />\uB4F1\uB85D\uAC70\uBD80 \uC774\uBA54\uC77C<br />\uC8FC\uC18C \uC124\uC815
+requests.kakao_account_blacklist_desc=\uC704 \uC694\uCCAD\uD558\uC9C0 \uC54A\uC740 \uC774\uBA54\uC77C \uC8FC\uC18C\uB97C \uCE74\uCE74\uC624\uC11C\uBE44\uC2A4\uC5D0\uC11C \uC0AC\uC6A9\uD560 \uC218 \uC5C6\uB3C4\uB85D \uC124\uC815\uD558\uACA0\uC2B5\uB2C8\uAE4C? \uC124\uC815 \uC2DC \uB2E4\uB978\uC0AC\uB78C\uBFD0 \uC544\uB2C8\uB77C \uD68C\uC6D0\uB2D8\uAED8 \uC11C\uB3C4 \uCE74\uCE74\uC624\uACC4\uC815\uC73C\uB85C \uC0AC\uC6A9\uD558\uC2E4 \uC218 \uC5C6\uC2B5\uB2C8\uB2E4.
+requests.search_result=\uB3C4\uC6C0\uB9D0 \uAC80\uC0C9 \uACB0\uACFC
+requests.search_placeholder=\uAD81\uAE08\uD55C \uC810\uC774 \uC788\uB2E4\uBA74 \uB3C4\uC6C0\uB9D0\uC744 \uAC80\uC0C9\uD574 \uBCF4\uC138\uC694.
+requests.search_placeholder_2=\uB3C4\uC6C0\uB9D0\uC744 \uAC80\uC0C9\uD574 \uBCF4\uC138\uC694
+requests.search_validation=\uAC80\uC0C9\uC5B4\uB294 2\uC790\uC774\uC0C1 \uC785\uB825\uD574\uC57C \uD569\uB2C8\uB2E4.
+requests.search_result_empty=\uAC80\uC0C9\uACB0\uACFC\uAC00 \uC5C6\uC2B5\uB2C8\uB2E4.
+requests.notice=\uACF5\uC9C0\uC0AC\uD56D
+requests.kakao_email_desc=\uC785\uB825\uD558\uC2E0 \uC774\uBA54\uC77C \uC8FC\uC18C\uB85C \uB2F5\uBCC0\uC774 \uBC1C\uC1A1 \uB428
+requests.tit_main=\uACE0\uAC1D\uC13C\uD130\uB97C \uD1B5\uD574 \uAD81\uAE08\uC99D\uC744 \uD574\uACB0\uD558\uC138\uC694
+requests.service_main=\uACE0\uAC1D\uC13C\uD130 \uC804\uCCB4 \uC11C\uBE44\uC2A4 \uBAA9\uB85D
+requests.sub_main=\uACE0\uAC1D \uC13C\uD130 \uC8FC\uC694 \uC11C\uBE44\uC2A4 \uBAA9\uB85D
+requests.sort_by=\uC815\uB82C \uAE30\uC900
+
+requests.question=\uBB38\uC758\uD558\uAE30
+requests.question_desc=\uAC04\uD3B8\uD558\uAC8C \uBA54\uC77C\uB85C \uB2F5\uBCC0\uC744 \uBC1B\uC744 \uC218 \uC788\uC5B4\uC694.
+requests.consulting=\uCE74\uD1A1 \uCC57\uBD07\uC0C1\uB2F4
+requests.consulting_desc=\uCC57\uBD07/\uC0C1\uB2F4\uC6D0\uACFC \uC2E4\uC2DC\uAC04\uC73C\uB85C \uC0C1\uB2F4\uD560 \uC218 \uC788\uC5B4\uC694.
+requests.floating_chatbot=\uCC57\uBD07\uC0C1\uB2F4
+requests.consulting_banner=\uC6D0\uD558\uC2DC\uB294 \uB2F5\uBCC0\uC744 \uCC3E\uC9C0 \uBABB\uD558\uC168\uB2E4\uBA74, \uACE0\uAC1D\uC13C\uD130\uB85C \uBB38\uC758\uC8FC\uC138\uC694.
+
+requests.back=\uC774\uC804
+requests.list=\uBAA9\uB85D
+requests.home=\uD648
+requests.empty_category=\uCE74\uD14C\uACE0\uB9AC \uC120\uD0DD
+requests.category_optgroup=\uB300\uBD84\uB958 \uCE74\uD14C\uACE0\uB9AC \uC120\uD0DD
+requests.category_optgroup2=\uC18C\uBD84\uB958 \uCE74\uD14C\uACE0\uB9AC \uC120\uD0DD
+requests.country_code=\uAD6D\uAC00 \uBC88\uD638
+requests.country_code_change=\uAD6D\uAC00 \uBC88\uD638 \uBCC0\uACBD
+requests.search_term=\uC6D0\uD558\uC2DC\uB294 \uAC80\uC0C9\uC5B4\uB97C \uC785\uB825\uD574 \uC8FC\uC138\uC694.
+requests.service_body=\uCE74\uCE74\uC624 \uACE0\uAC1D\uC13C\uD130 \uBCF8\uBB38
+requests.more_view=\uAC1C \uB354\uBCF4\uAE30
+requests.main=\uBCF8\uBB38
+requests.close_content=\uB0B4\uC6A9 \uC601\uC5ED \uB2EB\uAE30
+requests.open_content=\uB0B4\uC6A9 \uC601\uC5ED \uC5F4\uAE30
+requests.this_page=\uD604\uC7AC \uD398\uC774\uC9C0
+requests.help_by_category=\uCE74\uD14C\uACE0\uB9AC\uBCC4 \uB3C4\uC6C0\uB9D0
+requests.phone_desc_2=\uCE74\uCE74\uC624 \uC11C\uBE44\uC2A4 \uAC00\uC785 \uC2DC \uC785\uB825\uD55C \uD734\uB300\uD3F0 \uBC88\uD638 \uC785\uB825
+requests.required_personal_info_html=(\uD544\uC218) \uAC1C\uC778\uC815\uBCF4 \uC218\uC9D1, \uC774\uC6A9\uB3D9\uC758
+requests.view_full_article_more=\uC804\uBB38\uBCF4\uAE30
+requests.view_full_article_fold=\uC804\uBB38\uB2EB\uAE30
+requests.accuracy=\uC815\uD655\uB3C4
+requests.new=\uCD5C\uC2E0
+requests.view_count=\uC870\uD68C\uC21C
+requests.all=\uC804\uCCB4
+requests.least_two_characters=\uCD5C\uC18C 2\uAE00\uC790 \uC774\uC0C1 \uC785\uB825\uD574 \uC8FC\uC138\uC694.
+requests.select=\uC120\uD0DD\uB428
+requests.notices_from_customer_service=\uCE74\uCE74\uC624 \uACE0\uAC1D\uC13C\uD130\uC5D0\uC11C \uC54C\uB824\uB4DC\uB9BD\uB2C8\uB2E4.
+requests.required_fields=\uD544\uC218\uC785\uB825 \uC0AC\uD56D
+requests.search=\uAC80\uC0C9
+requests.menu=\uBA54\uB274
+requests.kakao_customer_category=\uCE74\uCE74\uC624 \uACE0\uAC1D\uC13C\uD130 \uCE74\uD14C\uACE0\uB9AC
+requests.product_id=\uC0C1\uD488 \uC544\uC774\uB514
+requests.product_name=\uC0C1\uD488\uBA85
+requests.member_flag=\uD68C\uC6D0\uC5EC\uBD80
+
+requests.kakao_account_require=\uCE74\uCE74\uC624\uACC4\uC815\uC744 \uC785\uB825\uD574 \uC8FC\uC138\uC694.
+requests.error.kakao_email_require=\uCE74\uCE74\uC624\uACC4\uC815 \uC774\uBA54\uC77C\uC8FC\uC18C\uB97C \uC785\uB825\uD574 \uC8FC\uC138\uC694.
+requests.error.email_require=E-Mail\uC744 \uC785\uB825\uD574 \uC8FC\uC138\uC694.
+requests.error.email_incorrect=\uD615\uC2DD\uC5D0 \uB9DE\uC9C0 \uC54A\uB294 e-mail \uC8FC\uC18C\uC785\uB2C8\uB2E4.
+requests.error.phone_require=\uD734\uB300\uD3F0 \uBC88\uD638\uB97C \uC785\uB825\uD574 \uC8FC\uC138\uC694.
+requests.error.phone_incorrect=\uAE30\uD638\uB97C \uC81C\uC678\uD55C \uC22B\uC790\uB9CC \uC785\uB825\uD574 \uC8FC\uC138\uC694.
+requests.error.phone_form_incorrect_kr=\uC798\uBABB\uB41C \uD615\uC2DD\uC758 \uBC88\uD638\uC785\uB2C8\uB2E4. 10\uC790\uB9AC \uC774\uC0C1 11\uC790\uB9AC \uC774\uD558\uC758 \uC22B\uC790\uB9CC \uC785\uB825\uD574 \uC8FC\uC138\uC694.
+requests.error.phone_form_incorrect=\uC798\uBABB\uB41C \uD615\uC2DD\uC758 \uBC88\uD638 \uC785\uB2C8\uB2E4. 4\uC790\uB9AC \uC774\uC0C1 15\uC790\uB9AC \uC774\uD558\uC758 \uC22B\uC790\uB9CC \uC785\uB825\uD574 \uC8FC\uC138\uC694.
+requests.error.order_id_incorrect=\uC720\uD6A8\uD558\uC9C0 \uC54A\uC740 \uC8FC\uBB38\uBC88\uD638\uC785\uB2C8\uB2E4. (\uC8FC\uBB38\uBC88\uD638\uB294 1\uAC1C\uB9CC \uC785\uB825\uD574 \uC8FC\uC138\uC694.)
+requests.error.privacy_agree=\uAC1C\uC778\uC815\uBCF4\uC218\uC9D1 \uBC0F \uC774\uC6A9\uC5D0 \uB3D9\uC758\uD574 \uC8FC\uC138\uC694.
+requests.error.file_incorrect=\uCCA8\uBD80\uAC00 \uBD88\uAC00\uD55C \uD30C\uC77C\uC785\uB2C8\uB2E4.
+requests.error.file_virus_include=\uC545\uC131\uCF54\uB4DC\uAC00 \uD3EC\uD568\uB41C \uD30C\uC77C\uC785\uB2C8\uB2E4.
+requests.error.file_v3_error=\uD30C\uC77C \uBC14\uC774\uB7EC\uC2A4 \uAC80\uC0AC \uC911 \uC5D0\uB7EC \uBC1C\uC0DD
+requests.error.file_exceed_max_size=\uD30C\uC77C\uC6A9\uB7C9\uC744 \uCD08\uACFC\uD558\uC600\uC2B5\uB2C8\uB2E4. 30MB \uC774\uD558\uB85C \uB4F1\uB85D\uD574 \uC8FC\uC138\uC694.
+requests.error.file_exceed_max_size_title=\uD30C\uC77C\uC6A9\uB7C9\uC744 \uCD08\uACFC\uD558\uC600\uC2B5\uB2C8\uB2E4.
+requests.error.file_exceed_max_size_message=\uC774\uD558\uB85C \uB4F1\uB85D\uD574 \uC8FC\uC138\uC694.
+requests.error.system_error=\uBB38\uC758 \uC811\uC218 \uC911 \uC624\uB958\uAC00 \uBC1C\uC0DD\uD588\uC2B5\uB2C8\uB2E4. \uC7A0\uC2DC \uD6C4 \uB2E4\uC2DC \uC2DC\uB3C4\uD574\uC8FC\uC2DC\uAE30 \uBC14\uB78D\uB2C8\uB2E4.
+requests.error.mail_send_fail=\uBB38\uC758 \uC811\uC218 \uC911 \uC624\uB958\uAC00 \uBC1C\uC0DD\uD588\uC2B5\uB2C8\uB2E4. \uC7A0\uC2DC \uD6C4 \uB2E4\uC2DC \uC2DC\uB3C4\uD574\uC8FC\uC2DC\uAE30 \uBC14\uB78D\uB2C8\uB2E4.
+requests.error.file_error=\uD30C\uC77C \uC5C5\uB85C\uB4DC \uC911 \uC5D0\uB7EC \uBC1C\uC0DD
+requests.error.agree_valid=\uAC1C\uC778\uC815\uBCF4\uC218\uC9D1\u00B7\uC774\uC6A9\uC5D0 \uB3D9\uC758\uD574 \uC8FC\uC138\uC694.
+requests.error.subject_empty=\uC81C\uBAA9\uC744 \uC785\uB825\uD574 \uC8FC\uC138\uC694.({0}\uC790 \uC774\uB0B4)
+requests.error.contents_empty=\uBB38\uC758\uD558\uC2E4 \uB0B4\uC6A9\uC744 \uC785\uB825\uD574 \uC8FC\uC138\uC694.
+requests.error.select_category=\uCE74\uD14C\uACE0\uB9AC\uB97C \uC120\uD0DD\uD574 \uC8FC\uC138\uC694
+requests.error.account_theft_require=\uACC4\uC815\uB3C4\uC6A9\uC2E0\uACE0\uC5D0 \uD544\uC694\uD55C \uC751\uB2F5\uC744 \uBAA8\uB450 \uC791\uC131\uD574 \uC8FC\uC138\uC694.
+requests.error.privacy_field_require=\uBB38\uC758\uB4F1\uB85D\uC5D0 \uD544\uC694\uD55C \uD544\uC218\uC815\uBCF4\uC785\uB2C8\uB2E4. \uC785\uB825\uD574 \uC8FC\uC138\uC694.
+requests.error.require_message=\uC744(\uB97C) \uC785\uB825\uD574 \uC8FC\uC138\uC694.
+requests.error.require_file_message=\uC744(\uB97C) \uCCA8\uBD80\uD574 \uC8FC\uC138\uC694.
+requests.error.require_radio_message=\uD544\uC218 \uC120\uD0DD \uD56D\uBAA9 \uC785\uB2C8\uB2E4.
+requests.success.ok=\uC811\uC218\uAC00 \uC644\uB8CC\uB418\uC5C8\uC2B5\uB2C8\uB2E4.<br>\uC811\uC218\uD558\uC2E0 \uB0B4\uC6A9\uC740 \uBE60\uB974\uAC8C \uD655\uC778\uD558\uC5EC \uB2F5\uBCC0\uB4DC\uB9AC\uACA0\uC2B5\uB2C8\uB2E4.
+requests.complete_desc=\uBB38\uC758\uAC00 \uC815\uC0C1\uC801\uC73C\uB85C \uC811\uC218\uB418\uC5C8\uC2B5\uB2C8\uB2E4.<br>\uD655\uC778\uD6C4 \uC774\uBA54\uC77C\uB85C \uB2F5\uBCC0\uB4DC\uB9AC\uACA0\uC2B5\uB2C8\uB2E4.
+requests.complete_success_desc1=\uBB38\uC758\uAC00 \uC815\uC0C1\uC801\uC73C\uB85C \uC811\uC218\uB418\uC5C8\uC2B5\uB2C8\uB2E4.
+requests.complete_success_desc2=\uD655\uC778\uD6C4 \uC774\uBA54\uC77C\uB85C \uB2F5\uBCC0\uB4DC\uB9AC\uACA0\uC2B5\uB2C8\uB2E4.
+requests.complete_fail_desc1=\uBB38\uC758 \uC811\uC218 \uC911 \uC624\uB958\uAC00 \uBC1C\uC0DD\uD588\uC2B5\uB2C8\uB2E4.
+requests.complete_fail_desc2=\uC7A0\uC2DC \uD6C4 \uB2E4\uC2DC \uC2DC\uB3C4\uD574\uC8FC\uC2DC\uAE30 \uBC14\uB78D\uB2C8\uB2E4.
+requests.report_success_html=\uC815\uC0C1\uC801\uC73C\uB85C \uBB38\uC758\uAC00 \uC811\uC218\uB418\uC5C8\uC2B5\uB2C8\uB2E4.<br/>\uCC98\uB9AC\uACB0\uACFC\uB294 \uAE30\uC7AC\uD558\uC2E0 \uC5F0\uB77D\uCC98(\uD734\uB300\uD3F0\uBC88\uD638/\uC774\uBA54\uC77C)\uB85C \uD68C\uC2E0\uB4DC\uB9AC\uACA0\uC2B5\uB2C8\uB2E4.
+requests.report_success_text=\u203B \uBB38\uC758\uB7C9\uC774 \uC99D\uAC00\uD558\uB294 \uACBD\uC6B0 \uB2F5\uBCC0\uC774 \uC9C0\uC5F0\uB420 \uC218 \uC788\uC2B5\uB2C8\uB2E4.<br>\uC2E0\uC18D\uD558\uAC8C \uB2F5\uBCC0\uB4DC\uB9B4 \uC218 \uC788\uB3C4\uB85D \uCD5C\uC120\uC744 \uB2E4\uD558\uACA0\uC2B5\uB2C8\uB2E4.
+requests.go_to_home=\uACE0\uAC1D\uC13C\uD130 \uD648\uC73C\uB85C \uC774\uB3D9
+requests.custom_complete_desc=\uC18C\uC911\uD55C \uC758\uACAC \uAC10\uC0AC\uB4DC\uB9BD\uB2C8\uB2E4.<br>\uBCF4\uB0B4\uC8FC\uC2E0 \uC758\uACAC\uC740 \uAF3C\uAF3C\uD788 \uAC80\uD1A0\uD558\uC5EC,<br>\uC11C\uBE44\uC2A4\uC5D0 \uBC18\uC601\uD560 \uC218 \uC788\uB3C4\uB85D \uCD5C\uC120\uC744 \uB2E4\uD558\uACA0\uC2B5\uB2C8\uB2E4.
+requests.sms.success=\uC778\uC99D\uBC88\uD638\uAC00 \uC804\uC1A1\uB418\uC5C8\uC2B5\uB2C8\uB2E4. \uC778\uC99D\uBC88\uD638 \uBC1C\uC1A1\uC740 \uB3D9\uC77C \uD734\uB300\uD3F0\uC5D0 \uD55C\uD558\uC5EC 1\uC77C 3\uD68C\uAE4C\uC9C0\uB9CC \uAC00\uB2A5\uD569\uB2C8\uB2E4.
+requests.sms.pass_success=\uC778\uC99D\uC774 \uC644\uB8CC\uB418\uC5C8\uC2B5\uB2C8\uB2E4.
+requests.sms.fail.limit=1\uC77C \uC778\uC99D\uBC88\uD638 \uC218\uC2E0\uD69F\uC218(3\uD68C)\uAC00 \uCD08\uACFC\uB418\uC5C8\uC2B5\uB2C8\uB2E4. \n24\uC2DC\uAC04\uC774 \uC9C0\uB09C \uC774\uD6C4\uC5D0 \uB2E4\uC2DC \uC2DC\uB3C4\uD574 \uC8FC\uC2DC\uAE30 \uBC14\uB78D\uB2C8\uB2E4.
+requests.sms.fail.country_code=\uC774 \uC11C\uBE44\uC2A4\uB294 \uD55C\uAD6D \uD734\uB300\uD3F0 \uBC88\uD638\uB9CC \uC9C0\uC6D0\uD569\uB2C8\uB2E4.
+requests.sms.fail.to_many_try=\uC778\uC99D\uBC88\uD638 \uD655\uC778 \uC2DC\uB3C4 \uAC74\uC218\uAC00 5\uD68C\uB97C \uCD08\uACFC\uD558\uC600\uC2B5\uB2C8\uB2E4.\n\uC778\uC99D\uBC88\uD638\uB97C \uB2E4\uC2DC \uBC1C\uAE09\uD574 \uC8FC\uC2DC\uAE30 \uBC14\uB78D\uB2C8\uB2E4.
+requests.sms.fail.wrong_passcode=\uC778\uC99D\uBC88\uD638\uAC00 \uC77C\uCE58\uD558\uC9C0 \uC54A\uC2B5\uB2C8\uB2E4. \uC778\uC99D\uBC88\uD638 \uD655\uC778 \uD6C4 \uB2E4\uC2DC \uC2DC\uB3C4\uD574 \uC8FC\uC2ED\uC2DC\uC624.
+requests.sms.fail.not_found_request=\uC798\uBABB\uB41C \uC811\uADFC\uC785\uB2C8\uB2E4. \uB2E4\uC2DC \uC2DC\uB3C4\uD574 \uC8FC\uC138\uC694.
+requests.sms.fail.not_found_phonenumber=\uCE74\uCE74\uC624\uD1A1\uC5D0 \uC874\uC7AC\uD558\uC9C0 \uC54A\uB294 \uD734\uB300\uD3F0 \uBC88\uD638\uC785\uB2C8\uB2E4.
+requests.sms.fail.wait=\uC7A0\uC2DC\uD6C4\uC5D0 \uB2E4\uC2DC \uC774\uC6A9\uD574 \uC8FC\uC138\uC694.
+requests.send=\uBCF4\uB0B4\uAE30
+requests.request=\uBB38\uC758\uD558\uAE30
+requests.login_title=\uB85C\uADF8\uC778 \uD558\uC2DC\uACA0\uC2B5\uB2C8\uAE4C?
+requests.login_message=\uCE74\uCE74\uC624 \uACC4\uC815 \uD639\uC740 \uC774\uC804 \uB2F5\uBCC0 \uBA54\uC77C \uC8FC\uC18C\uB85C <br/>\uC811\uC218\uD558\uC2DC\uBA74, \uC774\uC804 \uC0C1\uB2F4 \uB0B4\uC6A9\uC744 \uCC38\uACE0\uD558\uC5EC<br/>\uC2E0\uC18D\uD788 \uB3C4\uC640\uB4DC\uB9AC\uACA0\uC2B5\uB2C8\uB2E4.<br/>(\uB85C\uADF8\uC778\uD558\uC9C0 \uC54A\uC73C\uC154\uB3C4 \uC811\uC218\uB294 \uAC00\uB2A5\uD569\uB2C8\uB2E4.)
+requests.required_detail=\uC218\uC9D1 \uD56D\uBAA9 \uC0C1\uC138 \uC815\uBCF4
+requests.file_delete=\uCCA8\uBD80 \uD30C\uC77C \uC0AD\uC81C
+requests.relation.faq=\uAD00\uB828 FAQ
+requests.relation.faq_sub=\uD639\uC2DC! \uC544\uB798 \uB0B4\uC6A9\uC774 \uAD81\uAE08\uD558\uC2E0\uAC00\uC694?
+requests.field.radio.etc.name=\uAE30\uD0C0
+
+## \uBCF8\uC778\uC778\uC99D
+requests.vonin.vonin_cert=\uBCF8\uC778 \uD655\uC778
+requests.vonin.legal_represent_cert=\uBCF4\uD638\uC790 \uBCF8\uC778\uD655\uC778(\uBD80\uBAA8)
+requests.vonin.minor_cert_at_guardian_page=\uBCF4\uD638\uC870\uCE58 \uB300\uC0C1\uC790 \uBCF8\uC778\uD655\uC778(\uC790\uB140)
+requests.vonin.minor_cert_at_self=\uBCF4\uD638\uC870\uCE58 \uB300\uC0C1\uC790 \uBCF8\uC778\uD655\uC778
+requests.vonin.vonin_phone_cert=\uD734\uB300\uD3F0 \uBCF8\uC778 \uC778\uC99D
+requests.vonin.vonin_minor_phone_cert=\uBBF8\uC131\uB144\uC790 \uBCF8\uC778 \uC778\uC99D
+requests.vonin.vonin_card_cert=\uBCF8\uC778 \uBA85\uC758 \uCE74\uB4DC
+requests.vonin.legal_represent_detail1=\uBCF4\uD638\uC790 \uBCF8\uC778 \uBA85\uC758\uC758 \uD734\uB300\uD3F0\uC73C\uB85C \uC778\uC99D\uD574 \uC8FC\uC138\uC694.
+requests.vonin.minor_detail1=\uCE74\uCE74\uC624\uACC4\uC815 \uC18C\uC720\uC8FC \uD655\uC778\uC744 \uC704\uD574 \uBCF4\uD638\uC870\uCE58 \uB300\uC0C1\uC790 \uBCF8\uC778 \uBA85\uC758\uC758 \uD734\uB300\uD3F0\uC73C\uB85C \uC778\uC99D\uD574 \uC8FC\uC138\uC694.
+requests.vonin.vonin_detail1=\uACC4\uC815 \uC18C\uC720\uC8FC \uD655\uC778\uC744 \uC704\uD574 \uBCF8\uC778 \uBA85\uC758 \uD734\uB300\uD3F0\uC73C\uB85C \uC778\uC99D\uD574 \uC8FC\uC138\uC694.
+requests.vonin.vonin_detail2=\uB9CC\uC57D \uBCF8\uC778 \uBA85\uC758 \uD734\uB300\uD3F0\uC774 \uC5C6\uB294 \uACBD\uC6B0
+requests.vonin.vonin_detail3=\uB85C \uC778\uC99D\uD560 \uC218 \uC788\uC2B5\uB2C8\uB2E4.
+requests.vonin.collectField=<div class="text-left">\uBCF8\uC778\uC778\uC99D \uC815\uBCF4</div>\
+  <div class="text-left">- \uD734\uB300\uD3F0 \uBCF8\uC778 \uC778\uC99D \uC2DC: \uC774\uB984, \uC131\uBCC4, \uC0DD\uB144\uC6D4\uC77C, \uD734\uB300\uC804\uD654\uBC88\uD638, \uB0B4/\uC678\uAD6D\uC778 \uC5EC\uBD80, \uC554\uD638\uD654\uB41C \uC774\uC6A9\uC790 \uD655\uC778\uAC12(CI)</div>\
+  <div class="text-left">- \uC2E0\uC6A9\uCE74\uB4DC \uBCF8\uC778 \uC778\uC99D \uC2DC: \uC774\uB984, \uC131\uBCC4, \uC0DD\uB144\uC6D4\uC77C, \uB0B4/\uC678\uAD6D\uC778 \uC5EC\uBD80, \uC554\uD638\uD654\uB41C \uC774\uC6A9\uC790 \uD655\uC778\uAC12(CI)</div>
+requests.vonin.collectFieldNoneCard=<div class="text-left">\uBCF8\uC778\uC778\uC99D \uC815\uBCF4</div>\
+  <div class="text-left">- \uD734\uB300\uD3F0 \uBCF8\uC778 \uC778\uC99D \uC2DC: \uC774\uB984, \uC131\uBCC4, \uC0DD\uB144\uC6D4\uC77C, \uD734\uB300\uC804\uD654\uBC88\uD638, \uB0B4/\uC678\uAD6D\uC778 \uC5EC\uBD80, \uC554\uD638\uD654\uB41C \uC774\uC6A9\uC790 \uD655\uC778\uAC12(CI)</div>
+requests.vonin.legalRepresent.collectField=<div class="text-left">\uBCF8\uC778\uC778\uC99D \uC815\uBCF4</div>\
+  <div class="text-left">- \uD734\uB300\uD3F0 \uBCF8\uC778 \uC778\uC99D \uC2DC: \uC774\uB984, \uC131\uBCC4, \uC0DD\uB144\uC6D4\uC77C, \uD734\uB300\uC804\uD654\uBC88\uD638, \uB0B4/\uC678\uAD6D\uC778 \uC5EC\uBD80</div>\
+  <div class="text-left">- \uC2E0\uC6A9\uCE74\uB4DC \uBCF8\uC778 \uC778\uC99D \uC2DC: \uC774\uB984, \uC131\uBCC4, \uC0DD\uB144\uC6D4\uC77C, \uB0B4/\uC678\uAD6D\uC778 \uC5EC\uBD80</div>
+requests.vonin.minor.collectField=<div class="text-left">\uBCF8\uC778\uC778\uC99D \uC815\uBCF4</div>\
+  <div class="text-left">- \uD734\uB300\uD3F0 \uBCF8\uC778 \uC778\uC99D \uC2DC: \uC774\uB984, \uC131\uBCC4, \uC0DD\uB144\uC6D4\uC77C, \uD734\uB300\uC804\uD654\uBC88\uD638, \uB0B4/\uC678\uAD6D\uC778 \uC5EC\uBD80</div>
+requests.vonin.kakao_account=\uCE74\uCE74\uC624 \uACC4\uC815
+requests.vonin.purpose=\uBB38\uC758\u2022\uC694\uCCAD \uCC98\uB9AC\uB97C \uC704\uD55C \uBCF8\uC778\uD655\uC778
+requests.vonin.retentionPeriod=1\uB144\uAC04 \uBCF4\uAD00 \uD6C4 \uC9C0\uCCB4\uC5C6\uC774 \uD30C\uAE30<br>(\uB2E8, CI\uB294 \uCD5C\uCD08 \uBCF8\uC778 \uD655\uC778 \uD6C4 \uC989\uC2DC \uD30C\uAE30)
+requests.vonin.protectOpenChatRetentionPeriod=1\uB144\uAC04 \uBCF4\uAD00 \uD6C4 \uC9C0\uCCB4\uC5C6\uC774 \uD30C\uAE30
+requests.vonin.alert_to_child_after_cert=\uB9CC 14\uC138 \uBBF8\uB9CC \uD68C\uC6D0\uC740 \uBC95\uC815\uB300\uB9AC\uC778 \uB3D9\uC758 \uD6C4 \uBB38\uC758\uC811\uC218\uAC00 \uAC00\uB2A5\uD569\uB2C8\uB2E4.\r\uB85C\uADF8\uC778\uC744 \uD574\uC8FC\uC138\uC694.
+requests.vonin.pass_success=\uC778\uC99D\uC774 \uC644\uB8CC\uB418\uC5C8\uC2B5\uB2C8\uB2E4.
+
+# \uD0C8\uD1F4 \uD788\uB4E0\uD398\uC774\uC9C0
+requests.account.deactive.vonin.fail.country_code=\uC774 \uC11C\uBE44\uC2A4\uB294 \uD55C\uAD6D \uD734\uB300\uD3F0 \uBC88\uD638\uB9CC \uC9C0\uC6D0\uD569\uB2C8\uB2E4.
+requests.account.deactive.vonin.fail.not_found_phonenumber=\uCE74\uCE74\uC624\uD1A1\uC5D0 \uC874\uC7AC\uD558\uC9C0 \uC54A\uB294 \uD734\uB300\uD3F0 \uBC88\uD638\uC785\uB2C8\uB2E4.
+requests.account.deactive.vonin.not_same_user=\uD68C\uC6D0\uC774 \uC544\uB2D9\uB2C8\uB2E4.
+requests.account.deactive.vonin.fail.wait=\uC7A0\uC2DC\uD6C4\uC5D0 \uB2E4\uC2DC \uC774\uC6A9\uD574 \uC8FC\uC138\uC694.
+requests.account.deactive.vonin.wrong=\uC778\uC99D\uC815\uBCF4\uAC00 \uC62C\uBC14\uB974\uC9C0 \uC54A\uC2B5\uB2C8\uB2E4.
+
+## 14\uC138 \uBBF8\uB9CC
+requests.auth.guardian.guide=\uB9CC 14\uC138 \uBBF8\uB9CC \uC544\uB3D9\uC758 \uAC1C\uC778\uC815\uBCF4 \uD65C\uC6A9\uC744 \uC704\uD55C \uBCF4\uD638\uC790(\uBC95\uC815 \uB300\uB9AC\uC778) \uB3D9\uC758
+requests.auth.guardian.guide_detail=\uB9CC 14\uC138 \uBBF8\uB9CC \uC544\uB3D9\uC758 \uAC1C\uC778\uC815\uBCF4 \uCC98\uB9AC \uC2DC \uAC1C\uC778\uC815\uBCF4\uBCF4\uD638\uBC95\uC5D0 \uB530\uB77C \uBCF4\uD638\uC790(\uBC95\uC815\uB300\uB9AC\uC778) \uB3D9\uC758\uAC00 \uD544\uC694\uD569\uB2C8\uB2E4.<br><br>\
+\uC544\uB3D9\uC758 \uBB38\uC758 \uCC98\uB9AC\uB97C \uC704\uD574 \uBCF4\uD638\uC790(\uBC95\uC815\uB300\uB9AC\uC778)\uC758 \uD734\uB300\uD3F0 \uC778\uC99D\uC744 \uC9C4\uD589\uD574 \uC8FC\uC138\uC694.<br>\
+\uC785\uB825\uB41C \uC815\uBCF4\uB294 \uBCF4\uD638\uC790(\uBC95\uC815\uB300\uB9AC\uC778)\uC758 \uB3D9\uC758 \uD655\uC778 \uBAA9\uC801\uC73C\uB85C\uB9CC \uC774\uC6A9\uB429\uB2C8\uB2E4.
+requests.auth.guardian.success=\uBCF4\uD638\uC790(\uBC95\uC815\uB300\uB9AC\uC778) \uC778\uC99D\uC5D0 \uC131\uACF5\uD588\uC2B5\uB2C8\uB2E4.
+requests.auth.guardian.fail=\uC778\uC99D\uC774 \uC804\uC0C1\uC801\uC73C\uB85C \uC9C4\uD589\uB418\uC9C0 \uC54A\uC558\uC2B5\uB2C8\uB2E4. \uB2E4\uC2DC \uC2DC\uB3C4\uD574 \uC8FC\uC138\uC694.
+requests.auth.guardian.retry=\uC774\uBBF8 \uC778\uC99D\uD558\uC168\uC2B5\uB2C8\uB2E4.
+requests.auth.guardian.auth_check=\uBC95\uC815\uB300\uB9AC\uC778 \uBCF8\uC778\uC778\uC99D\uC744 \uC9C4\uD589\uD574 \uC8FC\uC138\uC694.
+requests.auth.guardian.phone_cert_valid=\uBCF4\uD638\uC790 \uD734\uB300\uD3F0 \uC778\uC99D
+requests.auth.guardian.phone_cert_valid_complete=\uBCF4\uD638\uC790 \uD734\uB300\uD3F0 \uC778\uC99D \uC644\uB8CC
+requests.auth.guardian.collect_purpose_field=<br>\uBC95\uC815\uB300\uB9AC\uC778 \uC774\uB984, \uBC95\uC815\uB300\uB9AC\uC778 \uC0DD\uB144\uC6D4\uC77C, \uBC95\uC815 \uB300\uB9AC\uC778 \uD734\uB300\uD3F0\uBC88\uD638
+requests.auth.guardian.collect_purpose_text=\uBC95\uC815 \uB300\uB9AC\uC778 \uD655\uC778
+
+## \uACC4\uC815 \uB3C4\uC6A9
+requests.account.theft.sms.timer.msg=\uC778\uC99D\uBC88\uD638 \uC785\uB825 \uC720\uD6A8\uC2DC\uAC04 :
+
+## \uACC4\uC815 \uD0C8\uD1F4
+requests.account.deactive.sms.timer.msg=\uC778\uC99D\uBC88\uD638 \uC785\uB825 \uC720\uD6A8\uC2DC\uAC04 :
+requests.account.deactive.sms.verification=SMS \uC778\uC99D \uD6C4 \uCE74\uCE74\uC624\uD1A1 \uD0C8\uD1F4\uD558\uAE30
+requests.account.deactive.sms.desc=\uC785\uB825\uD558\uC2DC\uB294 \uD734\uB300\uD3F0 \uBC88\uD638\uB85C \uC778\uC99D\uBC88\uD638\uAC00 \uBC1C\uC1A1\uB418\uBA70, <br><span class='cs-light-red-color'>\uD574\uB2F9 \uBC88\uD638\uC758 \uCE74\uCE74\uC624\uD1A1\uC774 \uD0C8\uD1F4\uB429\uB2C8\uB2E4.(\uD574\uC678\uBC88\uD638 \uC81C\uC678)</span><br><span class='cs-light-red-color'>SMS \uC778\uC99D \uD6C4 \uD0C8\uD1F4\uAC00 \uC644\uB8CC\uB41C \uD734\uB300\uD3F0 \uBC88\uD638\uC758 \uCE74\uCE74\uC624\uD1A1\uC740 \uCD5C\uC18C 60\uC77C\uAC04 \uC7AC\uAC00\uC785\uC774 \uC81C\uD55C\uB429\uB2C8\uB2E4.</span>
+requests.account.deactive.sms.valid.required.phone=\uD734\uB300\uD3F0 \uBC88\uD638\uB97C \uC785\uB825\uD574 \uC8FC\uC138\uC694.
+requests.account.deactive.sms.valid.pattern.phone=\uD734\uB300\uD3F0 \uD615\uC2DD\uC774 \uC62C\uBC14\uB974\uC9C0 \uC54A\uC2B5\uB2C8\uB2E4.
+requests.account.deactive.sms.valid.required.passcode=\uC778\uC99D\uBC88\uD638\uB97C \uC785\uB825\uD574 \uC8FC\uC138\uC694.
+requests.account.deactive.sms.valid.check.passcode=\uC778\uC99D\uBC88\uD638 \uBC1C\uC1A1 \uBC84\uD2BC\uC744 \uB20C\uB7EC\uC8FC\uC138\uC694.
+requests.account.deactive.sms.valid.msg.timeout=\uC720\uD6A8\uC2DC\uAC04\uC774 \uCD08\uACFC\uB418\uC5C8\uC2B5\uB2C8\uB2E4. \uB2E4\uC2DC \uC2DC\uB3C4\uD574 \uC8FC\uC2DC\uAE30 \uBC14\uB78D\uB2C8\uB2E4.
+requests.account.deactive.confirm.body.message=<span class='cs-color-red'><span id='accountDeactivePhoneNumberConfirm'></span>\uB85C \uAC00\uC785\uB41C<br>\uCE74\uCE74\uC624\uD1A1\uC744 \uD0C8\uD1F4</span>\uD558\uC2DC\uACA0\uC2B5\uB2C8\uAE4C?<br><br>\uB2E4\uB978 \uBC88\uD638\uC758 \uCE74\uCE74\uC624\uD1A1\uC744 \uD0C8\uD1F4\uD558\uB824\uBA74<br>[\uCDE8\uC18C] \uBC84\uD2BC\uC744 \uB20C\uB7EC\uC8FC\uC138\uC694.<br><br>\uD0C8\uD1F4 \uC2DC <span class='cs-color-red'>60\uC77C \uB3D9\uC548</span> \uD734\uB300\uD3F0\uBC88\uD638\uB85C<br><span class='cs-color-red'>\uCE74\uCE74\uC624\uD1A1 \uC7AC\uAC00\uC785\uC774 \uBD88\uAC00</span>\uD569\uB2C8\uB2E4.
+requests.account.deactive.confirm.cancel=\uCDE8\uC18C
+requests.account.deactive.confirm.request=\uD0C8\uD1F4
+
+## \uD1A1 \uC774\uC6A9\uC81C\uD55C \uC774\uC758\uC2E0\uCCAD (\uBBF8\uC218\uAE0D CS)
+requests.account.restricted.restriction_date_label=\uC81C\uD55C \uAE30\uAC04
+requests.account.restricted.restriction_expired_label=\uC81C\uD55C \uB9CC\uB8CC
+requests.account.restricted.subject_label=\uC774\uC6A9\uC81C\uD55C \uC7AC\uAC80\uD1A0 \uC2E0\uCCAD
+requests.account.restricted.contents_label=\uC2E0\uCCAD \uC0AC\uC720
+requests.account.restricted.error.contents_empty=\uC7AC\uAC80\uD1A0 \uC694\uCCAD \uC774\uC720\uC5D0 \uB300\uD574 \uC0C1\uC138\uD788 \uC785\uB825\uD574 \uC8FC\uC138\uC694. (\uD544\uC694 \uC2DC \uC790\uB8CC \uCCA8\uBD80 \uAC00\uB2A5)
+requests.account.restricted.content_list_label=\uC7AC\uAC80\uD1A0 \uB300\uC0C1 \uCF58\uD150\uCE20
+requests.account.restricted.content_list.message=\uC7AC\uAC80\uD1A0 \uB300\uC0C1 \uCF58\uD150\uCE20\uB97C \uC120\uD0DD\uD574 \uC8FC\uC138\uC694.
+requests.account.restricted.alert.login_title=\uB85C\uADF8\uC778\uC774 \uD544\uC694\uD55C \uD398\uC774\uC9C0\uC785\uB2C8\uB2E4.
+requests.account.restricted.alert.login_content=\uB85C\uADF8\uC778 \uC0C1\uD0DC\uC5D0\uC11C\uB9CC \uC7AC\uAC80\uD1A0 \uC2E0\uCCAD\uC744 \uD560 \uC218 \uC788\uC2B5\uB2C8\uB2E4.<br>\uB85C\uADF8\uC778 \uD558\uC2DC\uACA0\uC2B5\uB2C8\uAE4C?
+requests.account.restricted.alert.content_empty=\uC7AC\uAC80\uD1A0 \uB300\uC0C1 \uCF58\uD150\uCE20\uAC00 \uC5C6\uC2B5\uB2C8\uB2E4.
+
+policy.term.about_us=\uD68C\uC0AC\uC18C\uAC1C
+policy.term.term=\uC774\uC6A9\uC57D\uAD00
+policy.privacy=\uAC1C\uC778\uC815\uBCF4\uCC98\uB9AC\uBC29\uCE68
+policy.policy=\uC6B4\uC601\uC815\uCC45
+policy.safeguard=\uCCAD\uC18C\uB144\uBCF4\uD638\uC815\uCC45
+policy.rights=\uAD8C\uB9AC\uCE68\uD574\uC2E0\uACE0\uC548\uB0B4
+policy.conflict=\uC804\uC790\uC0C1\uAC70\uB798 \uD53C\uD574\uAD6C\uC81C\uC2E0\uCCAD
+policy.location=\uC704\uCE58\uAE30\uBC18\uC11C\uBE44\uC2A4\uC774\uC6A9\uC57D\uAD00
+policy.location_html=\uC704\uCE58\uAE30\uBC18\uC11C\uBE44\uC2A4 \uC774\uC6A9\uC57D\uAD00
+policy.notice=\uACF5\uC9C0\uC0AC\uD56D
+policy.urgent_notice=\uAE34\uAE09 \uACF5\uC9C0\uC0AC\uD56D
+policy.urgent_notice2=\uACF5\uC9C0\uC0AC\uD56D
+policy.urgent_notice2_desc=\uC548\uB155\uD558\uC138\uC694, \uB2E4\uC74C\uCE74\uCE74\uC624 \uC785\uB2C8\uB2E4. kakao.com\uC744 \uC774\uC6A9\uD574 \uC8FC\uC2DC\uB294 \uC5EC\uB7EC\uBD84\uAED8 \uC548\uB0B4\uB97C \uB4DC\uB9BD\uB2C8\uB2E4. 2015\uB144 9\uC6D4 23\uC77C\uC790\uB85C \uC0AC\uBA85\uC744 \u2018\uB2E4\uC74C\uCE74\uCE74\uC624' \uC5D0\uC11C \u2018\uCE74\uCE74\uC624\u2019\uB85C \uBCC0\uACBD\uD558\uAC8C \uB418\uC5C8\uC2B5\uB2C8\uB2E4.\uAD00\uB828\uD574\uC11C 2015\uB144 9\uC6D4 23\uC77C \uC774\uD6C4\uB85C \uCE74\uCE74\uC624 \uC11C\uBE44\uC2A4 \uC0AC\uC774\uD2B8(kakao.com)\uAC00 \uB2F9\uBD84\uAC04 \uCE74\uCE74\uC624 \uAE30\uC5C5\uC0AC\uC774\uD2B8\uB85C \uC6B4\uC601\uC774 \uB420 \uC608\uC815\uC785\uB2C8\uB2E4.23\uC77C \uC774\uD6C4\uB85C \uCE74\uCE74\uC624 \uC11C\uBE44\uC2A4\uC758 \uC18C\uAC1C \uBC0F \uC774\uC6A9 \uAD00\uB828 \uBB38\uC758\uB97C \uC6D0\uD558\uC2DC\uB294 \uBD84\uB4E4\uC740 \uCE74\uCE74\uC624 \uAE30\uC5C5\uC0AC\uC774\uD2B8 \uB0B4\uC758 \u201C\uCE74\uCE74\uC624\uC11C\uBE44\uC2A4\u201D \uBC14\uB85C\uAC00\uAE30\uB97C \uD1B5\uD574 \uC811\uC18D\uD574 \uC8FC\uC2DC\uAE30 \uBC14\uB78D\uB2C8\uB2E4.\uAC10\uC0AC\uD569\uB2C8\uB2E4.
+policy.urgent_notice2_close=\uB2EB\uAE30
+policy.delivery_partners=\uCE74\uCE74\uC624 \uC0C1\uD488\uBC30\uC1A1 \uC218\uD0C1\uC5C5\uCCB4
+policy.sellers=\uD310\uB9E4\uC790
+policy.delivery_companies=\uD0DD\uBC30\uC0AC
+policy.txt_connect=Daum \uC11C\uBE44\uC2A4\uC640 \uCE74\uCE74\uC624 \uC11C\uBE44\uC2A4\uB97C \uC5F0\uACB0\uD558\uC600\uB2E4\uBA74 \uCE74\uCE74\uC624 \uD1B5\uD569 \uC57D\uAD00\uB9CC \uC801\uC6A9\uB429\uB2C8\uB2E4.
+policy.link_service=\uCE74\uCE74\uC624 \uC11C\uBE44\uC2A4 \uC57D\uAD00
+policy.link_right=\uCE74\uCE74\uC624 \uD1B5\uD569 \uC57D\uAD00
+policy.talk.terms_and_policy=\uC57D\uAD00 \uBC0F \uC815\uCC45 \uB4F1
+policy.talk.terms_of_service=\uC774\uC6A9\uC57D\uAD00
+policy.talk.location_based_service=\uC704\uCE58\uAE30\uBC18\uC11C\uBE44\uC2A4 \uC774\uC6A9\uC57D\uAD00
+policy.talk.privacy_policy=\uAC1C\uC778\uC815\uBCF4\uCC98\uB9AC\uBC29\uCE68
+policy.talk.operation_policy=\uC6B4\uC601\uC815\uCC45
+policy.talk.youth_protection=\uCCAD\uC18C\uB144\uBCF4\uD638\uC815\uCC45
+policy.talk.open_source_license=\uC624\uD508\uC18C\uC2A4 \uB77C\uC774\uC120\uC2A4
+policy.talk.kakao_custom_ads=\uB9DE\uCDA4\uD615 \uAD11\uACE0 \uC548\uB0B4
+policy.talk.business_name_text=\uC0C1\uD638
+policy.talk.business_name=(\uC8FC)\uCE74\uCE74\uC624
+policy.talk.ceo_text=\uB300\uD45C
+policy.talk.ceo=\uC815\uC2E0\uC544
+policy.talk.biz_regist_text=\uC0AC\uC5C5\uC790\uB4F1\uB85D\uBC88\uD638
+policy.talk.biz_regist_no=120-81-47521
+policy.talk.e_commerce_regist_text=\uD1B5\uC2E0\uD310\uB9E4\uC5C5\uC2E0\uACE0\uBC88\uD638
+policy.talk.e_commerce_regist_no=\uC81C2015-\uC81C\uC8FC\uC544\uB77C-0032\uD638
+policy.talk.address_text=\uC8FC\uC18C
+policy.talk.address=\uC81C\uC8FC\uD2B9\uBCC4\uC790\uCE58\uB3C4 \uC81C\uC8FC\uC2DC \uCCA8\uB2E8\uB85C 242(\uC601\uD3C9\uB3D9)
+policy.talk.host_biz_text=\uD638\uC2A4\uD305\uC0AC\uC5C5
+policy.talk.host_biz=(\uC8FC)\uCE74\uCE74\uC624
+policy.talk.terms_link=https://www.kakao.com/ko/terms?type=ts&etc=base&showDownload=true&showAccountBanner=
+policy.talk.privacy_link=https://www.kakao.com/policy/privacy?type=p&lang=ko
+
+general.do_not_show_again=\uB2E4\uC2DC \uBCF4\uC9C0 \uC54A\uAE30
+general.all=\uC804\uCCB4
+general.open=\uC5F4\uAE30
+general.fold=\uC811\uAE30
+general.more=\uB354\uBCF4\uAE30
+general.close=\uB2EB\uAE30
+general.confirm=\uD655\uC778
+general.search=\uAC80\uC0C9
+general.cancel=\uCDE8\uC18C
+general.logout_message=\uB85C\uADF8\uC544\uC6C3 \uD558\uC2DC\uACA0\uC2B5\uB2C8\uAE4C?
+general.init=\uC785\uB825 \uB0B4\uC6A9 \uC9C0\uC6B0\uAE30
+general.down=\uD558\uC704
+general.open_new_window=\uC0C8\uCC3D\uC5F4\uB9BC
+general.delete=\uC0AD\uC81C
+
+search.no_result=\uAC80\uC0C9\uACB0\uACFC\uAC00 \uC5C6\uC2B5\uB2C8\uB2E4.
+search.search_again=\uB2E4\uC2DC \uAC80\uC0C9\uD558\uAE30
+search.go_to_search_all_desc=\uD1B5\uD569\uAC80\uC0C9\uC73C\uB85C \uB354 \uB9CE\uC740 \uACB0\uACFC\uB97C \uD655\uC778\uD574 \uBCF4\uC138\uC694.
+search.go_to_search_all=\uD1B5\uD569\uAC80\uC0C9 \uACB0\uACFC \uBCF4\uAE30
+search.search_all=\uD1B5\uD569\uAC80\uC0C9
+search.category_all=\uC804\uCCB4
+search.search_result=\uAC80\uC0C9\uACB0\uACFC
+search.view_all_service=\uC11C\uBE44\uC2A4 \uC804\uCCB4\uBCF4\uAE30
+search.select_service=\uC11C\uBE44\uC2A4 \uC120\uD0DD
+search.search_trend=\uCD94\uCC9C \uAC80\uC0C9\uC5B4
+search.search_recent=\uCD5C\uADFC \uAC80\uC0C9\uC5B4
+search.search_no_recent=\uCD5C\uADFC \uAC80\uC0C9\uC5B4\uAC00 \uC5C6\uC2B5\uB2C8\uB2E4.
+search.search_clear_all=\uC804\uCCB4\uC0AD\uC81C
+search.go_to_service=\uC11C\uBE44\uC2A4 \uBC14\uB85C\uAC00\uAE30
+search.item_count=\uAC74
+search.select_category=\uCE74\uD14C\uACE0\uB9AC \uC120\uD0DD
+search.select_detail_category=\uC138\uBD80 \uCE74\uD14C\uACE0\uB9AC \uC120\uD0DD
+search.search_input=\uAC80\uC0C9\uC5B4 \uC785\uB825
+search.view_all_category=\uCE74\uD14C\uACE0\uB9AC \uC804\uCCB4\uBCF4\uAE30
+search.area_suggest=\uC5C5\uB370\uC774\uD2B8 \uB428, \uCD94\uCC9C \uAC80\uC0C9\uC5B4
+
+merger2014.title=\uCE74\uCE74\uC624 \uAC1C\uC778\uC815\uBCF4
+merger2014.policy_title_html=\uD68C\uC0AC\uC758 \uD569\uBCD1\uC5D0 \uB530\uB978 \uAC1C\uC778\uC815\uBCF4 \uC774\uC804\uC5D0 \uB300\uD574 \uC548\uB0B4\uB4DC\uB9BD\uB2C8\uB2E4.
+
+myqna.title=\uB0B4 \uBB38\uC758\uB0B4\uC5ED
+myqna.desc=\uCD5C\uADFC 1\uB144 \uB0B4 \uBB38\uC758 \uB0B4\uC5ED\uC744 \uD655\uC778\uD558\uC2E4 \uC218 \uC788\uC2B5\uB2C8\uB2E4.<br>\uC77C\uBD80 \uC11C\uBE44\uC2A4\uB294 \uB0B4 \uBB38\uC758\uB0B4\uC5ED \uAE30\uB2A5\uC744 \uC81C\uACF5\uD558\uC9C0 \uC54A\uC2B5\uB2C8\uB2E4.
+myqna.empty=\uCD5C\uADFC \uBB38\uC758\uD558\uC2E0 \uB0B4\uC5ED\uC774 \uC5C6\uC2B5\uB2C8\uB2E4.
+myqna.inquiry_label_status.received=\uC811\uC218
+myqna.inquiry_label_status.progress=\uC9C4\uD589
+myqna.inquiry_label_status.done=\uC644\uB8CC
+S¥(>l      h>³h>³HAÏzh>³   e    O^partitionKey=%28https%2Ckakao.com%29,:https://cs.kakao.com/i18n/messages.properties?_=1748939533333 necko:classified 1 strongly-framed 1 security-info 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 request-method GET response-head HTTP/2 200 OK
+date: Tue, 03 Jun 2025 08:32:13 GMT
+content-security-policy: frame-ancestors https://www.daum.net;
+strict-transport-security: max-age=31536000; includeSubDomains
+X-Firefox-Spdy: h2
+ original-response-headers date: Tue, 03 Jun 2025 08:32:13 GMT
+content-security-policy: frame-ancestors https://www.daum.net;
+strict-transport-security: max-age=31536000; includeSubDomains
+X-Firefox-Spdy: h2
+ ctid 1 uncompressed-len 0 net-response-time-onstart 70 net-response-time-onstop 72   Ê
