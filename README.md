@@ -3,10 +3,6 @@
   - 리눅스 기본 사용 : GUI 환경 설정, 터미널 명령어, 사용자 계정 관리, 권한 전환 등 리눅스의 기초적인 사용 방법을 학습
   - 서버 운영 트렌드와 실습 : 서버 시장 동향, 리눅스 서버의 활용성, 계정 생성 및 서버 종료 등을 실습
 
-####  ➜ 2주차 응용 문제 & 추가 구현 완료
-  - url 맵핑, 컨트롤러 추가 : hello.2 맵핑, 5개 속성
-<div align="center"> <img width="300" alt="image" src="![image](https://github.com/user-attachments/assets/e0ab2e19-034f-433f-8a45-d690489bd974)"> </div>
-
 ## * 3주차 수업 *
   - 리눅스 파일 시스템 구조 이해 : EXT4 기반의 파일 시스템과 /bin, /home, /etc 등 주요 디렉터리 구조 및 기능을 학습
   - 파일 및 디렉터리 조작 실습 : 생성, 복사, 이동, 삭제, 링크 생성 등의 명령어를 통해 파일과 폴더를 실습
@@ -75,8 +71,10 @@
  - 4. 서버의 주요 서비스 등록 처리를 수행하는 프로세스는?
  정답: 4번
  ➜ 데몬 프로세스(백그라운드에서 실행되며 시스템 서비스 유지)
-<div align="center"> <img width="300" alt="image" src="![image](https://github.com/user-attachments/assets/e59d8533-2328-4205-a8a7-a7f059e7481d)
-"> </div>
+<div align="center">
+  <img width="300" alt="image" src="https://github.com/user-attachments/assets/e0ab2e19-034f-433f-8a45-d690489bd974">
+</div>
+
 
 ## * 7주차 수업 *
   - GitHub 연동 실습: 리눅스 환경에서 Git 설치 후, 원격 저장소 생성, 커밋, 푸시까지 깃허브에 로그 파일을 업로드하는 전 과정을 실습
