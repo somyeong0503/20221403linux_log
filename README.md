@@ -5,8 +5,7 @@
 
 ####  ➜ 2주차 응용 문제 & 추가 구현 완료
   - url 맵핑, 컨트롤러 추가 : hello.2 맵핑, 5개 속성
-<div align="center"> <img width="300" alt="image" src="![image](https://github.com/user-attachments/assets/e59d8533-2328-4205-a8a7-a7f059e7481d)
-"> </div>
+<div align="center"> <img width="300" alt="image" src="![image](https://github.com/user-attachments/assets/e0ab2e19-034f-433f-8a45-d690489bd974)"> </div>
 
 ## * 3주차 수업 *
   - 리눅스 파일 시스템 구조 이해 : EXT4 기반의 파일 시스템과 /bin, /home, /etc 등 주요 디렉터리 구조 및 기능을 학습
