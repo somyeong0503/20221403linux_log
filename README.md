@@ -86,10 +86,34 @@
   - GitHub 연동 실습: 리눅스 환경에서 Git 설치 후, 원격 저장소 생성, 커밋, 푸시까지 깃허브에 로그 파일을 업로드하는 전 과정을 실습
   - 자동화 및 접근 설정: 보안 토큰 생성, 자동 업로드 스크립트(git_upload.sh) 작성 및 crontab을 통한 자동 실행 설정 방법을 학습
 
+####  ➜ 7주차 응용 문제
+- 1. 현재 깃허브 업로드는 업로드 할 때마다 아이디, 패스워드(토큰)을 입력 해야한다. 원격 주소를 수정하여 자동 로그인(입력)되도록 수정한다.
+➜ 기존 HTTPS 방식 원격 주소를 사용하고 있었기 때문에 매번 로그인 요구가 발생했다.
+이를 해결하기 위해 SSH 방식으로 원격 저장소를 재설정하여 로그인 없이 자동으로 푸시되도록 설정했다.
+ <div align="center">
+  <img width="500" alt="image" src="https://github.com/user-attachments/assets/bf49a979-c708-4d35-9492-f8666f6af3e8">
+</div> 
+<div align="center">
+  <img width="500" alt="image" src="https://github.com/user-attachments/assets/386049db-1a58-4bd8-a9f8-0343c2dc34f1">
+</div>
+- 2. 깃허브 업로드 스크립트를 부팅할 때 자동으로 1번 실행되도록 자동 스케쥴러에 등록한다.
+➜ crontab -e 명령어를 사용하여 @reboot /home/guest/shared/test.sh를 등록함으로써 부팅 시 자동 실행되도록 구성하였다. 또한 */30 * * * * /home/guest/git_upload.sh도 함께 등록하여 30분마다 자동으로 깃허브 로그 업로드가 이뤄지도록 설정하였다.
+<div align="center">
+  <img width="300" alt="image" src="https://github.com/user-attachments/assets/4a1ae30b-b9c7-48b0-ab17-cfd5e07e4d81">
+</div>
+
 ## * 9주차 수업 *
   - 패키지 관리 실습: APT, dpkg 명령어로 리눅스 소프트웨어 설치, 검색, 삭제 및 보안 업데이트 수행법을 학습
   - 디스크 및 파티션 관리: fdisk, mkfs, mount, fstab 등을 사용하여 디스크 파티션 생성, 포맷, 마운트 및 자동 등록을 실습
   - RAID 설정 실습: mdadm을 통해 RAID 0 구성을 실습하고, 장치 2개를 하나의 고속 볼륨으로 묶어 파일시스템 생성 및 마운트를 완료
+
+####  ➜ 9주차 응용 문제
+<div align="center">
+  <img width="300" alt="image" src="https://github.com/user-attachments/assets/69f4de0e-aced-44e9-bd8b-d2f7109a1bdb">
+</div>
+<div align="center">
+  <img width="300" alt="image" src="https://github.com/user-attachments/assets/7ea94b65-a3d8-4c48-84ea-490c1a2799c3">
+</div>
 
 ## * 10주차 수업 *
   - 웹 서버 환경 구축: Apache2, PHP, MySQL을 설치하여 리눅스에서 APM 환경을 구성하고 phpMyAdmin을 통해 데이터베이스를 관리
