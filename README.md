@@ -73,14 +73,7 @@
  ➜ 데몬 프로세스(백그라운드에서 실행되며 시스템 서비스 유지)
 
 좀비 프로세스, Cockpit 구현완료 ➜ 
- <div align="center">
-  <img width="600" alt="image" src="https://github.com/user-attachments/assets/e0ab2e19-034f-433f-8a45-d690489bd974">
-</div>                                 
- <div align="center">
-  <img width="500" alt="image" src="https://github.com/user-attachments/assets/33df6cb0-5ea0-45f3-8940-085c86948cd8">
-</div> 
-
-
+ <p align="center"> <img src="https://github.com/user-attachments/assets/e0ab2e19-034f-433f-8a45-d690489bd974" width="600"/> </p> <p align="center"> <img src="https://github.com/user-attachments/assets/33df6cb0-5ea0-45f3-8940-085c86948cd8" width="500"/> </p>
 
 ## * 7주차 수업 *
   - GitHub 연동 실습: 리눅스 환경에서 Git 설치 후, 원격 저장소 생성, 커밋, 푸시까지 깃허브에 로그 파일을 업로드하는 전 과정을 실습
@@ -90,45 +83,56 @@
 - 1. 현재 깃허브 업로드는 업로드 할 때마다 아이디, 패스워드(토큰)을 입력 해야한다. 원격 주소를 수정하여 자동 로그인(입력)되도록 수정한다.
 ➜ 기존 HTTPS 방식 원격 주소를 사용하고 있었기 때문에 매번 로그인 요구가 발생했다.
 이를 해결하기 위해 SSH 방식으로 원격 저장소를 재설정하여 로그인 없이 자동으로 푸시되도록 설정했다.
- <div align="center">
-  <img width="500" alt="image" src="https://github.com/user-attachments/assets/bf49a979-c708-4d35-9492-f8666f6af3e8">
-</div> 
-<div align="center">
-  <img width="500" alt="image" src="https://github.com/user-attachments/assets/386049db-1a58-4bd8-a9f8-0343c2dc34f1">
-</div>
+ <p align="center"> <img src="https://github.com/user-attachments/assets/bf49a979-c708-4d35-9492-f8666f6af3e8" width="500"/> </p> <p align="center"> <img src="https://github.com/user-attachments/assets/386049db-1a58-4bd8-a9f8-0343c2dc34f1" width="500"/> </p>
 - 2. 깃허브 업로드 스크립트를 부팅할 때 자동으로 1번 실행되도록 자동 스케쥴러에 등록한다.
 ➜ crontab -e 명령어를 사용하여 @reboot /home/guest/shared/test.sh를 등록함으로써 부팅 시 자동 실행되도록 구성하였다. 또한 */30 * * * * /home/guest/git_upload.sh도 함께 등록하여 30분마다 자동으로 깃허브 로그 업로드가 이뤄지도록 설정하였다.
-<div align="center">
-  <img width="300" alt="image" src="https://github.com/user-attachments/assets/4a1ae30b-b9c7-48b0-ab17-cfd5e07e4d81">
-</div>
+<p align="center"> <img src="https://github.com/user-attachments/assets/4a1ae30b-b9c7-48b0-ab17-cfd5e07e4d81" width="300"/> </p>
 
 ## * 9주차 수업 *
   - 패키지 관리 실습: APT, dpkg 명령어로 리눅스 소프트웨어 설치, 검색, 삭제 및 보안 업데이트 수행법을 학습
   - 디스크 및 파티션 관리: fdisk, mkfs, mount, fstab 등을 사용하여 디스크 파티션 생성, 포맷, 마운트 및 자동 등록을 실습
-  - RAID 설정 실습: mdadm을 통해 RAID 0 구성을 실습하고, 장치 2개를 하나의 고속 볼륨으로 묶어 파일시스템 생성 및 마운트를 완료
+  - 카카오톡(한글화) : wine기반으로 실행하기 구현완료
+<p align="center"> <img src="https://github.com/user-attachments/assets/eb95728b-2542-4a3b-82f4-60bf88d8f682" width="300"/> </p>
+
+
 
 ####  ➜ 9주차 응용 문제
-<div align="center">
-  <img width="300" alt="image" src="https://github.com/user-attachments/assets/69f4de0e-aced-44e9-bd8b-d2f7109a1bdb">
-</div>
-<div align="center">
-  <img width="300" alt="image" src="https://github.com/user-attachments/assets/7ea94b65-a3d8-4c48-84ea-490c1a2799c3">
-</div>
+- RAID 설정 실습: mdadm을 통해 RAID 0 구성을 실습하고, 장치 2개를 하나의 고속 볼륨으로 묶어 파일시스템 생성 및 마운트를 완료
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/69f4de0e-aced-44e9-bd8b-d2f7109a1bdb" width="300"/>
+  <img src="https://github.com/user-attachments/assets/7ea94b65-a3d8-4c48-84ea-490c1a2799c3" width="300"/>
+</p>
 
 ## * 10주차 수업 *
   - 웹 서버 환경 구축: Apache2, PHP, MySQL을 설치하여 리눅스에서 APM 환경을 구성하고 phpMyAdmin을 통해 데이터베이스를 관리
   - 워드프레스 설치 및 설정: 최신 워드프레스 파일을 다운로드 후 압축 해제 및 이동, DB 연결 설정, 설치 마법사로 사이트 구축까지 완료
   - 플러그인과 테마 활용: 다양한 워드프레스 테마와 플러그인을 설치하고, FTP 서버 설정을 통해 외부 업로드 및 웹사이트 커스터마이징을 실습
+   <p align="center">
+  <img src="https://github.com/user-attachments/assets/eb890f66-991a-439d-b168-8fecabf0bd60" width="300"/>
+  <img src="https://github.com/user-attachments/assets/7d4b03e0-1aab-4927-896b-01376cb6136b" width="300"/>
+</p>
 
 ## * 11주차 수업 *
   - 웹 서버 보안 설정 강화: Apache 설정 파일을 수정하여 디렉터리 목록 차단, 파일 업로드 제한, 헤더 정보 숨기기 등 웹 서버 보안을 강화
   - 불필요한 파일 및 모듈 정리: 쉘 스크립트를 활용해 불필요한 매뉴얼 파일과 미사용 Apache 모듈을 비활성화하여 서버 효율성과 보안성을 높
   - 워드프레스 및 서버 백업 자동화: 플러그인 및 쉘 스크립트로 워드프레스 백업을 수행하고, crontab을 활용한 정기 백업 및 정리 작업을 자동화
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/2ac4ad6f-bd30-4ce2-89d2-7199cd1f425e" width="450"/>
+  <img src="https://github.com/user-attachments/assets/79a3b5db-0c60-4435-8211-78d23cbc35df" width="450"/>
+  <img src="https://github.com/user-attachments/assets/b30055e4-af74-4ac6-a7eb-8fa145df08e2" width="450"/>
+</p>
+
+####  ➜ 11주차 응용 문제
+
 
 ## * 12주차 수업 *
   - 취약점 스캐닝 도구 ZAP 활용: OWASP ZAP을 설치하고, 워드프레스 사이트에 대해 자동 및 능동 스캔을 수행하여 웹 취약점(예: XSS, CSRF, SQL Injection 등)을 분석
   - 웹 방화벽 ModSecurity 설정: Apache2에 ModSecurity와 OWASP CRS를 연동하여 실시간 공격 탐지 및 차단 기능을 설정하고, 실제 공격 시뮬레이션으로 403 응답 확인
 
+####  ➜ 12주차 응용 문제
+
 ## * 13주차 수업 *
   - 자원 모니터링 개념 이해: CPU, 메모리, 스왑, 네트워크 등 리눅스 시스템의 자원 구조와 부하 원인을 분석하며 MMU, 가상 메모리, 캐시 구조 등을 학습
   - 실시간 성능 분석 도구 실습: htop, mpstat, vmstat, stress 등의 도구로 시스템 부하 상황을 실시간 모니터링하고 CPU·메모리·네트워크 부하 테스트를 수행
+
+####  ➜ 13주차 응용 문제
