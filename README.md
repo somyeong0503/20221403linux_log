@@ -73,7 +73,7 @@
  ➜ 데몬 프로세스(백그라운드에서 실행되며 시스템 서비스 유지)
 
 좀비 프로세스, Cockpit 구현완료 ➜ 
- <p align="center"> <img src="https://github.com/user-attachments/assets/e0ab2e19-034f-433f-8a45-d690489bd974" width="600"/> </p> <p align="center"> <img src="https://github.com/user-attachments/assets/33df6cb0-5ea0-45f3-8940-085c86948cd8" width="500"/> </p>
+ <p align="center"> <img src="https://github.com/user-attachments/assets/e0ab2e19-034f-433f-8a45-d690489bd974" width="600"/> </p> <p align="center"> <img src="https://github.com/user-attachments/assets/33df6cb0-5ea0-45f3-8940-085c86948cd8" width="400"/> </p>
 
 ## * 7주차 수업 *
   - GitHub 연동 실습: 리눅스 환경에서 Git 설치 후, 원격 저장소 생성, 커밋, 푸시까지 깃허브에 로그 파일을 업로드하는 전 과정을 실습
@@ -119,7 +119,6 @@
 <p align="center">
   <img src="https://github.com/user-attachments/assets/2ac4ad6f-bd30-4ce2-89d2-7199cd1f425e" width="450"/>
   <img src="https://github.com/user-attachments/assets/79a3b5db-0c60-4435-8211-78d23cbc35df" width="450"/>
-  <img src="https://github.com/user-attachments/assets/b30055e4-af74-4ac6-a7eb-8fa145df08e2" width="450"/>
 </p>
 
 ####  ➜ 11주차 응용 문제
