@@ -117,8 +117,8 @@
   - 불필요한 파일 및 모듈 정리: 쉘 스크립트를 활용해 불필요한 매뉴얼 파일과 미사용 Apache 모듈을 비활성화하여 서버 효율성과 보안성을 높
   - 워드프레스 및 서버 백업 자동화: 플러그인 및 쉘 스크립트로 워드프레스 백업을 수행하고, crontab을 활용한 정기 백업 및 정리 작업을 자동화
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/2ac4ad6f-bd30-4ce2-89d2-7199cd1f425e" width="450"/>
-  <img src="https://github.com/user-attachments/assets/79a3b5db-0c60-4435-8211-78d23cbc35df" width="450"/>
+  <img src="https://github.com/user-attachments/assets/2ac4ad6f-bd30-4ce2-89d2-7199cd1f425e" width="350"/>
+  <img src="https://github.com/user-attachments/assets/79a3b5db-0c60-4435-8211-78d23cbc35df" width="350"/>
 </p>
 
 ####  ➜ 11주차 응용 문제
