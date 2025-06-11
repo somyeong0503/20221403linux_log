@@ -128,6 +128,17 @@
 </p>
 
 ####  ➜ 11주차 응용 문제
+  - 1. 본 문제에서는 워드프레스에서 흔히 발견되는 취약점들을 점검하고, 무료 기능과 설정을 통해 보안 강화 작업을 수행하였다.
+       주요 취약점인 XML-RPC 노출, 디렉토리 인덱스 허용, 파일 편집 기능, 보안 헤더 미설정 등을 .htaccess 및 wp-config.php를 통해 개선하였다. 모든 설정은 무료 기능만으로 적용하였으며, 결과 스크린샷은 screenshots폴더에 포함하였다.
+       <p align="center"> <img src="https://github.com/user-attachments/assets/bb752585-fae7-49ac-b615-c88048230058" width="300"/> </p>
+  - 2. Crontab을 이용하여 총 4개의 자동화 작업을 설정하였다.
+       서버 부팅 시 초기화 작업을 위한 test.sh, 30분 간격으로 Git 상태를 푸시하는 git_upload.sh, 매주 일요일 새벽 3시에 불필요한 Apache 로그 및 임시 파일을 삭제하는 cleanup_apache.sh, 그리고 매주 월요일 새벽 8시에 /var/www 디렉토리를 자동으로 백        업하는 backup_www.sh 스크립트가 설정되어 있다.
+       모든 스크립트는 실행 권한 부여 후 crontab에 등록되었으며, GitHub에 스크립트와 로그 경로 포함하여 정리하였다.
+       <p align="center">
+        <img src="https://github.com/user-attachments/assets/15b7565a-8ff4-43fc-be6e-e261dc8ed07b" width="300"/>
+        <img src="https://github.com/user-attachments/assets/1f812a7e-2272-479f-8660-1b32990b055f" width="300"/>
+        <img src="https://github.com/user-attachments/assets/3ccac44f-a70e-4960-ab7a-a65e98bd91f0" width="300"/>
+       </p>
 
 
 ## * 12주차 수업 *
@@ -149,3 +160,8 @@
  </p>
 
 ####  ➜ 13주차 응용 문제
+  ➜ 이 문제에서는 curl을 2000회 병렬로 실행하여 네트워크 대역폭을 집중적으로 소비시키고, 그로 인해 시스템 리소스(CPU, 메모리 등)에 어떤 영향을 미치는지를 관찰하였다. 
+  curl은 10MB짜리 테스트 파일을 반복적으로 다운로드하며 부하를 주고, htop 명령어를 통해 리소스 사용량 변화를 실시간 모니터링하였다. 
+  테스트 결과, CPU 사용률은 네트워크 IO 대기 상태로 인해 급격히 상승하진 않았지만, 전체 curl 수가 많을수록 프로세스 수 증가로 메모리 사용량이 점진적으로 증가하였다. 
+  동시에 실행되는 프로세스가 많을 경우 시스템이 처리 가능한 최대 동시성 한계에 도달하면 일부 요청이 지연되거나 실패할 수 있으므로, 대규모 요청 처리 환경에서는 비동기 큐 또는 연결 풀링 등의 기술이 중요함을 확인하였다.
+<p align="center"> <img src="https://github.com/user-attachments/assets/0a8b4377-4d93-455b-9fdc-17f31ef18085" width="300"/> </p>
