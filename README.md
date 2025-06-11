@@ -92,7 +92,7 @@
  <p align="center"> <img src="https://github.com/user-attachments/assets/bf49a979-c708-4d35-9492-f8666f6af3e8" width="500"/> </p> <p align="center"> <img src="https://github.com/user-attachments/assets/386049db-1a58-4bd8-a9f8-0343c2dc34f1" width="500"/> </p>
 - 2. 깃허브 업로드 스크립트를 부팅할 때 자동으로 1번 실행되도록 자동 스케쥴러에 등록한다.
 ➜ crontab -e 명령어를 사용하여 @reboot /home/guest/shared/test.sh를 등록함으로써 부팅 시 자동 실행되도록 구성하였다. 또한 */30 * * * * /home/guest/git_upload.sh도 함께 등록하여 30분마다 자동으로 깃허브 로그 업로드가 이뤄지도록 설정하였다.
-<p align="center"> <img src="https://github.com/user-attachments/assets/204f7840-c64c-4d3d-bee9-0a83ee8e10f1" width="300"/> </p>
+<p align="center"> <img src="https://github.com/user-attachments/assets/6587178a-1ace-458b-80c1-9c2151ee4cf3" width="300"/> </p>
 
 ## * 9주차 수업 *
   - 패키지 관리 실습: APT, dpkg 명령어로 리눅스 소프트웨어 설치, 검색, 삭제 및 보안 업데이트 수행법을 학습
@@ -137,7 +137,7 @@
        <p align="center">
         <img src="https://github.com/user-attachments/assets/15b7565a-8ff4-43fc-be6e-e261dc8ed07b" width="300"/>
         <img src="https://github.com/user-attachments/assets/1f812a7e-2272-479f-8660-1b32990b055f" width="300"/>
-        <img src="https://github.com/user-attachments/assets/f1d93ac7-d1cc-45d5-a8fe-b850e2490163" width="300"/>
+        <img src="https://github.com/user-attachments/assets/22d57be1-4025-467a-959e-5578f7355cb3" width="300"/>
        </p>
 
 
