@@ -2,6 +2,7 @@
   - VIRTUAL BOX 설치, 우분투 서버 설치
   - 리눅스 기본 사용 : GUI 환경 설정, 터미널 명령어, 사용자 계정 관리, 권한 전환 등 리눅스의 기초적인 사용 방법을 학습
   - 서버 운영 트렌드와 실습 : 서버 시장 동향, 리눅스 서버의 활용성, 계정 생성 및 서버 종료 등을 실습
+<p align="center"> <img src="https://github.com/user-attachments/assets/be72378a-6e89-40bf-bdc6-0f67ff76cb07" width="350"/>
 
 ## * 3주차 수업 *
   - 리눅스 파일 시스템 구조 이해 : EXT4 기반의 파일 시스템과 /bin, /home, /etc 등 주요 디렉터리 구조 및 기능을 학습
@@ -25,6 +26,10 @@
   - 리눅스 계정 생성과 보안 설정 : adduser, usermod, passwd 등을 활용한 계정 생성, 홈 디렉터리 변경, 패스워드 정책 설정 실습
   - 사용자 그룹 관리 : 그룹 생성 및 변경, 보조 그룹 추가, 그룹 삭제  등 계정과 그룹간 권한 관리를 학습
   - 원격 접속 및 폴더 공유 : ssh 서버 설정과 PUTTY를 통한 원격 접속, VIRTUAL BOX 환경에서 공유 폴더 마운트 및 파일 편집 실습
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/7f6a5352-70c8-406b-b9f3-a90940a070c7" width="300"/>
+  <img src="https://github.com/user-attachments/assets/31687d0e-ffdc-4eba-bcfd-20aa96b16cb5" width="300"/>
+</p>
 
 ####  ➜ 4주차 응용 문제
   - 1. adduser 명령어로 홈 디렉터리를 지정하여 test 사용자를 생성하시오.
@@ -44,6 +49,7 @@
   - 리눅스 파일 권한 이해 및 설정 : ls -al, chmod, umask, chown 등을 통해 파일과 디렉터리의 권한을 확인하고 변경하는 방법을 학습
   - 특수 권한과 속성 관리: setuid, setgid, sticky bit, chattr, lsattr 등을 통해 고급 보안 설정과 시스템 관리에 필요한 권한을 학습
   - 공유 폴더 자동 마운트 설정: crontab과 쉘 스크립트를 활용하여 VirtualBox 공유 폴더를 시스템 부팅 시 자동으로 연결하는 실습을 수행
+<p align="center"> <img src="https://github.com/user-attachments/assets/99da4623-f39f-411c-9520-797e5d69c1b8" width="350"/>
 
 ####  ➜ 5주차 응용 문제
   - 1. 현재 umask 기본값은 022다. 폴더 및 디렉터리 생성 시 권한을 750으로 설정하려면?
@@ -127,11 +133,19 @@
 ## * 12주차 수업 *
   - 취약점 스캐닝 도구 ZAP 활용: OWASP ZAP을 설치하고, 워드프레스 사이트에 대해 자동 및 능동 스캔을 수행하여 웹 취약점(예: XSS, CSRF, SQL Injection 등)을 분석
   - 웹 방화벽 ModSecurity 설정: Apache2에 ModSecurity와 OWASP CRS를 연동하여 실시간 공격 탐지 및 차단 기능을 설정하고, 실제 공격 시뮬레이션으로 403 응답 확인
+  <p align="center">
+    <img src="https://github.com/user-attachments/assets/1f7ac097-5bfb-438f-a323-1e96b220e59f" width="350"/>
+    <img src="https://github.com/user-attachments/assets/37cbe17f-ce3d-4961-9742-3d898b20c61a" width="350"/>
+  </p>
 
 ####  ➜ 12주차 응용 문제
 
 ## * 13주차 수업 *
   - 자원 모니터링 개념 이해: CPU, 메모리, 스왑, 네트워크 등 리눅스 시스템의 자원 구조와 부하 원인을 분석하며 MMU, 가상 메모리, 캐시 구조 등을 학습
   - 실시간 성능 분석 도구 실습: htop, mpstat, vmstat, stress 등의 도구로 시스템 부하 상황을 실시간 모니터링하고 CPU·메모리·네트워크 부하 테스트를 수행
+ <p align="center">
+  <img src="https://github.com/user-attachments/assets/25ac2db2-e473-4158-aebc-149782049f52" width="350"/>
+  <img src="https://github.com/user-attachments/assets/bf443615-1b7d-4543-9c80-c2549e41754e" width="350"/>
+ </p>
 
 ####  ➜ 13주차 응용 문제
