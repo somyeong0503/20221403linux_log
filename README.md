@@ -150,6 +150,12 @@
   </p>
 
 ####  ➜ 12주차 응용 문제
+  - 1. 취약점 스캔 결과 대표 취약성 5개
+    X-Content-Type-Options Header Missing, Reflected Cross-Site Scripting (XSS), Password Field with Autocomplete Enabled, Missing Cache-Control Header, Cookie Without HttpOnly Flag
+  - 2. ModSecurity 실습결과
+    ModSecurity는 다양한 공격 패턴을 탐지 및 차단할 수 있었으며, 로그를 통해 실시간 확인 가능했다.
+<p align="center"> <img src="https://github.com/user-attachments/assets/f3864e3a-eb1b-4a33-ac4a-01ac19f9f333" width="300"/> </p>
+
 
 ## * 13주차 수업 *
   - 자원 모니터링 개념 이해: CPU, 메모리, 스왑, 네트워크 등 리눅스 시스템의 자원 구조와 부하 원인을 분석하며 MMU, 가상 메모리, 캐시 구조 등을 학습
